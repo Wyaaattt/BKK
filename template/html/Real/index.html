@@ -326,8 +326,38 @@
                       <h5 class="card-header">Data Alumni</h5>
                       <div class="table-responsive text-nowrap">
                       </div>
-                      <input class="search" type="text" id="searchInput" placeholder="Search" onkeyup="searchTable()">
-                      <div>
+                      <form>
+                        <div class="row m-1">
+                          <div class="col-sm-4">
+                            <label class="form-label">Nama</label>
+                            <input class="form-control" type="text" id="searchInput" placeholder="John Doe" onkeyup="searchTable()">
+                          </div>
+                          <div class="col-sm-3  ">
+                            <label for="exampleFormControlSelect1" class="form-label">Program Keahlian</label>
+                            <select class="form-select" id="select1" aria-label="Default select example" onchange="searchTable1()">
+                              <option selected>Jurusan</option>
+                              <option value="1">RPL</option>
+                              <option value="2">PM</option>
+                              <option value="3">DKV</option>
+                              <option value="4">Nothing</option>
+                            </select>
+                          </div>
+                          <div class="col-sm-3">
+                            <label for="exampleFormControlSelect1" class="form-label">Tahun Lulus</label>
+                            <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
+                              <option selected>Tahun Lulus</option>
+                              <option value="1">2020 - 2023</option>
+                              <option value="2">2023 - 2026</option>
+                              <option value="3">2026 - 2029</option>
+                            </select>
+                          </div>
+                          <div class="col-sm-1">
+                            <button class="form-control btn-primary" style="margin: 29px; width: 100px;" ><i class="bx bx-search fs-4 lh-0" style="margin-right: 5px;"></i>Send</button>
+                          </div>
+                          </div>
+                      </form>
+                      <div class="row">
+                        <div class="m-3">
                           <input type="file" id="uploadImport" class="account-file-input" hidden accept="image/png, image/jpeg" />
                           <label for="uploadImport" class="btn btn-primary float-md-right">
                             <i class="bx bx-upload mr-2"></i> Import
@@ -336,194 +366,195 @@
                           <label for="uploadExport" class="btn btn-danger float-md-right">
                             <i class="bx bx-download mr-2"></i> Export
                           </label>
+                        </div>
                       </div>
-                      <table class="table" id="myTable">
-                        
-                          <thead>
+                        <table class="table" id="myTable">
+                          
+                            <thead>
+                              <tr>
+                              <th>Foto</th>
+                              <th>Nama Lengkap</th>
+                              <th>Jenis Kelamin</th>
+                              <th>Alamat</th>
+                              <th>Program Keahlian</th>
+                              <th>Tahun Lulus</th>
+                              <th>Aksi</th>
+                            </tr>
+                          </thead>
+                          <tbody>
                             <tr>
-                            <th>Foto</th>
-                            <th>Nama Lengkap</th>
-                            <th>Jenis Kelamin</th>
-                            <th>Alamat</th>
-                            <th>Program Keahlian</th>
-                            <th>Tahun Lulus</th>
-                            <th>Aksi</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>
-                              <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                                <li
+                              <td>
+                                <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
+                                  <li
+                                    data-bs-toggle="tooltip"
+                                    data-popup="tooltip-custom"
+                                    data-bs-placement="text-center"
+                                    class="avatar avatar-xs pull-up"
+                                    title="Christina Parker"
+                                  >
+                                    <img src="../../assets/img/avatars/7.png" alt="Avatar" class="rounded-circle" style="height: 40px; width: 40px;" />
+                                  </li>
+                                </ul>
+                              </td>
+                              <td>1111111  </td>
+                              <td>Lawcere</td>
+                              <td>Lawcere</td>
+                              <td>Nothing</td>
+                              <td>RPL</td>
+                              <td>
+                                <a href="edit_detail_alumni.html" class="btn btn-danger">Edit</a>
+                              </td>
+                          
+                            <tr>
+                              <td>
+                                <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
+                                  <li
                                   data-bs-toggle="tooltip"
                                   data-popup="tooltip-custom"
                                   data-bs-placement="text-center"
                                   class="avatar avatar-xs pull-up"
                                   title="Christina Parker"
-                                >
-                                  <img src="../../assets/img/avatars/7.png" alt="Avatar" class="rounded-circle" style="height: 40px; width: 40px;" />
-                                </li>
-                              </ul>
-                            </td>
-                            <td>1111111  </td>
-                            <td>Lawcere</td>
-                            <td>Lawcere</td>
-                            <td>Nothing</td>
-                            <td>Nothing</td>
-                            <td>
-                              <a href="edit_detail_alumni.html" class="btn btn-danger">Edit</a>
-                            </td>
-                         
-                          <tr>
-                            <td>
-                              <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                                <li
-                                data-bs-toggle="tooltip"
-                                data-popup="tooltip-custom"
-                                data-bs-placement="text-center"
-                                class="avatar avatar-xs pull-up"
-                                title="Christina Parker"
-                                >
-                                  <img src="../../assets/img/avatars/6.png" alt="Avatar" class="rounded-circle" style="height: 40px; width: 40px;" />
-                                </li>
-                              </ul>
-                            </td>
-                            <td>22222  </td>
-                            <td>Wyaat</td>
-                            <td>Nothing</td>
-                            <td>Nothing</td>
-                            <td>Nothing</td>
-                            <td>
-                              <a href="edit_detail_alumni.html" class="btn btn-danger">Edit</a>
-                            </td>
-                          </tr>
-                          <tr>
-                          <tr>
-                            <td>
-                              <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                                <li
+                                  >
+                                    <img src="../../assets/img/avatars/6.png" alt="Avatar" class="rounded-circle" style="height: 40px; width: 40px;" />
+                                  </li>
+                                </ul>
+                              </td>
+                              <td>22222  </td>
+                              <td>Wyaat</td>
+                              <td>Nothing</td>
+                              <td>Nothing</td>
+                              <td>PM</td>
+                              <td>
+                                <a href="edit_detail_alumni.html" class="btn btn-danger">Edit</a>
+                              </td>
+                            </tr>
+                            <tr>
+                            <tr>
+                              <td>
+                                <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
+                                  <li
+                                    data-bs-toggle="tooltip"
+                                    data-popup="tooltip-custom"
+                                    data-bs-placement="text-center"
+                                    class="avatar avatar-xs pull-up"
+                                    title="Christina Parker"
+                                  >
+                                    <img src="../../assets/img/avatars/7.png" alt="Avatar" class="rounded-circle" style="height: 40px; width: 40px;" />
+                                  </li>
+                                </ul>
+                              </td>
+                              <td>1111111  </td>
+                              <td>Lawcere</td>
+                              <td>Nothing</td>
+                              <td>Nothing</td>
+                              <td>Nothing</td>
+                              <td>
+                                <a href="edit_detail_alumni.html" class="btn btn-danger">Edit</a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
+                                  <li
                                   data-bs-toggle="tooltip"
                                   data-popup="tooltip-custom"
                                   data-bs-placement="text-center"
                                   class="avatar avatar-xs pull-up"
                                   title="Christina Parker"
-                                >
-                                  <img src="../../assets/img/avatars/7.png" alt="Avatar" class="rounded-circle" style="height: 40px; width: 40px;" />
-                                </li>
-                              </ul>
-                            </td>
-                            <td>1111111  </td>
-                            <td>Lawcere</td>
-                            <td>Nothing</td>
-                            <td>Nothing</td>
-                            <td>Nothing</td>
-                            <td>
-                              <a href="edit_detail_alumni.html" class="btn btn-danger">Edit</a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                                <li
-                                data-bs-toggle="tooltip"
-                                data-popup="tooltip-custom"
-                                data-bs-placement="text-center"
-                                class="avatar avatar-xs pull-up"
-                                title="Christina Parker"
-                                >
-                                  <img src="../../assets/img/avatars/6.png" alt="Avatar" class="rounded-circle" style="height: 40px; width: 40px;" />
-                                </li>
-                              </ul>
-                            </td>
-                            <td>22222  </td>
-                            <td>Wyaat</td>
-                            <td>Wyaat</td>
-                            <td>Nothing</td>
-                            <td>Nothing</td>
-                            <td>
-                              <a href="edit_detail_alumni.html" class="btn btn-danger">Edit</a>
-                            </td>
-                          </tr>
-                          <tr>
-                          <tr>
-                            <td>
-                              <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                                <li
+                                  >
+                                    <img src="../../assets/img/avatars/6.png" alt="Avatar" class="rounded-circle" style="height: 40px; width: 40px;" />
+                                  </li>
+                                </ul>
+                              </td>
+                              <td>22222  </td>
+                              <td>Wyaat</td>
+                              <td>Wyaat</td>
+                              <td>Nothing</td>
+                              <td>Nothing</td>
+                              <td>
+                                <a href="edit_detail_alumni.html" class="btn btn-danger">Edit</a>
+                              </td>
+                            </tr>
+                            <tr>
+                            <tr>
+                              <td>
+                                <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
+                                  <li
+                                    data-bs-toggle="tooltip"
+                                    data-popup="tooltip-custom"
+                                    data-bs-placement="text-center"
+                                    class="avatar avatar-xs pull-up"
+                                    title="Christina Parker"
+                                  >
+                                    <img src="../../assets/img/avatars/7.png" alt="Avatar" class="rounded-circle" style="height: 40px; width: 40px;" />
+                                  </li>
+                                </ul>
+                              </td>
+                              <td>1111111  </td>
+                              <td>Lawcere</td>
+                              <td>Lawcere</td>
+                              <td>Nothing</td>
+                              <td>Nothing</td>
+                              <td>
+                                <a href="edit_detail_alumni.html" class="btn btn-danger">Edit</a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
+                                  <li
                                   data-bs-toggle="tooltip"
                                   data-popup="tooltip-custom"
                                   data-bs-placement="text-center"
                                   class="avatar avatar-xs pull-up"
                                   title="Christina Parker"
-                                >
-                                  <img src="../../assets/img/avatars/7.png" alt="Avatar" class="rounded-circle" style="height: 40px; width: 40px;" />
-                                </li>
-                              </ul>
-                            </td>
-                            <td>1111111  </td>
-                            <td>Lawcere</td>
-                            <td>Lawcere</td>
-                            <td>Nothing</td>
-                            <td>Nothing</td>
-                            <td>
-                              <a href="edit_detail_alumni.html" class="btn btn-danger">Edit</a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                                <li
-                                data-bs-toggle="tooltip"
-                                data-popup="tooltip-custom"
-                                data-bs-placement="text-center"
-                                class="avatar avatar-xs pull-up"
-                                title="Christina Parker"
-                                >
-                                  <img src="../../assets/img/avatars/6.png" alt="Avatar" class="rounded-circle" style="height: 40px; width: 40px;" />
-                                </li>
-                              </ul>
-                            </td>
-                            <td>22222  </td>
-                            <td>Wyaat</td>
-                            <td>Wyaat</td>
-                            <td>Nothing</td>
-                            <td>Nothing</td>
-                            <td>
-                              <a href="edit_detail_alumni.html" class="btn btn-danger">Edit</a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                                <li
-                                  data-bs-toggle="tooltip"
-                                  data-popup="tooltip-custom"
-                                  data-bs-placement="text-center"
-                                  class="avatar avatar-xs pull-up"
-                                  title="Christina Parker"
-                                >
-                                  <img src="../../assets/img/avatars/1.png" alt="Avatar" class="rounded-circle" style="height: 40px; width: 40px;" />
-                                </li>
-                              </ul>
-                            </td>
-                            <td>33333  </td>
-                            <td>Albert Cook</td>
-                            <td>Nothing</td>
-                            <td>Nothing</td>
-                            <td>Nothing</td>
-                            <td>
-                              <a href="edit_detail_alumni.html" class="btn btn-danger">Edit</a>
-                            </t>
-                        </tbody>
-                        <tfoot class="table-border-bottom-0">
-                          <tr>
-                            <th>Project</th>
-                            <th>Client</th>
-                            <th>Users</th>
-                            <th>Status</th>
-                            <th>Actions</th>
-                          </tr>
-                        </tfoot>
-                      </table>
+                                  >
+                                    <img src="../../assets/img/avatars/6.png" alt="Avatar" class="rounded-circle" style="height: 40px; width: 40px;" />
+                                  </li>
+                                </ul>
+                              </td>
+                              <td>22222  </td>
+                              <td>Wyaat</td>
+                              <td>Wyaat</td>
+                              <td>Nothing</td>
+                              <td>Nothing</td>
+                              <td>
+                                <a href="edit_detail_alumni.html" class="btn btn-danger">Edit</a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
+                                  <li
+                                    data-bs-toggle="tooltip"
+                                    data-popup="tooltip-custom"
+                                    data-bs-placement="text-center"
+                                    class="avatar avatar-xs pull-up"
+                                    title="Christina Parker"
+                                  >
+                                    <img src="../../assets/img/avatars/1.png" alt="Avatar" class="rounded-circle" style="height: 40px; width: 40px;" />
+                                  </li>
+                                </ul>
+                              </td>
+                              <td>33333  </td>
+                              <td>Albert Cook</td>
+                              <td>Nothing</td>
+                              <td>Nothing</td>
+                              <td>Nothing</td>
+                              <td>
+                                <a href="edit_detail_alumni.html" class="btn btn-danger">Edit</a>
+                              </t>
+                          </tbody>
+                          <tfoot class="table-border-bottom-0">
+                            <tr>
+                              <th>Project</th>
+                              <th>Client</th>
+                              <th>Users</th>
+                              <th>Status</th>
+                              <th>Actions</th>
+                            </tr>
+                          </tfoot>
+                        </table>
                       
                       <button id="loadMoreBtn" class="btn btn-primary">Lihat Lebih Banyak</button>
                     </div>
