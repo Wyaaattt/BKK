@@ -89,7 +89,7 @@
             <!-- Dashboard -->
             <li class="menu-item">
               <a href="index.html" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                <i class="menu-icon tf-icons bx bxs-graduation"></i>
                 <div data-i18n="Analytics">Data Alumni</div>
               </a>
             </li>
@@ -97,7 +97,7 @@
             <!-- Layouts -->
             <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-layout"></i>
+                <i class="menu-icon tf-icons bx bx-id-card"></i>
                 <div data-i18n="Layouts">Data User</div>
               </a>
 
@@ -117,13 +117,13 @@
             </li>
             <li class="menu-item active">
               <a href="loker.html" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-lock-open-alt"></i>
+                <i class="menu-icon tf-icons bx bx-briefcase-alt-2"></i>
                 <div data-i18n="Authentications">Data Loker</div>
               </a>
             </li>
             <li class="menu-item">
               <a href="lamaran.html" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-cube-alt"></i>
+                <i class="menu-icon tf-icons bx bx-file"></i>
                 <div data-i18n="Misc">Data Lamaran</div>
               </a>
             </li>
@@ -263,17 +263,48 @@
                       <h5 class="card-header">Data Loker</h5>
                       <div class="table-responsive text-nowrap">
                       </div>
-                      <input class="search" type="text" id="searchInput" placeholder="Search" onkeyup="searchTable()">
-                      <div>
-                        <input type="file" id="uploadImport" class="account-file-input" hidden accept="image/png, image/jpeg" />
-                        <label for="uploadImport" class="btn btn-primary float-md-right">
-                          <i class="bx bx-upload mr-2"></i> Import
-                        </label>
-                        <input type="file" id="uploadExport" class="account-file-input" hidden accept="image/png, image/jpeg" />
-                        <label for="uploadExport" class="btn btn-danger float-md-right">
-                          <i class="bx bx-download mr-2"></i> Export
-                        </label>
-                        <a href="tambah_loker.html" class="btn btn-success">Tambah</a>
+                      <form>
+                        <div class="row m-1">
+                          <div class="col-sm-4">
+                            <label class="form-label">Nama</label>
+                            <input class="form-control" type="text" id="searchInput" placeholder="John Doe" onkeyup="searchTable()">
+                          </div>
+                          <div class="col-sm-3  ">
+                            <label for="exampleFormControlSelect1" class="form-label">Program Keahlian</label>
+                            <select class="form-select" id="select1" aria-label="Default select example" onchange="searchTable1()">
+                              <option selected>Jurusan</option>
+                              <option value="1">RPL</option>
+                              <option value="2">PM</option>
+                              <option value="3">DKV</option>
+                              <option value="4">Nothing</option>
+                            </select>
+                          </div>
+                          <div class="col-sm-3">
+                            <label for="exampleFormControlSelect1" class="form-label">Tahun Lulus</label>
+                            <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
+                              <option selected>Tahun Lulus</option>
+                              <option value="1">2020 - 2023</option>
+                              <option value="2">2023 - 2026</option>
+                              <option value="3">2026 - 2029</option>
+                            </select>
+                          </div>
+                          <div class="col-sm-1">
+                            <button class="form-control btn-primary" style="margin: 29px; width: 100px;" ><i class="bx bx-search fs-4 lh-0" style="margin-right: 5px;"></i>Send</button>
+                          </div>
+                          </div>
+                      </form>
+                      <div class="row">
+                        <div class="m-3">
+                          <input type="file" id="uploadImport" class="account-file-input" hidden accept="image/png, image/jpeg" />
+                          <label for="uploadImport" class="btn btn-primary float-md-right">
+                            <i class="bx bx-upload mr-2"></i> Import
+                          </label>
+                          <input type="file" id="uploadExport" class="account-file-input" hidden accept="image/png, image/jpeg" />
+                          <label for="uploadExport" class="btn btn-danger float-md-right">
+                            <i class="bx bx-download mr-2"></i> Export
+                          </label>
+                          <a href="tambah_loker.html" class="btn btn-success">Tambah</a>
+                        </div>
                     </div>
                       <table class="table" id="myTable">
                           <thead>

@@ -24,6 +24,11 @@ function searchTable() {
     }
    
 }
+
+function searchTable1() {
+  
+}
+
 document.addEventListener("DOMContentLoaded", function() {
     const table = document.getElementById("myTable");
     const loadMoreBtn = document.getElementById("loadMoreBtn");
