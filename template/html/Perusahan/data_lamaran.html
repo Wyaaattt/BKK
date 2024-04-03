@@ -98,9 +98,8 @@
             <li class="menu-item">
               <a href="data_loker.html" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-id-card"></i>
-                <div data-i18n="Layouts">Lowongan Pekerjaan</div>
+                <div data-i18n="Layouts">Loker</div>
               </a>
-
             </li>
             <li class="menu-item active">
               <a href="data_lamaran.html" class="menu-link">
@@ -251,18 +250,40 @@
                       <h5 class="card-header">Data Lamaran</h5>
                       <div class="table-responsive text-nowrap">
                       </div>
-                      <input class="search" type="text" id="searchInput" placeholder="Search" onkeyup="searchTable()">
-                        <div>
-                          <input type="file" id="uploadImport" class="account-file-input" hidden accept="image/png, image/jpeg" />
-                          <label for="uploadImport" class="btn btn-primary float-md-right">
-                            <i class="bx bx-upload mr-2"></i> Import
-                          </label>
-                          <input type="file" id="uploadExport" class="account-file-input" hidden accept="image/png, image/jpeg" />
-                          <label for="uploadExport" class="btn btn-danger float-md-right">
-                            <i class="bx bx-download mr-2"></i> Export
-                          </label>
-                          <a href="tambah_lamaran.html" class="btn btn-success">Tambah</a>
-                      </div>
+                      
+                        <div class="row m-1">
+                          <div class="col-sm-4">
+                            <label class="form-label">Nama Lamaran</label>
+                            <input class="form-control" type="text" id="searchInput" placeholder="John Doe" onkeyup="searchTable()">
+                          </div>
+                          <div class="col-sm-3  ">
+                            <label for="exampleFormControlSelect1" class="form-label">Program Keahlian</label>
+                            <select class="form-select" id="select1" aria-label="Default select example" onchange="searchTable1()">
+                              <option selected>Perusahaan</option>
+                              <option value="1">RPL</option>
+                              <option value="2">PM</option>
+                              <option value="3">DKV</option>
+                              <option value="4">Nothing</option>
+                            </select>
+                          </div>
+                          <div class="col-sm-3">
+                            <label for="exampleFormControlSelect1" class="form-label">Tahun Lulus</label>
+                            <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
+                              <option selected>Tahun Lulus</option>
+                              <option value="1">2020 - 2023</option>
+                              <option value="2">2023 - 2026</option>
+                              <option value="3">2026 - 2029</option>
+                            </select>
+                          </div>
+                          <div class="col-sm-1">
+                            <button class="form-control btn-primary" style="margin: 29px; width: 100px;" ><i class="bx bx-search fs-4 lh-0" style="margin-right: 5px;"></i>Send</button>
+                          </div>
+                          <form>
+                            <div class="col-sm-1">
+                              <a href="tambah_lamaran.html" class="form-control btn-success">Tambah</a>
+                            </div>
+                          </form>
+                          </div>
                       <table class="table" id="myTable">
                           <thead>
                             <tr>
@@ -295,7 +316,9 @@
                       
                             <td>
                            
-                              <a href="edit_lamaran.html" class="btn btn-danger">Edit</a>
+                              <a href="edit_lamaran.html" class="btn btn-primary">Edit</a>
+                              <a href="detail_lamaran.html" class="btn btn-warning">Tampil</a>
+                              <a href="#hapus" class="btn btn-danger">Hapus</a>
 
                             </td>
                          
@@ -320,7 +343,9 @@
                           
                             <td>
                            
-                              <a href="edit_lamaran.html" class="btn btn-danger">Edit</a>
+                              <a href="edit_lamaran.html" class="btn btn-primary">Edit</a>
+                              <a href="detail_lamaran.html" class="btn btn-warning">Tampil</a>
+                              <a href="#hapus" class="btn btn-danger">Hapus</a>
 
                             </td>
                           </tr>
@@ -346,7 +371,9 @@
                            
                             <td>
                            
-                              <a href="edit_lamaran.html" class="btn btn-danger">Edit</a>
+                              <a href="edit_lamaran.html" class="btn btn-primary">Edit</a>
+                              <a href="detail_lamaran.html" class="btn btn-warning">Tampil</a>
+                              <a href="#hapus" class="btn btn-danger">Hapus</a>
 
                             </td>
                           </tr>
@@ -371,7 +398,9 @@
                             <td>Nothing</td>
                             <td>
                            
-                              <a href="edit_lamaran.html" class="btn btn-danger">Edit</a>
+                              <a href="edit_lamaran.html" class="btn btn-primary">Edit</a>
+                              <a href="detail_lamaran.html" class="btn btn-warning">Tampil</a>
+                              <a href="#hapus" class="btn btn-danger">Hapus</a>
 
                             </td>
                           </tr>
@@ -397,7 +426,9 @@
                             <td>Nothing</td>
                             <td>
                            
-                              <a href="edit_lamaran.html" class="btn btn-danger">Edit</a>
+                              <a href="edit_lamaran.html" class="btn btn-primary">Edit</a>
+                              <a href="detail_lamaran.html" class="btn btn-warning">Tampil</a>
+                              <a href="#hapus" class="btn btn-danger">Hapus</a>
 
                             </td>
                           </tr>
@@ -422,7 +453,9 @@
                             <td>Nothing</td>
                             <td>
                            
-                              <a href="edit_lamaran.html" class="btn btn-danger">Edit</a>
+                              <a href="edit_lamaran.html" class="btn btn-primary">Edit</a>
+                              <a href="detail_lamaran.html" class="btn btn-warning">Tampil</a>
+                              <a href="#hapus" class="btn btn-danger">Hapus</a>
 
                             </td>
                           </tr>
@@ -447,7 +480,9 @@
                             <td>Nothing</td>
                             <td>
                            
-                              <a href="edit_lamaran.html" class="btn btn-danger">Edit</a>
+                              <a href="edit_lamaran.html" class="btn btn-primary">Edit</a>
+                              <a href="detail_lamaran.html" class="btn btn-warning">Tampil</a>
+                              <a href="#hapus" class="btn btn-danger">Hapus</a>
                             </td>
                         </tbody>
                         <tfoot class="table-border-bottom-0">
