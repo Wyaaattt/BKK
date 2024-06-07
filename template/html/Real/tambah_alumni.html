@@ -71,9 +71,9 @@
 
         <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
             <div class="app-brand demo">
-              <a href="index.html" class="app-brand-link">
+              <a href="dashboard.html" class="app-brand-link">
                 <!-- <span class="app-brand-text demo menu-text fw-bolder ms-2">Sneat</span> -->
-                <img src="../../assets/img/logo/logo11.png" width="200px" height="80px"></img>
+                <img src="../../assets/img/logo/karir_sebelas.png" width="190px" height="90px"></img>
               </a>
               
               <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -86,43 +86,117 @@
             <ul class="menu-inner py-1">
               <!-- Dashboard -->
               <li class="menu-item">
+                <a href="dashboard.html" class="menu-link">
+                  <i class='menu-icon bx bxs-dashboard'></i>
+                  <div data-i18n="Analytics">Dashboard</div>
+                </a>
+                <ul class="menu-sub">
+                  <li class="menu-item">
+                    <a href="riwayat_akun_alumni.html" class="menu-link">
+                      <i class="menu-icon tf-icons bx bxs-user-circle"></i>
+                      <div data-i18n="CRM">Alumni</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">1</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="riwayat_akun_perusahaan.html" class="menu-link">
+                      <i class="menu-icon tf-icons bx bxs-building"></i>
+                      <div data-i18n="Analytics">Perusahaan</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">1</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="riwayat_loker.html" class="menu-link">
+                      <i class="menu-icon tf-icons bx bx-briefcase-alt-2"></i>
+                      <div data-i18n="eCommerce">Loker</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">3</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="riwayat_lamaran.html" class="menu-link">
+                      <i class="menu-icon tf-icons bx bx-file"></i>
+                      <div data-i18n="Logistics">Lamaran</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">2</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-header small text-uppercase"><span class="menu-header-text">Pages</span></li>
+
+              <li class="menu-item">
                 <a href="index.html" class="menu-link">
-                  <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                  <i class="menu-icon tf-icons bx bxs-graduation"></i>
                   <div data-i18n="Analytics">Data Alumni</div>
                 </a>
               </li>
-  
               <!-- Layouts -->
               <li class="menu-item active">
                 <a href="javascript:void(0);" class="menu-link menu-toggle">
-                  <i class="menu-icon tf-icons bx bx-layout"></i>
+                  <i class="menu-icon tf-icons bx bx-id-card"></i>
                   <div data-i18n="Layouts">Data User</div>
                 </a>
   
                 <ul class="menu-sub">
-                    <li class="menu">
-                      <a href="perusahaa.html" class="menu-link">
-                        <i class="menu-icon tf-icons bx bxs-building"></i>
-                        <div data-i18n="Without menu">Akun Perusahaan</div>
-                      </a>
-                    </li>
-                    <li class="menu-link active">
-                        <a href="alumni.html" class="menu">
-                          <i class="menu-icon tf-icons bx bxs-user-circle"></i>
-                        <div data-i18n="Without navbar">Akun Alumni</div>
-                      </a>
-                  </ul>
+                  <li class="menu-item">
+                    <a href="perusahaa.html" class="menu-link menu-toggle">
+                      <i class="menu-icon tf-icons bx bxs-building"></i>
+                      <div data-i18n="Without menu">Akun Perusahaan</div>
+                    </a>
+                    <ul class="menu-sub">
+                      <li class="menu-item">
+                        <a href="perusahaa.html" class="menu-link">
+                          <i class='menu-icon bx bxs-building'></i>
+                          <div data-i18n="Logistics">Tampil Data</div>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="tambah_perusaha.html" class="menu-link">
+                          <i class="menu-icon bx bxs-user-plus"></i>
+                          <div data-i18n="Logistics">Tambah Data</div>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item active">
+                      <a href="alumni.html" class="menu-link menu-toggle">
+                        <i class="menu-icon tf-icons bx bxs-user-circle"></i>
+                      <div data-i18n="Without navbar">Akun Alumni</div>
+                    </a>
+                    <ul class="menu-sub">
+                      <li class="menu-item">
+                        <a href="alumni.html" class="menu-link">
+                          <i class="menu-icon bx bxs-user-circle"></i>
+                          <div data-i18n="Logistics">Tampil Data</div>
+                        </a>
+                      </li>
+                      <li class="menu-item active">
+                        <a href="tambah_alumni.html" class="menu-link">
+                          <i class='menu-icon bx bxs-user-plus'></i>
+                          <div data-i18n="Logistics">Tambah Data</div>
+                        </a>
+                      </li>
+                    </ul>
+                </ul>
               </li>
               <li class="menu-item">
-                <a href="loker.html" class="menu-link">
-                  <i class="menu-icon tf-icons bx bx-lock-open-alt"></i>
+                <a href="loker.html" class="menu-link menu-toggle">
+                  <i class="menu-icon tf-icons bx bx-briefcase-alt-2"></i>
                   <div data-i18n="Authentications">Data Loker</div>
                 </a>
-               
+                <ul class="menu-sub">
+                  <li class="menu-item">
+                    <a href="loker.html" class="menu-link">
+                      <i class='menu-icon bx bx-briefcase-alt-2'></i>
+                      <div data-i18n="Logistics">Tampil Data</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="tambah_loker.html" class="menu-link">
+                      <i class='menu-icon bx bxs-user-plus'></i>
+                      <div data-i18n="Logistics">Tambah Data</div>
+                    </a>
+                  </li>
+                </ul>
               </li>
               <li class="menu-item">
                 <a href="lamaran.html" class="menu-link">
-                  <i class="menu-icon tf-icons bx bx-cube-alt"></i>
+                  <i class="menu-icon tf-icons bx bx-file"></i>
                   <div data-i18n="Misc">Data Lamaran</div>
                 </a>
               </li>
@@ -227,131 +301,229 @@
 
               <!-- Basic Layout & Basic with Icons -->
               <div class="row">
-                <!-- Basic Layout -->
-               
-                <!-- Basic with Icons -->
-                <div class="col-xxl">
+                <div class="col-lg-12 mb-4 order-0">
                   <div class="card mb-4">
-                    <div class="card-header d-flex align-items-center justify-content-between">
-                      <h5 class="mb-0">Tambah Akun Alumni</h5>
+                      <h5 class="card-header">Detail</h5>
+                      <!-- Account -->
+                      <div class="card-body">
+                        <div class="d-flex align-items-start align-items-sm-center gap-4">
+                          <img
+                            src="../../assets/img/avatars/1.png"
+                            alt="user-avatar"
+                            class="d-block rounded"
+                            height="100"
+                            width="100"
+                            id="uploadedAvatar"
+                          />
+                          <div class="button-wrapper">
+                            <label for="upload" class="btn btn-primary me-2 mb-4" tabindex="0">
+                              <span class="d-none d-sm-block">Upload new photo</span>
+                              <i class="bx bx-upload d-block d-sm-none"></i>
+                              <input
+                                type="file"
+                                id="upload"
+                                class="account-file-input"
+                                hidden
+                                accept="image/png, image/jpeg"
+                              />
+                            </label>
+                            <button type="button" class="btn btn-outline-secondary account-image-reset mb-4">
+                              <i class="bx bx-reset d-block d-sm-none"></i>
+                              <span class="d-none d-sm-block">Reset</span>
+                            </button>
+  
+                            <p class="text-muted mb-0">Allowed JPG, GIF or PNG. Max size of 800K</p>
+                          </div>
+                        </div>
+                      </div>
+                      <hr class="my-0" />
+                      <div class="card-body">
+                        <form id="formAccountSettings" method="POST" onsubmit="return false">
+                          <div class="row">
+                            <h5 class="card-title">Profil</h5>
+                            <div class="mb-3 col-md-6">
+                              <label for="firstName" class="form-label">Nama Lengkap</label>
+                              <div class="input-group input-group-merge">
+                                <span class="input-group-text"><i class="bx bxs-user-circle"></i></span>
+                               <input type="text" class="form-control" value="Gultom Julius">
+                              </div>
+                            </div>
+                            <div class="mb-3 col-md-6">
+                              <label for="email" class="form-label">E-mail</label>
+                              <div class="input-group input-group-merge">
+                                <span class="input-group-text"><i class="bx bx-envelope"></i></span>
+                               <input type="text" class="form-control" value="juliuussyb69@gmail.com">
+                              </div>
+                            </div>
+                            <div class="mb-3 col-md-6">
+                              <label for="organization" class="form-label">Role</label>
+                              <div class="input-group input-group-merge">
+                                <span class="input-group-text"><i class="bx bx-cube-alt"></i></span>
+                               <select class="form-select">
+                                <option value="">Alumni</option>
+                               </select>
+                              </div>
+                            </div>
+                            <div class="mb-3 col-md-6">
+                              <label class="form-label" for="phoneNumber">Provinsi</label>
+                              <div class="input-group input-group-merge">
+                                <span class="input-group-text"><i class="bx bx-buildings"></i></span>
+                                <select class="form-select">
+                                  <option value="">Jawa Barat</option>
+                                  <option value="">Jawa Tengah</option>
+                                  <option value="">DKI Jakarta</option>
+                                </select>
+                              </div>
+                            </div>
+                            <hr class="my-0" />
+                            <h5 class="card-title mt-3">Riwayat Pendidikan</h5>
+                            <div class="mb-3 col-md-6">
+                              <label for="firstName" class="form-label">Nama Universitas/Sekolah</label>
+                              <div class="input-group input-group-merge">
+                                <span class="input-group-text"><i class="bx bxs-building"></i></span>
+                               <input type="text" class="form-control" value="Gultom Julius">
+                              </div>
+                            </div>
+                            <div class="mb-3 col-md-6">
+                              <label for="firstName" class="form-label">Alamat</label>
+                              <div class="input-group input-group-merge">
+                                <span class="input-group-text"><i class="bx bx-home-circle"></i></span>
+                               <input type="text" class="form-control" value="Gultom Julius">
+                              </div>
+                            </div>
+                            <div class="mb-3 col-md-6">
+                              <label for="firstName" class="form-label">Gelar</label>
+                              <div class="input-group input-group-merge">
+                                <span class="input-group-text"><i class="bx bxs-graduation"></i></span>
+                               <input type="text" class="form-control" value="Cumlade">
+                              </div>
+                            </div>
+                            <div class="mb-3 col-md-6">
+                              <label for="firstName" class="form-label">Bidang Studi</label>
+                              <div class="input-group input-group-merge">
+                                <span class="input-group-text"><i class='bx bx-book-content'></i></span>
+                               <input type="text" class="form-control" value="Ccomputer science">
+                              </div>
+                            </div>
+                            <div class="mb-3 col-md-6">
+                              <label for="firstName" class="form-label">Tahun Awal</label>
+                              <div class="input-group input-group-merge">
+                                <span class="input-group-text"><i class='bx bxs-calendar'></i></span>
+                               <input type="text" class="form-control" value="2023">
+                              </div>
+                            </div>
+                            <div class="mb-3 col-md-6">
+                              <label for="firstName" class="form-label">Tahun Akhir</label>
+                              <div class="input-group input-group-merge">
+                                <span class="input-group-text"><i class="bx bxs-calendar"></i></span>
+                               <input type="text" class="form-control" value="2027">
+                              </div>
+                            </div>
+                            <div class="mb-3 col-md-6">
+                              <label for="firstName" class="form-label">Nilai</label>
+                              <div class="input-group input-group-merge">
+                                <span class="input-group-text"><i class="bx bx-file"></i></span>
+                               <input type="text" class="form-control" value="4.00">
+                              </div>
+                            </div>
+                            <div class="mb-3 col-md-6">
+                              <label for="firstName" class="form-label">Pengalaman Organisasi</label>
+                              <div class="input-group input-group-merge">
+                                <span class="input-group-text"><i class="bx bxs-building"></i></span>
+                               <input type="text" class="form-control" value="Pramuka">
+                              </div>
+                            </div>
+                            <div class="mb-3 col-md-12">
+                              <label class="form-label">Deskripsi</label>
+                              <textarea class="form-control"></textarea>
+                            </div>
+                            <hr class="my-0" />
+                            <h5 class="card-title mt-3">Riwayat Pekerjaan</h5>
+                            <div class="mb-3 col-md-6">
+                              <label for="firstName" class="form-label">Posisis Pekerjaan</label>
+                              <div class="input-group input-group-merge">
+                                <span class="input-group-text"><i class="bx bxs-building"></i></span>
+                               <input type="text" class="form-control" value="Gultom Julius">
+                              </div>
+                            </div>
+                            <div class="mb-3 col-md-6">
+                              <label for="firstName" class="form-label">Jenis Pekerjaan</label>
+                              <div class="input-group input-group-merge">
+                                <span class="input-group-text"><i class="bx bxs-building"></i></span>
+                               <input type="text" class="form-control" value="Gultom Julius">
+                              </div>
+                            </div>
+                            <div class="mb-3 col-md-6">
+                              <label for="firstName" class="form-label">Nama Perusahaa</label>
+                              <div class="input-group input-group-merge">
+                                <span class="input-group-text"><i class="bx bxs-graduation"></i></span>
+                               <input type="text" class="form-control" value="Cumlade">
+                              </div>
+                            </div>
+                            <div class="mb-3 col-md-6">
+                              <label for="firstName" class="form-label">Alamat</label>
+                              <div class="input-group input-group-merge">
+                                <span class="input-group-text"><i class="bx bxs-building"></i></span>
+                               <input type="text" class="form-control" value="Ccomputer science">
+                              </div>
+                            </div>
+                            <div class="mb-3 col-md-6">
+                              <label for="firstName" class="form-label">Tahun Awal\</label>
+                              <div class="input-group input-group-merge">
+                                <span class="input-group-text"><i class="bx bxs-building"></i></span>
+                               <input type="text" class="form-control" value="2023">
+                              </div>
+                            </div>
+                            <di class="mb-3 col-md-6">
+                              <label for="firstName" class="form-label">Tahun Akhir</label>
+                              <div class="input-group input-group-merge">
+                                <span class="input-group-text"><i class="bx bxs-building"></i></span>
+                               <input type="text" class="form-control" value="2027">
+                              </div>
+                            </di>
+                            <div class="mb-3 col-md-12">
+                              <label class="form-label">Deskripsi</label>
+                              <textarea class="form-control"></textarea>
+                            </div>
+                            <div class="row mt-3">
+                              <div class="col-md-12">
+                                <button type="submit" class="btn btn-primary">Send</button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
                     </div>
-                    <div class="card-body">
-                      <form>
-                        <div class="row mb-3">
-                          <label class="col-sm-2 col-form-label" for="basic-icon-default-fullname">Name</label>
-                          <div class="col-sm-10">
-                            <div class="input-group input-group-merge">
-                              <span id="basic-icon-default-fullname2" class="input-group-text"
-                                ><i class="bx bx-user"></i
-                              ></span>
-                              <input
-                                type="text"
-                                class="form-control"
-                                id="basic-icon-default-fullname"
-                                placeholder="John Doe"
-                                aria-label="John Doe"
-                                aria-describedby="basic-icon-default-fullname2"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row mb-3">
-                          <label class="col-sm-2 col-form-label" for="basic-icon-default-company">Company</label>
-                          <div class="col-sm-10">
-                            <div class="input-group input-group-merge">
-                              <span id="basic-icon-default-company2" class="input-group-text"
-                                ><i class="bx bx-buildings"></i
-                              ></span>
-                              <input
-                                type="text"
-                                id="basic-icon-default-company"
-                                class="form-control"
-                                placeholder="ACME Inc."
-                                aria-label="ACME Inc."
-                                aria-describedby="basic-icon-default-company2"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row mb-3">
-                          <label class="col-sm-2 col-form-label" for="basic-icon-default-email">Email</label>
-                          <div class="col-sm-10">
-                            <div class="input-group input-group-merge">
-                              <span class="input-group-text"><i class="bx bx-envelope"></i></span>
-                              <input
-                                type="text"
-                                id="basic-icon-default-email"
-                                class="form-control"
-                                placeholder="john.doe"
-                                aria-label="john.doe"
-                                aria-describedby="basic-icon-default-email2"
-                              />
-                              <span id="basic-icon-default-email2" class="input-group-text">@example.com</span>
-                            </div>
-                            <div class="form-text">You can use letters, numbers & periods</div>
-                          </div>
-                        </div>
-                        <div class="row mb-3">
-                          <label class="col-sm-2 form-label" for="basic-icon-default-phone">Phone No</label>
-                          <div class="col-sm-10">
-                            <div class="input-group input-group-merge">
-                              <span id="basic-icon-default-phone2" class="input-group-text"
-                                ><i class="bx bx-phone"></i
-                              ></span>
-                              <input
-                                type="text"
-                                id="basic-icon-default-phone"
-                                class="form-control phone-mask"
-                                placeholder="658 799 8941"
-                                aria-label="658 799 8941"
-                                aria-describedby="basic-icon-default-phone2"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row mb-3">
-                          <label class="col-sm-2 form-label" for="basic-icon-default-message">Message</label>
-                          <div class="col-sm-10">
-                            <div class="input-group input-group-merge">
-                              <span id="basic-icon-default-message2" class="input-group-text"
-                                ><i class="bx bx-comment"></i
-                              ></span>
-                              <textarea
-                                id="basic-icon-default-message"
-                                class="form-control"
-                                placeholder="Hi, Do you have a moment to talk Joe?"
-                                aria-label="Hi, Do you have a moment to talk Joe?"
-                                aria-describedby="basic-icon-default-message2"
-                              ></textarea>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row justify-content-end">
-                          <div class="col-sm-10">
-                            <button type="submit" class="btn btn-primary">Send</button>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
+                    <div class="layout-overlay layout-menu-toggle"></div>
+                  </div>
                   </div>
                 </div>
-              </div>
             </div>
             <!-- / Content -->
 
-            <footer class="content-footer footer bg-footer-theme">
-                <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
-                  <div class="mb-2 mb-md-0">
-                    
-                    <script>
-                      document.write(new Date().getFullYear());
-                    </script>
-                    
-                    <a href="https://themeselection.com" target="_blank" class="footer-link fw-bolder align-middle">Made by Julius</a>
+            <section id="basic-footer">
+              <footer class="footer bg-footer-theme">
+                <div
+                  class="container-fluid d-flex flex-md-row flex-column justify-content-between align-items-md-center gap-1 container-p-x py-3"
+                >
+                  <div>
+                    <a
+                      href="https://themeselection.com/demo/sneat-bootstrap-html-admin-template/landing/"
+                      target="_blank"
+                      class="footer-text fw-bolder"
+                      >Karis Sebelass</a
+                    >
+                    ©
                   </div>
-                  
+                  <div>
+                    <a href="https://themeselection.com/license/" class="footer-link me-4" target="_blank">License</a>
+                    <a href="javascript:void(0)" class="footer-link me-4">Help</a>
+                    <a href="javascript:void(0)" class="footer-link me-4">Contact</a>
+                    <a href="javascript:void(0)" class="footer-link">Terms &amp; Conditions</a>
+                  </div>
                 </div>
               </footer>
+            </section>
             <!-- / Footer -->
 
             <div class="content-backdrop fade"></div>

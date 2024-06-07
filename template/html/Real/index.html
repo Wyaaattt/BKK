@@ -73,9 +73,9 @@
 
         <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
           <div class="app-brand demo">
-            <a href="index.html" class="app-brand-link">
+            <a href="dashboard.html" class="app-brand-link">
               <!-- <span class="app-brand-text demo menu-text fw-bolder ms-2">Sneat</span> -->
-              <img src="../../assets/img/logo/logo11.png" width="200px" height="80px"></img>
+              <img src="../../assets/img/logo/karir_sebelas.png" width="190px" height="90px"></img>
             </a>
             
             <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -87,6 +87,39 @@
 
           <ul class="menu-inner py-1">
             <!-- Dashboard -->
+            <li class="menu-item">
+              <a href="dashboard.html" class="menu-link menu-toggle">
+                <i class='menu-icon bx bxs-dashboard'></i>
+                <div data-i18n="Analytics">Dashboard</div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="riwayat_akun_alumni.html" class="menu-link">
+                    <i class="menu-icon tf-icons bx bxs-user-circle"></i>
+                    <div data-i18n="CRM">Alumni</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">1</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="riwayat_akun_perusahaan.html" class="menu-link">
+                    <i class="menu-icon tf-icons bx bxs-building"></i>
+                    <div data-i18n="Analytics">Perusahaan</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">1</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="riwayat_loker.html" class="menu-link">
+                    <i class="menu-icon tf-icons bx bx-briefcase-alt-2"></i>
+                    <div data-i18n="eCommerce">Loker</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">3</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="riwayat_lamaran.html" class="menu-link">
+                    <i class="menu-icon tf-icons bx bx-file"></i>
+                    <div data-i18n="Logistics">Lamaran</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">2</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-header small text-uppercase"><span class="menu-header-text">Pages</span></li>
             <li class="menu-item active">
               <a href="index.html" class="menu-link">
                 <i class="menu-icon tf-icons bx bxs-graduation"></i>
@@ -100,26 +133,67 @@
                 <i class="menu-icon tf-icons bx bx-id-card"></i>
                 <div data-i18n="Layouts">Data User</div>
               </a>
-
               <ul class="menu-sub">
-                <li class="menu">
-                  <a href="perusahaa.html" class="menu-link">
+                <li class="menu-item">
+                  <a href="perusahaa.html" class="menu-link menu-toggle">
                     <i class="menu-icon tf-icons bx bxs-building"></i>
                     <div data-i18n="Without menu">Akun Perusahaan</div>
                   </a>
+                  <ul class="menu-sub">
+                    <li class="menu-item">
+                      <a href="perusahaa.html" class="menu-link">
+                        <i class='menu-icon bx bxs-building'></i>
+                        <div data-i18n="Logistics">Tampil Data</div>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="tambah_perusaha.html" class="menu-link">
+                        <i class="menu-icon bx bxs-user-plus"></i>
+                        <div data-i18n="Logistics">Tambah Data</div>
+                      </a>
+                    </li>
+                  </ul>
                 </li>
-                <li class="menu">
-                  <a href="alumni.html" class="menu-link">
-                    <i class="menu-icon tf-icons bx bxs-user-circle"></i>
+                <li class="menu-item">
+                    <a href="alumni.html" class="menu-link menu-toggle">
+                      <i class="menu-icon tf-icons bx bxs-user-circle"></i>
                     <div data-i18n="Without navbar">Akun Alumni</div>
                   </a>
+                  <ul class="menu-sub">
+                    <li class="menu-item">
+                      <a href="alumni.html" class="menu-link">
+                        <i class="menu-icon bx bxs-user-circle"></i>
+                        <div data-i18n="Logistics">Tampil Data</div>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="tambah_alumni.html" class="menu-link">
+                        <i class='menu-icon bx bxs-user-plus'></i>
+                        <div data-i18n="Logistics">Tambah Data</div>
+                      </a>
+                    </li>
+                  </ul>
               </ul>
             </li>
             <li class="menu-item">
-              <a href="loker.html" class="menu-link">
+              <a href="loker.html" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-briefcase-alt-2"></i>
                 <div data-i18n="Authentications">Data Loker</div>
               </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="loker.html" class="menu-link">
+                    <i class='menu-icon bx bx-briefcase-alt-2'></i>
+                    <div data-i18n="Logistics">Tampil Data</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="tambah_loker.html" class="menu-link">
+                    <i class='menu-icon bx bxs-user-plus'></i>
+                    <div data-i18n="Logistics">Tambah Data</div>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="menu-item">
               <a href="lamaran.html" class="menu-link">
@@ -226,81 +300,14 @@
 
             <div class="container-xxl flex-grow-1 container-p-y">
               <div class="row">
-                <div class="col-lg-6 col-md-6 order-1">
-                  <div class="row">
-                    <div class="col-lg-6 col-md-12 col-6 mb-4">
-                      <div class="card">
-                        <div class="card-body text-center">
-                          <div class="card-title d-flex align-items-start justify-content-between">
-                            <div class="avatar flex-shrink-0 mx-auto">
-                              <img src="../../assets/img/icons/unicons/chart-success.png" alt="chart success" class="rounded" />
-                            </div>
-                          </div>
-                          <span class="fw-semibold d-block mb-1">Alumni</span>
-                          <h3 class="card-title mb-2">628</h3>
-                          <small class="text-success fw-semibold"><i class="bx bx-up-arrow-alt"></i> +43</small>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12 col-6 mb-4">
-                      <div class="card">
-                        <div class="card-body text-center">
-                          <div class="card-title d-flex align-items-start justify-content-between">
-                            <div class="avatar flex-shrink-0 mx-auto">
-                              <img src="../../assets/img/icons/unicons/wallet-info.png" alt="Credit Card" class="rounded" />
-                            </div>
-                          </div>
-                          <span class="fw-semibold d-block mb-1">Alumni Baru</span>
-                          <h3 class="card-title text-nowrap mb-1">10</h3>
-                          <small class="text-success fw-semibold"><i class="bx bx-up-arrow-alt"></i> +43</small>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-8 col-lg-6 order-3 order-md-2">
-                  <div class="row">
-                    <div class="col-6 mb-4">
-                      <div class="card">
-                        <div class="card-body text-center">
-                          <div class="card-title d-flex align-items-start justify-content-between">
-                            <div class="avatar flex-shrink-0 mx-auto">
-                              <img src="../../assets/img/icons/unicons/paypal.png" alt="Credit Card" class="rounded" />
-                            </div>
-                          </div>
-                          <span class="fw-semibold d-block mb-1">Alumni Bekerja</span>
-                          <h3 class="card-title text-nowrap mb-2">325</h3>
-                          <small class="text-success fw-semibold"><i class="bx bx-up-arrow-alt"></i> +14</small>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-6 mb-4">
-                      <div class="card">
-                        <div class="card-body text-center">
-                          <div class="card-title d-flex align-items-start justify-content-between">
-                            <div class="avatar flex-shrink-0 mx-auto">
-                              <img src="../../assets/img/icons/unicons/cc-primary.png" alt="Credit Card" class="rounded" />
-                            </div>
-                          </div>
-                          <span class="fw-semibold d-block mb-1">Alumni Belum Bekerja</span>
-                          <h3 class="card-title mb-2">303</h3>
-                          <small class="text-muted fw-semibold"><i class="bi bi-equal-alt">=</i></small>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
                 <div class="col-lg-12 mb-4 order-0">
                   <div class="card">
                     <div class="d-flex align-items-end row">
                       <div class="col-sm-7">
                         <div class="card-body">
-                          <h3 class="card-title text-primary">Welcome to Admin  Dashboard</h3>
+                          <h3 class="card-title text-primary">Selamat Datang di Halaman Data Alumni</h3>
                           <p class="mb-4">
-                            You have done <span class="fw-bold">72%</span> more sales today. Check your new badge in
-                            your profile.
+                            Data Alumni adalah data - data para alumni Smk Negeri 11 Bandung
                           </p>
                           <!-- <a href="javascript:;" class="btn btn-sm btn-outline-primary">View Badges</a> -->
                         </div>
@@ -309,7 +316,7 @@
                         <div class="card-body pb-0 px-0 px-md-4">
                           <img
                             src="../../assets/img/illustrations/man-with-laptop-light.png"
-                            height="140"
+                            height="200"
                             alt="View Badge User"
                             data-app-dark-img="illustrations/man-with-laptop-dark.png"
                             data-app-light-img="illustrations/man-with-l  aptop-light.png"
@@ -320,292 +327,622 @@
                   </div>
                 </div>
               </div>
-                <div class="row">
-                  <div class="col-lg-12 mb-4 order-0">
-                    <div class="card">         
-                      <h5 class="card-header">Data Alumni</h5>
-                      <div class="table-responsive text-nowrap">
-                      </div>
-                      <form>
-                        <div class="row m-1">
-                          <div class="col-sm-4">
-                            <label class="form-label">Nama</label>
-                            <input class="form-control" type="text" id="searchInput" placeholder="John Doe" onkeyup="searchTable()">
-                          </div>
-                          <div class="col-sm-3  ">
-                            <label for="exampleFormControlSelect1" class="form-label">Program Keahlian</label>
-                            <select class="form-select" id="select1" aria-label="Default select example" onchange="searchTable1()">
-                              <option selected>Jurusan</option>
-                              <option value="1">RPL</option>
-                              <option value="2">PM</option>
-                              <option value="3">DKV</option>
-                              <option value="4">Nothing</option>
-                            </select>
-                          </div>
-                          <div class="col-sm-3">
-                            <label for="exampleFormControlSelect1" class="form-label">Tahun Lulus</label>
-                            <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
-                              <option selected>Tahun Lulus</option>
-                              <option value="1">2020 - 2023</option>
-                              <option value="2">2023 - 2026</option>
-                              <option value="3">2026 - 2029</option>
-                            </select>
-                          </div>
-                          <div class="col-sm-1">
-                            <button class="form-control btn-primary" style="margin: 29px; width: 100px;" ><i class="bx bx-search fs-4 lh-0" style="margin-right: 5px;"></i>Send</button>
-                          </div>
-                          </div>
-                      </form>
-                      <div class="row">
-                        <div class="m-3">
-                          <input type="file" id="uploadImport" class="account-file-input" hidden accept="image/png, image/jpeg" />
-                          <label for="uploadImport" class="btn btn-primary float-md-right">
-                            <i class="bx bx-upload mr-2"></i> Import
-                          </label>
-                          <input type="file" id="uploadExport" class="account-file-input" hidden accept="image/png, image/jpeg" />
-                          <label for="uploadExport" class="btn btn-danger float-md-right">
-                            <i class="bx bx-download mr-2"></i> Export
-                          </label>
-                        </div>
-                      </div>
-                        <table class="table" id="myTable">
-                          
-                            <thead>
-                              <tr>
-                              <th>Foto</th>
-                              <th>Nama Lengkap</th>
-                              <th>Jenis Kelamin</th>
-                              <th>Alamat</th>
-                              <th>Program Keahlian</th>
-                              <th>Tahun Lulus</th>
-                              <th>Aksi</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>
-                                <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                                  <li
-                                    data-bs-toggle="tooltip"
-                                    data-popup="tooltip-custom"
-                                    data-bs-placement="text-center"
-                                    class="avatar avatar-xs pull-up"
-                                    title="Christina Parker"
-                                  >
-                                    <img src="../../assets/img/avatars/7.png" alt="Avatar" class="rounded-circle" style="height: 40px; width: 40px;" />
-                                  </li>
-                                </ul>
-                              </td>
-                              <td>1111111  </td>
-                              <td>Lawcere</td>
-                              <td>Lawcere</td>
-                              <td>Nothing</td>
-                              <td>RPL</td>
-                              <td>
-                                <a href="edit_detail_alumni.html" class="btn btn-danger">Edit</a>
-                              </td>
-                          
-                            <tr>
-                              <td>
-                                <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                                  <li
-                                  data-bs-toggle="tooltip"
-                                  data-popup="tooltip-custom"
-                                  data-bs-placement="text-center"
-                                  class="avatar avatar-xs pull-up"
-                                  title="Christina Parker"
-                                  >
-                                    <img src="../../assets/img/avatars/6.png" alt="Avatar" class="rounded-circle" style="height: 40px; width: 40px;" />
-                                  </li>
-                                </ul>
-                              </td>
-                              <td>22222  </td>
-                              <td>Wyaat</td>
-                              <td>Nothing</td>
-                              <td>Nothing</td>
-                              <td>PM</td>
-                              <td>
-                                <a href="edit_detail_alumni.html" class="btn btn-danger">Edit</a>
-                              </td>
-                            </tr>
-                            <tr>
-                            <tr>
-                              <td>
-                                <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                                  <li
-                                    data-bs-toggle="tooltip"
-                                    data-popup="tooltip-custom"
-                                    data-bs-placement="text-center"
-                                    class="avatar avatar-xs pull-up"
-                                    title="Christina Parker"
-                                  >
-                                    <img src="../../assets/img/avatars/7.png" alt="Avatar" class="rounded-circle" style="height: 40px; width: 40px;" />
-                                  </li>
-                                </ul>
-                              </td>
-                              <td>1111111  </td>
-                              <td>Lawcere</td>
-                              <td>Nothing</td>
-                              <td>Nothing</td>
-                              <td>Nothing</td>
-                              <td>
-                                <a href="edit_detail_alumni.html" class="btn btn-danger">Edit</a>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                                  <li
-                                  data-bs-toggle="tooltip"
-                                  data-popup="tooltip-custom"
-                                  data-bs-placement="text-center"
-                                  class="avatar avatar-xs pull-up"
-                                  title="Christina Parker"
-                                  >
-                                    <img src="../../assets/img/avatars/6.png" alt="Avatar" class="rounded-circle" style="height: 40px; width: 40px;" />
-                                  </li>
-                                </ul>
-                              </td>
-                              <td>22222  </td>
-                              <td>Wyaat</td>
-                              <td>Wyaat</td>
-                              <td>Nothing</td>
-                              <td>Nothing</td>
-                              <td>
-                                <a href="edit_detail_alumni.html" class="btn btn-danger">Edit</a>
-                              </td>
-                            </tr>
-                            <tr>
-                            <tr>
-                              <td>
-                                <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                                  <li
-                                    data-bs-toggle="tooltip"
-                                    data-popup="tooltip-custom"
-                                    data-bs-placement="text-center"
-                                    class="avatar avatar-xs pull-up"
-                                    title="Christina Parker"
-                                  >
-                                    <img src="../../assets/img/avatars/7.png" alt="Avatar" class="rounded-circle" style="height: 40px; width: 40px;" />
-                                  </li>
-                                </ul>
-                              </td>
-                              <td>1111111  </td>
-                              <td>Lawcere</td>
-                              <td>Lawcere</td>
-                              <td>Nothing</td>
-                              <td>Nothing</td>
-                              <td>
-                                <a href="edit_detail_alumni.html" class="btn btn-danger">Edit</a>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                                  <li
-                                  data-bs-toggle="tooltip"
-                                  data-popup="tooltip-custom"
-                                  data-bs-placement="text-center"
-                                  class="avatar avatar-xs pull-up"
-                                  title="Christina Parker"
-                                  >
-                                    <img src="../../assets/img/avatars/6.png" alt="Avatar" class="rounded-circle" style="height: 40px; width: 40px;" />
-                                  </li>
-                                </ul>
-                              </td>
-                              <td>22222  </td>
-                              <td>Wyaat</td>
-                              <td>Wyaat</td>
-                              <td>Nothing</td>
-                              <td>Nothing</td>
-                              <td>
-                                <a href="edit_detail_alumni.html" class="btn btn-danger">Edit</a>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                                  <li
-                                    data-bs-toggle="tooltip"
-                                    data-popup="tooltip-custom"
-                                    data-bs-placement="text-center"
-                                    class="avatar avatar-xs pull-up"
-                                    title="Christina Parker"
-                                  >
-                                    <img src="../../assets/img/avatars/1.png" alt="Avatar" class="rounded-circle" style="height: 40px; width: 40px;" />
-                                  </li>
-                                </ul>
-                              </td>
-                              <td>33333  </td>
-                              <td>Albert Cook</td>
-                              <td>Nothing</td>
-                              <td>Nothing</td>
-                              <td>Nothing</td>
-                              <td>
-                                <a href="edit_detail_alumni.html" class="btn btn-danger">Edit</a>
-                              </t>
-                          </tbody>
-                          <tfoot class="table-border-bottom-0">
-                            <tr>
-                              <th>Project</th>
-                              <th>Client</th>
-                              <th>Users</th>
-                              <th>Status</th>
-                              <th>Actions</th>
-                            </tr>
-                          </tfoot>
-                        </table>
-                      
-                      <button id="loadMoreBtn" class="btn btn-primary">Lihat Lebih Banyak</button>
+              <div class=" col-lg-12 mb-4 order-0">
+              <div class="card">
+                <h5 class="card-header">Data Alumni</h5>
+                <form>
+                  <div class="row g-3 m-3">
+                    <div class="col-md-4">
+                      <label for="nama" class="form-label">Nama Lengkap</label>
+                      <input class="form-control" type="text" id="searchInput" placeholder="John Doe" onkeyup="searchTable()">
                     </div>
-                  </div>
-                
-                <!-- Total Revenue -->
-              </div>
-              <div class="row">
-                <div class="col-12 col-lg-12 order-2 order-md-3 order-lg-2 mb-4">
-                  <div class="card">
-                    <div class="row row-bordered g-0">
-                      <div class="col-md-12">
-                        <h5 class="card-header m-0 me-2 pb-3">Alumni</h5>
-                        <div id="chart" class="px-2"></div>
+                    <div class="col-md-3">
+                      <label for="programKeahlian" class="form-label">Program Keahlian</label>
+                      <select class="form-select" id="select1" aria-label="Default select example" onchange="searchTable1()">
+                        <option selected>Jurusan</option>
+                        <option value="1">PPLG</option>
+                        <option value="2">PM</option>
+                        <option value="3">DKV</option>
+                        <option value="4">AKL</option>
+                        <option value="5">MBLOG</option>
+                        <option value="6">MPLB</option>
+                        <option value="7">TJKT</option>
+                      </select>
+                    </div>
+                    <div class="col-md-3">
+                      <label for="tahunLulus" class="form-label">Tahun Lulus</label>
+                      <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
+                        <option selected>Tahun Lulus</option>
+                        <option value="1">2020 - 2023</option>
+                        <option value="2">2023 - 2026</option>
+                        <option value="3">2026 - 2029</option>
+                      </select>
+                    </div>
+                    <div class="col-md-1" style="padding-top: 30px;">
+                      <button class="btn btn-success" style="width: 150px;">Send</button>
+                    </div>
+                      <div class="col-md-3 mt-4">
+                        <input type="file" id="uploadImport" class="account-file-input" hidden accept="image/png, image/jpeg" />
+                        <label for="uploadImport" class="btn btn-primary float-md-right">
+                          <i class="bx bx-upload mr-2"></i> Import
+                        </label>
+                        <input type="file" id="uploadExport" class="account-file-input" hidden accept="image/png, image/jpeg" />
+                        <label for="uploadExport" class="btn btn-danger float-md-right">
+                          <i class="bx bx-download mr-2"></i> Export
+                        </label>
                       </div>
+                  </div>
+                </form>
+                <div class="table-responsive text-nowrap">
+                  <table class="table m-2" id="myTable">
+                    <thead>
+                      <tr>
+                        <th>Foto</th>
+                        <th>NIS</th>
+                        <th>Nama Lengkap</th>
+                        <th>Jenis Kelamin</th>
+                        <th>Jurusan</th>
+                        <th>Tahun Lulus</th>  
+                        <th>Status</th>  
+                        <th>Aksi</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table-border-bottom-0">
+                      <tr>
+                        <td>
+                          <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
+                            <li
+                              data-bs-toggle="tooltip"
+                              data-popup="tooltip-custom"
+                              data-bs-placement="text-center"
+                              class="avatar avatar-xs pull-up"
+                              title="Christina Parker"
+                            >
+                              <img src="../../assets/img/avatars/7.png" alt="Avatar" class="rounded-circle" style="height: 40px; width: 40px;" />
+                            </li>
+                          </ul>
+                        </td>
+                        <td>234236</td>
+                        <td>Gultom Julius</td>
+                        <td>
+                        <select class="select2 form-select">
+                        <option value="laki-laki">Laki-Laki</option>
+                        <option value="Perempuan">Perempuan</option>
+                        </select>
+                      </td>
+                        <td>
+                          <select class="select form-select">
+                          <option value="RPL">RPL</option>
+                          <option value="PM">PM</option>
+                          <option value="TJKT">TJKT</option>
+                          <option value="AKL">AKL</option>
+                          <option value="MBLOG">MBLOG</option>
+                          <option value="MPLB">MPLB</option>
+                          <option value="DKV">DKV</option>
+                        </select>
+                      </td>
+                      <td>2021-2024</td>
+                      <td>
+                        <span class="badge bg-label-danger me-1">Sudah Verifikasi</span>
+                    </td>
+                        <td>
+                          <a href="edit_detail_alumni.html" class="btn btn-danger">Edit</a>
+                          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal_julius">
+                            Detail
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="modal_julius" tabindex="-1" aria-labelledby="modal_julius_label" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="modal_julius_label">Detail</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                            <h5 class="card-header">Alamat</h5>
+                                            <div class="card-body">
+                                                <div class="d-flex flex-column align-items-center gap-4">
+                                                    <img
+                                                        src="../../assets/img/avatars/1.png"
+                                                        alt="user-avatar"
+                                                        class="d-block rounded"
+                                                        height="100"
+                                                        width="100"
+                                                        id="uploadedAvatar"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <hr class="my-0" />
+                                            <div class="card-body">
+                                              <div class="row">
+                                                <div class="col-md-6">
+                                                    <label for="inputEmail4" class="form-label">Provinsi</label>
+                                                     <select class="form-select menu-link menu-toggle">
+                                                        <option>Provinsi</option>
+                                                        <option>Jawa Barat</option>
+                                                        <option>Nanggroe Aceh</option>
+                                                        <option>Kepulauan Riau</option>
+                                                     </select>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                    <label for="inputPassword4" class="form-label">Kabupatan/Kota</label>
+                                                    <select class="form-select">
+                                                        <option>Kabupatan/Kota</option>
+                                                        <option>Jakarta</option>
+                                                        <option>Bandung</option>
+                                                        <option>Kabupatan Nganjuk</option>
+                                                    </select>
+                                                  </div>
+                                                </div>
+                                                <div class="row mt-4">
+                                                  <div class="col-md-6">
+                                                    <label for="inputEmail4" class="form-label">Kecamatan</label>
+                                                    <select class="form-select">
+                                                        <option>Kecamatan</option>
+                                                        <option>Babakan Ciparay</option>
+                                                        <option>Kelay</option>
+                                                        <option>Laham</option>
+                                                    </select>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                    <label for="inputEmail4" class="form-label">Kelurahan</label>
+                                                    <select class="form-select">
+                                                        <option>Kelurahan</option>
+                                                        <option>Sukahaji</option>
+                                                        <option>Kayu Ara</option>
+                                                        <option>Bandugn Ujung</option>
+                                                    </select>
+                                                  </div>
+                                              </div>
+                                            </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                        </td>
+                      <tr>
+                        <td>
+                          <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
+                            <li
+                            data-bs-toggle="tooltip"
+                            data-popup="tooltip-custom"
+                            data-bs-placement="text-center"
+                            class="avatar avatar-xs pull-up"
+                            title="Christina Parker"
+                            >
+                              <img src="../../assets/img/avatars/6.png" alt="Avatar" class="rounded-circle" style="height: 40px; width: 40px;" />
+                            </li>
+                          </ul>
+                        </td>
+                        <td>234463</td>
+                        <td>Dava Ardiansyah Hidayat</td>
+                        <td>
+                          <select class="select2 form-select">
+                            <option value="laki-laki">Laki-Laki</option>
+                            <option value="Perempuan">Perempuan</option>
+                            </select>
+                        </td>
+                        <td>
+                          <select class="select form-select">
+                          <option value="RPL">RPL</option>
+                          <option value="PM">PM</option>
+                          <option value="TJKT">TJKT</option>
+                          <option value="AKL">AKL</option>
+                          <option value="MBLOG">MBLOG</option>
+                          <option value="MPLB">MPLB</option>
+                          <option value="DKV">DKV</option>
+                        </select>
+                      </td>
+                      <td>
+                        2021-2024
+                      </td>
+                      <td>
+                        <span class="badge bg-label-success me-1">Sudah Verifikasi</span>
+                    </td>
+                        <td>
+                          <a href="edit_detail_alumni.html" class="btn btn-danger">Edit</a>
+                          <!-- Button to trigger modal -->
+                            <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal_dava">
+                              Detail
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="modal_dava" tabindex="-1" aria-labelledby="modal_dava_label" aria-hidden="true">
+                              <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                  <div class="modal-content">
+                                      <div class="modal-header">
+                                          <h5 class="modal-title" id="modal_dava_label">Detail</h5>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                      </div>
+                                      <div class="modal-body">
+                                          <div class="card mb-4">
+                                              <h5 class="card-header">Alamat</h5>
+                                              <div class="card-body">
+                                                  <div class="d-flex flex-column align-items-center gap-4">
+                                                      <img
+                                                          src="../../assets/img/avatars/1.png"
+                                                          alt="user-avatar"
+                                                          class="d-block rounded"
+                                                          height="100"
+                                                          width="100"
+                                                          id="uploadedAvatar"
+                                                      />
+                                                  </div>
+                                              </div>
+                                              <hr class="my-0" />
+                                              <div class="card-body">
+                                                <div class="row">
+                                                  <div class="col-md-6">
+                                                      <label for="inputEmail4" class="form-label">Provinsi</label>
+                                                       <select class="form-select menu-link menu-toggle">
+                                                          <option>Provinsi</option>
+                                                          <option>Jawa Barat</option>
+                                                          <option>Nanggroe Aceh</option>
+                                                          <option>Kepulauan Riau</option>
+                                                       </select>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                      <label for="inputPassword4" class="form-label">Kabupatan/Kota</label>
+                                                      <select class="form-select">
+                                                          <option>Kabupatan/Kota</option>
+                                                          <option>Jakarta</option>
+                                                          <option>Bandung</option>
+                                                          <option>Kabupatan Nganjuk</option>
+                                                      </select>
+                                                    </div>
+                                                  </div>
+                                                  <div class="row mt-4">
+                                                    <div class="col-md-6">
+                                                      <label for="inputEmail4" class="form-label">Kecamatan</label>
+                                                      <select class="form-select">
+                                                          <option>Kecamatan</option>
+                                                          <option>Babakan Ciparay</option>
+                                                          <option>Kelay</option>
+                                                          <option>Laham</option>
+                                                      </select>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                      <label for="inputEmail4" class="form-label">Kelurahan</label>
+                                                      <select class="form-select">
+                                                          <option>Kelurahan</option>
+                                                          <option>Sukahaji</option>
+                                                          <option>Kayu Ara</option>
+                                                          <option>Bandugn Ujung</option>
+                                                      </select>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
+                            <li
+                              data-bs-toggle="tooltip"
+                              data-popup="tooltip-custom"
+                              data-bs-placement="text-center"
+                              class="avatar avatar-xs pull-up"
+                              title="Christina Parker"
+                            >
+                              <img src="../../assets/img/avatars/7.png" alt="Avatar" class="rounded-circle" style="height: 40px; width: 40px;" />
+                            </li>
+                          </ul>
+                        </td>
+                        <td>243475</td>
+                        <td>Rasyad Halimawan</td>
+                        <td>
+                          <select class="select2 form-select">
+                            <option value="laki-laki">Laki-Laki</option>
+                            <option value="Perempuan">Perempuan</option>
+                            </select>
+                        </td>
+                        <td>
+                          <select class="select form-select">
+                            <option value="RPL">RPL</option>
+                            <option value="PM">PM</option>
+                            <option value="TJKT">TJKT</option>
+                            <option value="AKL">AKL</option>
+                            <option value="MBLOG">MBLOG</option>
+                            <option value="MPLB">MPLB</option>
+                            <option value="DKV">DKV</option>
+                          </select>
+                        </td>
+                        <td>
+                          2021-2024
+                        </td>
+                        <td>
+                          <span class="badge bg-label-danger me-1">Sudah Verifikasi</span>
+                      </td>
+                        <td>
+                          <a href="edit_detail_alumni.html" class="btn btn-danger">Edit</a>
+                          <button type="button" class="btn  btn-warning" data-bs-toggle="modal" data-bs-target="#modal_acid">
+                            Detail
+                          </button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="modal_acid" tabindex="-1" aria-labelledby="modal_acid_label" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="modal_acid_label">Detail</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="card mb-4">
+                                            <h5 class="card-header">Alamat</h5>
+                                            <div class="card-body">
+                                                <div class="d-flex flex-column align-items-center gap-4">
+                                                    <img
+                                                        src="../../assets/img/avatars/1.png"
+                                                        alt="user-avatar"
+                                                        class="d-block rounded"
+                                                        height="100"
+                                                        width="100"
+                                                        id="uploadedAvatar"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <hr class="my-0" />
+                                            <div class="card-body">
+                                                <form>
+                                                  <div class="row mb-3">
+                                                      <!-- <label class="col-sm-2 col-form-label" for="basic-icon-default-company">Alamat</label> -->
+                                                      <div class="row">
+                                                      <div class="col-md-6">
+                                                          <label for="inputEmail4" class="form-label">Provinsi</label>
+                                                           <select class="form-select menu-link menu-toggle">
+                                                              <option>Provinsi</option>
+                                                              <option>Jawa Barat</option>
+                                                              <option>Nanggroe Aceh</option>
+                                                              <option>Kepulauan Riau</option>
+                                                           </select>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                          <label for="inputPassword4" class="form-label">Kabupatan/Kota</label>
+                                                          <select class="form-select">
+                                                              <option>Kabupatan/Kota</option>
+                                                              <option>Jakarta</option>
+                                                              <option>Bandung</option>
+                                                              <option>Kabupatan Nganjuk</option>
+                                                          </select>
+                                                        </div>
+                                                      </div>
+                                                      <div class="row mt-4">
+                                                        <div class="col-md-6">
+                                                          <label for="inputEmail4" class="form-label">Kecamatan</label>
+                                                          <select class="form-select">
+                                                              <option>Kecamatan</option>
+                                                              <option>Babakan Ciparay</option>
+                                                              <option>Kelay</option>
+                                                              <option>Laham</option>
+                                                          </select>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                          <label for="inputEmail4" class="form-label">Kelurahan</label>
+                                                          <select class="form-select">
+                                                              <option>Kelurahan</option>
+                                                              <option>Sukahaji</option>
+                                                              <option>Kayu Ara</option>
+                                                              <option>Bandugn Ujung</option>
+                                                          </select>
+                                                        </div>
+                                                    </div>
+                                                  </div>
+                                                </form>
+                                              </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
+                            <li
+                            data-bs-toggle="tooltip"
+                            data-popup="tooltip-custom"
+                            data-bs-placement="text-center"
+                            class="avatar avatar-xs pull-up"
+                            title="Christina Parker"
+                            >
+                              <img src="../../assets/img/avatars/6.png" alt="Avatar" class="rounded-circle" style="height: 40px; width: 40px;" />
+                            </li>
+                          </ul>
+                        </td>
+                        <td>243643</td>
+                        <td>Muhammad Afdhal</td>
+                        <td>
+                          <select class="select2 form-select">
+                            <option value="laki-laki">Laki-Laki</option>
+                            <option value="Perempuan">Perempuan</option>
+                            </select>
+                        </td>
+                        <td>
+                          <select class="select form-select">
+                            <option value="RPL">RPL</option>
+                            <option value="PM">PM</option>
+                            <option value="TJKT">TJKT</option>
+                            <option value="AKL">AKL</option>
+                            <option value="MBLOG">MBLOG</option>
+                            <option value="MPLB">MPLB</option>
+                            <option value="DKV">DKV</option>
+                          </select>
+                        </td>
+                        <td>
+                        2021-2024
+                        </td> 
+                        <td>
+                          <span class="badge bg-label-danger me-1">Sudah Verifikasi</span>
+                      </td>
+                        <td>
+                          <a href="edit_detail_alumni.html" class="btn btn-danger">Edit</a>
+                          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal_afdhal">
+                            Detail
+                          </button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="modal_afdhal" tabindex="-1" aria-labelledby="modal_afdhal_label" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="modal_afdhal_label">Detail</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="card mb-4">
+                                            <h5 class="card-header">Profile</h5>
+                                            <div class="card-body">
+                                                <div class="d-flex flex-column align-items-center gap-4">
+                                                    <img
+                                                        src="../../assets/img/avatars/1.png"
+                                                        alt="user-avatar"
+                                                        class="d-block rounded"
+                                                        height="100"
+                                                        width="100"
+                                                        id="uploadedAvatar"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <hr class="my-0" />
+                                            <div class="card-body">
+                                              <div class="row">
+                                                <div class="col-md-6">
+                                                    <label for="inputEmail4" class="form-label">Provinsi</label>
+                                                     <select class="form-select menu-link menu-toggle">
+                                                        <option>Provinsi</option>
+                                                        <option>Jawa Barat</option>
+                                                        <option>Nanggroe Aceh</option>
+                                                        <option>Kepulauan Riau</option>
+                                                     </select>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                    <label for="inputPassword4" class="form-label">Kabupatan/Kota</label>
+                                                    <select class="form-select">
+                                                        <option>Kabupatan/Kota</option>
+                                                        <option>Jakarta</option>
+                                                        <option>Bandung</option>
+                                                        <option>Kabupatan Nganjuk</option>
+                                                    </select>
+                                                  </div>
+                                                </div>
+                                                <div class="row mt-4">
+                                                  <div class="col-md-6">
+                                                    <label for="inputEmail4" class="form-label">Kecamatan</label>
+                                                    <select class="form-select">
+                                                        <option>Kecamatan</option>
+                                                        <option>Babakan Ciparay</option>
+                                                        <option>Kelay</option>
+                                                        <option>Laham</option>
+                                                    </select>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                    <label for="inputEmail4" class="form-label">Kelurahan</label>
+                                                    <select class="form-select">
+                                                        <option>Kelurahan</option>
+                                                        <option>Sukahaji</option>
+                                                        <option>Kayu Ara</option>
+                                                        <option>Bandugn Ujung</option>
+                                                    </select>
+                                                  </div>
+                                              </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          
+                        </td>
+                      </tr>
+                      <tfoot class="table-border-bottom-0">
+                        <tr>
+                          <th>Foto</th>
+                          <th>NIS</th>
+                          <th>Nama Lengkap</th>
+                          <th>Jenis Kalamin</th>
+                          <th>Jurusan</th>
+                          <th>Tahun Lulus</th>  
+                          <th>Status</th>  
+                          <th>Aksi</th>
+                        </tr>
+                      </tfoot>
+                    </tbody>
+                  </table>
+                  <nav aria-label="Page navigation">
+                    <ul class="pagination s justify-content-end mt-3" id="pagination">
+                      <li class="page-item prev">
+                        <a class="page-link" href="javascript:void(0);"><i class="tf-icon bx bx-chevrons-left"></i></a>
+                      </li>
+                      <li class="page-item next">
+                        <a class="page-link" href="javascript:void(0);"><i class="tf-icon bx bx-chevrons-right"></i></a>
+                      </li>
+                    </ul>
+                  </nav>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12 col-lg-12 order-2 order-md-3 order-lg-2 mb-4">
+                <div class="card">
+                  <div class="row row-bordered g-0">
+                    <div class="col-md-12">
+                      <h5 class="card-header m-0 me-2 pb-3">Alumni</h5>
+                      <div id="chart" class="px-2"></div>
                     </div>
                   </div>
                 </div>
               </div>
-                
-                <!--/ Total Revenue -->
-              
             </div>
             <!-- / Content -->
+            
 
-            <!-- Footer -->
-            <footer class="content-footer footer bg-footer-theme">
-              <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
-                <div class="mb-2 mb-md-0">
-                  
-                  <script>
-                    document.write(new Date().getFullYear());
-                  </script>
-                  
-                  <a href="https://themeselection.com" target="_blank" class="footer-link fw-bolder align-middle">Made by Julius</a>
-                </div>
-                
-              </div>
-            </footer>
-            <!-- / Footer -->
-
+            
             <div class="content-backdrop fade"></div>
           </div>
+          <!-- Footer -->
+          <section id="basic-footer">
+            <footer class="footer bg-footer-theme">
+              <div
+              class="container-fluid d-flex flex-md-row flex-column justify-content-between align-items-md-center gap-1 container-p-x py-3"
+              >
+              <div>
+                  <a
+                    href="https://themeselection.com/demo/sneat-bootstrap-html-admin-template/landing/"
+                    target="_blank"
+                    class="footer-text fw-bolder"
+                    >Karis Sebelass</a
+                  >
+                  ©
+                </div>
+                <div>
+                  <a href="https://themeselection.com/license/" class="footer-link me-4" target="_blank">License</a>
+                  <a href="javascript:void(0)" class="footer-link me-4">Help</a>
+                  <a href="javascript:void(0)" class="footer-link me-4">Contact</a>
+                  <a href="javascript:void(0)" class="footer-link">Terms &amp; Conditions</a>
+                </div>
+              </div>
+            </footer>
+          </section>
           <!-- Content wrapper -->
         </div>
         <!-- / Layout page -->
+          <!-- / Footer -->
       </div>
 
       <!-- Overlay -->
-      <div class="layout-overlay layout-menu-toggle"></div>
+        <div class="layout-overlay layout-menu-toggle"></div>
+      </div>
     </div>
+    
     <!-- / Layout wrapper -->
 
     
@@ -626,6 +963,7 @@
     <!-- Main JS -->
     <script src="../../assets/js/main.js"></script>
     <script src="../../assets/js/table-search.js"></script>
+    <script src="../../assets/js/pagiantion.js"></script>
 
     <!-- Page JS -->
     <script src="../../assets/js/dashboards-analytics.js"></script>

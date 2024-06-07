@@ -71,9 +71,8 @@
 
         <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
             <div class="app-brand demo">
-              <a href="index.html" class="app-brand-link">
-                <!-- <span class="app-brand-text demo menu-text fw-bolder ms-2">Sneat</span> -->
-                <img src="../../assets/img/logo/logo11.png" width="200px" height="80px"></img>
+              <a href="dashboard.html" class="app-brand-link">
+                <img src="../../assets/img/logo/karir_sebelas.png" width="190px" height="90px"></img>
               </a>
               
               <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -86,60 +85,120 @@
             <ul class="menu-inner py-1">
               <!-- Dashboard -->
               <li class="menu-item ">
+                <a href="dashboard.html" class="menu-link menu-toggle">
+                  <i class='menu-icon bx bxs-dashboard'></i>
+                  <div data-i18n="Analytics">Dashboard</div>
+                </a>
+                <ul class="menu-sub">
+                  <li class="menu-item">
+                    <a href="riwayat_akun_alumni.html" class="menu-link">
+                      <i class="menu-icon tf-icons bx bxs-user-circle"></i>
+                      <div data-i18n="CRM">Alumni</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">1</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="riwayat_akun_perusahaan.html" class="menu-link">
+                      <i class="menu-icon tf-icons bx bxs-building"></i>
+                      <div data-i18n="Analytics">Perusahaan</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">1</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="riwayat_loker.html" class="menu-link">
+                      <i class="menu-icon tf-icons bx bx-briefcase-alt-2"></i>
+                      <div data-i18n="eCommerce">Loker</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">3</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="riwayat_lamaran.html" class="menu-link">
+                      <i class="menu-icon tf-icons bx bx-file"></i>
+                      <div data-i18n="Logistics">Lamaran</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">2</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="menu-header small text-uppercase"><span class="menu-header-text">Pages</span></li>
+              <li class="menu-item ">
                 <a href="index.html" class="menu-link">
-                  <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                  <i class="menu-icon tf-icons bx bxs-graduation"></i>
                   <div data-i18n="Analytics">Data Alumni</div>
                 </a>
               </li>
-  
               <!-- Layouts -->
               <li class="menu-item">
                 <a href="javascript:void(0);" class="menu-link menu-toggle">
-                  <i class="menu-icon tf-icons bx bx-layout"></i>
+                  <i class="menu-icon tf-icons bx bx-id-card"></i>
                   <div data-i18n="Layouts">Data User</div>
                 </a>
   
                 <ul class="menu-sub">
-                  <li class="menu">
-                    <a href="perusahaa.html" class="menu-link">
+                  <li class="menu-item">
+                    <a href="perusahaa.html" class="menu-link menu-toggle">
                       <i class="menu-icon tf-icons bx bxs-building"></i>
                       <div data-i18n="Without menu">Akun Perusahaan</div>
                     </a>
+                    <ul class="menu-sub">
+                      <li class="menu-item">
+                        <a href="perusahaa.html" class="menu-link">
+                          <i class='menu-icon bx bxs-building'></i>
+                          <div data-i18n="Logistics">Tampil Perusahaan</div>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="tambah_perusaha.html" class="menu-link">
+                          <i class="menu-icon bx bxs-user-plus"></i>
+                          <div data-i18n="Logistics">Tambah Perusahaan</div>
+                        </a>
+                      </li>
+                    </ul>
                   </li>
-                  <li class="menu">
-                    <a href="alumni.html" class="menu-link">
-                      <i class="menu-icon tf-icons bx bxs-user-circle"></i>
+                  <li class="menu-item">
+                      <a href="alumni.html" class="menu-link menu-toggle">
+                        <i class="menu-icon tf-icons bx bxs-user-circle"></i>
                       <div data-i18n="Without navbar">Akun Alumni</div>
                     </a>
+                    <ul class="menu-sub">
+                      <li class="menu-item">
+                        <a href="alumni.html" class="menu-link">
+                          <i class="menu-icon bx bxs-user-circle"></i>
+                          <div data-i18n="Logistics">Tampil Alumni</div>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="tambah_alumni.html" class="menu-link">
+                          <i class='menu-icon bx bxs-user-plus'></i>
+                          <div data-i18n="Logistics">Tambah Alumni</div>
+                        </a>
+                      </li>
+                    </ul>
                 </ul>
               </li>
               <li class="menu-item active">
-                <a href="loker.html" class="menu-link">
-                  <i class="menu-icon tf-icons bx bx-lock-open-alt"></i>
+                <a href="loker.html" class="menu-link menu-toggle">
+                  <i class="menu-icon tf-icons bx bx-briefcase-alt-2"></i>
                   <div data-i18n="Authentications">Data Loker</div>
                 </a>
+                <ul class="menu-sub">
+                  <li class="menu-item">
+                    <a href="loker.html" class="menu-link">
+                      <i class='menu-icon bx bx-briefcase-alt-2'></i>
+                      <div data-i18n="Logistics">Tampil Loker</div>
+                    </a>
+                  </li>
+                  <li class="menu-item active">
+                    <a href="tambah_loker.html" class="menu-link">
+                      <i class='menu-icon bx bxs-user-plus'></i>
+                      <div data-i18n="Logistics">Tambah Loker</div>
+                    </a>
+                  </li>
+                </ul>
               </li>
               <li class="menu-item">
                 <a href="lamaran.html" class="menu-link">
-                  <i class="menu-icon tf-icons bx bx-cube-alt"></i>
+                  <i class="menu-icon tf-icons bx bx-file"></i>
                   <div data-i18n="Misc">Data Lamaran</div>
                 </a>
               </li>
-              <!-- Components -->
-              <!-- <li class="menu-header small text-uppercase"><span class="menu-header-text">Components</span></li> -->
-              <!-- Cards -->
-              
-             
-  
-              <!-- Forms & Tables -->
-              <!-- <li class="menu-header small text-uppercase"><span class="menu-header-text">Forms &amp; Tables</span></li> -->
-              <!-- Forms -->
-              
-              
-              <!-- Tables -->
-             
-              <!-- Misc -->
-              <!-- <li class="menu-header small text-uppercase"><span class="menu-header-text">Misc</span></li> -->
              
             </ul>
           </aside>
@@ -219,8 +278,7 @@
             <!-- Content -->
 
             <div class="container-xxl flex-grow-1 container-p-y">
-              <!-- <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Forms/</span> Horizontal Layouts</h4> -->
-
+              
               <!-- Basic Layout & Basic with Icons -->
               <div class="row">
                 <!-- Basic Layout -->
@@ -234,8 +292,8 @@
                     <div class="card-body">
                       <form>
                         <div class="row mb-3">
-                          <label class="col-sm-2 col-form-label" for="basic-icon-default-fullname">Name</label>
-                          <div class="col-sm-10">
+                          <div class="col-md-6">
+                            <label class="col-sm-12 col-form-label" for="basic-icon-default-fullname">Jabatan</label>
                             <div class="input-group input-group-merge">
                               <span id="basic-icon-default-fullname2" class="input-group-text"
                                 ><i class="bx bx-user"></i
@@ -250,10 +308,8 @@
                               />
                             </div>
                           </div>
-                        </div>
-                        <div class="row mb-3">
-                          <label class="col-sm-2 col-form-label" for="basic-icon-default-company">Company</label>
-                          <div class="col-sm-10">
+                          <div class="col-md-6">
+                            <label class="col-sm-12 col-form-label" for="basic-icon-default-company">Jenis Pekerjaan</label>
                             <div class="input-group input-group-merge">
                               <span id="basic-icon-default-company2" class="input-group-text"
                                 ><i class="bx bx-buildings"></i
@@ -270,60 +326,15 @@
                           </div>
                         </div>
                         <div class="row mb-3">
-                          <label class="col-sm-2 col-form-label" for="basic-icon-default-email">Email</label>
-                          <div class="col-sm-10">
+                          <div class="col-md-12">
+                            <label class="col-sm-2 form-label" for="basic-icon-default-phone">Deskripsi</label>
                             <div class="input-group input-group-merge">
-                              <span class="input-group-text"><i class="bx bx-envelope"></i></span>
-                              <input
-                                type="text"
-                                id="basic-icon-default-email"
-                                class="form-control"
-                                placeholder="john.doe"
-                                aria-label="john.doe"
-                                aria-describedby="basic-icon-default-email2"
-                              />
-                              <span id="basic-icon-default-email2" class="input-group-text">@example.com</span>
-                            </div>
-                            <div class="form-text">You can use letters, numbers & periods</div>
-                          </div>
-                        </div>
-                        <div class="row mb-3">
-                          <label class="col-sm-2 form-label" for="basic-icon-default-phone">Phone No</label>
-                          <div class="col-sm-10">
-                            <div class="input-group input-group-merge">
-                              <span id="basic-icon-default-phone2" class="input-group-text"
-                                ><i class="bx bx-phone"></i
-                              ></span>
-                              <input
-                                type="text"
-                                id="basic-icon-default-phone"
-                                class="form-control phone-mask"
-                                placeholder="658 799 8941"
-                                aria-label="658 799 8941"
-                                aria-describedby="basic-icon-default-phone2"
-                              />
+                              <textarea class="form-control"></textarea>
                             </div>
                           </div>
-                        </div>
-                        <div class="row mb-3">
-                          <label class="col-sm-2 form-label" for="basic-icon-default-message">Message</label>
-                          <div class="col-sm-10">
-                            <div class="input-group input-group-merge">
-                              <span id="basic-icon-default-message2" class="input-group-text"
-                                ><i class="bx bx-comment"></i
-                              ></span>
-                              <textarea
-                                id="basic-icon-default-message"
-                                class="form-control"
-                                placeholder="Hi, Do you have a moment to talk Joe?"
-                                aria-label="Hi, Do you have a moment to talk Joe?"
-                                aria-describedby="basic-icon-default-message2"
-                              ></textarea>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row justify-content-end">
-                          <div class="col-sm-10">
+                         
+                        <div class="row mt-3">
+                          <div class="col-md-12">
                             <button type="submit" class="btn btn-primary">Send</button>
                           </div>
                         </div>
@@ -331,23 +342,35 @@
                     </div>
                   </div>
                 </div>
+                    <div class="layout-overlay layout-menu-toggle"></div>
+                  </div>
               </div>
             </div>
             <!-- / Content -->
 
-            <footer class="content-footer footer bg-footer-theme">
-                <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
-                  <div class="mb-2 mb-md-0">
-                    
-                    <script>
-                      document.write(new Date().getFullYear());
-                    </script>
-                    
-                    <a href="https://themeselection.com" target="_blank" class="footer-link fw-bolder align-middle">Made by Julius</a>
+            <section id="basic-footer">
+              <footer class="footer bg-footer-theme">
+                <div
+                  class="container-fluid d-flex flex-md-row flex-column justify-content-between align-items-md-center gap-1 container-p-x py-3"
+                >
+                  <div>
+                    <a
+                      href="https://themeselection.com/demo/sneat-bootstrap-html-admin-template/landing/"
+                      target="_blank"
+                      class="footer-text fw-bolder"
+                      >Karis Sebelass</a
+                    >
+                    ©
                   </div>
-                  
+                  <div>
+                    <a href="https://themeselection.com/license/" class="footer-link me-4" target="_blank">License</a>
+                    <a href="javascript:void(0)" class="footer-link me-4">Help</a>
+                    <a href="javascript:void(0)" class="footer-link me-4">Contact</a>
+                    <a href="javascript:void(0)" class="footer-link">Terms &amp; Conditions</a>
+                  </div>
                 </div>
               </footer>
+            </section>
             <!-- / Footer -->
 
             <div class="content-backdrop fade"></div>
@@ -358,8 +381,6 @@
       </div>
 
       <!-- Overlay -->
-      <div class="layout-overlay layout-menu-toggle"></div>
-    </div>
     <!-- / Layout wrapper -->
 
    

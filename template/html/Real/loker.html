@@ -73,9 +73,9 @@
 
         <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
           <div class="app-brand demo">
-            <a href="index.html" class="app-brand-link">
+            <a href="dashboard.html" class="app-brand-link">
               <!-- <span class="app-brand-text demo menu-text fw-bolder ms-2">Sneat</span> -->
-              <img src="../../assets/img/logo/logo11.png" width="200px" height="80px"></img>
+              <img src="../../assets/img/logo/karir_sebelas.png" width="190px" height="90px"></img>
             </a>
             
             <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -88,12 +88,45 @@
           <ul class="menu-inner py-1">
             <!-- Dashboard -->
             <li class="menu-item">
+              <a href="dashboard.html" class="menu-link menu-toggle">
+                <i class='menu-icon bx bxs-dashboard'></i>
+                <div data-i18n="Analytics">Dashboard</div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="riwayat_akun_alumni.html" class="menu-link">
+                    <i class="menu-icon tf-icons bx bxs-user-circle"></i>
+                    <div data-i18n="CRM">Alumni</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">1</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="riwayat_akun_perusahaan.html" class="menu-link">
+                    <i class="menu-icon tf-icons bx bxs-building"></i>
+                    <div data-i18n="Analytics">Perusahaan</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">1</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="riwayat_loker.html" class="menu-link">
+                    <i class="menu-icon tf-icons bx bx-briefcase-alt-2"></i>
+                    <div data-i18n="eCommerce">Loker</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">3</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="riwayat_lamaran.html" class="menu-link">
+                    <i class="menu-icon tf-icons bx bx-file"></i>
+                    <div data-i18n="Logistics">Lamaran</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">2</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-header small text-uppercase"><span class="menu-header-text">Pages</span></li>
+            <li class="menu-item">
               <a href="index.html" class="menu-link">
                 <i class="menu-icon tf-icons bx bxs-graduation"></i>
                 <div data-i18n="Analytics">Data Alumni</div>
               </a>
             </li>
-
             <!-- Layouts -->
             <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
@@ -102,24 +135,66 @@
               </a>
 
               <ul class="menu-sub">
-                <li class="menu">
-                  <a href="perusahaa.html" class="menu-link">
+                <li class="menu-item">
+                  <a href="perusahaa.html" class="menu-link menu-toggle">
                     <i class="menu-icon tf-icons bx bxs-building"></i>
                     <div data-i18n="Without menu">Akun Perusahaan</div>
                   </a>
+                  <ul class="menu-sub">
+                    <li class="menu-item">
+                      <a href="perusahaa.html" class="menu-link">
+                        <i class='menu-icon bx bxs-building'></i>
+                        <div data-i18n="Logistics">Tampil Data</div>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="tambah_perusaha.html" class="menu-link">
+                        <i class="menu-icon bx bxs-user-plus"></i>
+                        <div data-i18n="Logistics">Tambah Data</div>
+                      </a>
+                    </li>
+                  </ul>
                 </li>
-                <li class="menu">
-                  <a href="alumni.html" class="menu-link">
-                    <i class="menu-icon tf-icons bx bxs-user-circle"></i>
+                <li class="menu-item">
+                    <a href="alumni.html" class="menu-link menu-toggle">
+                      <i class="menu-icon tf-icons bx bxs-user-circle"></i>
                     <div data-i18n="Without navbar">Akun Alumni</div>
                   </a>
+                  <ul class="menu-sub">
+                    <li class="menu-item">
+                      <a href="alumni.html" class="menu-link">
+                        <i class="menu-icon bx bxs-user-circle"></i>
+                        <div data-i18n="Logistics">Tampil Data</div>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="tambah_alumni.html" class="menu-link">
+                        <i class='menu-icon bx bxs-user-plus'></i>
+                        <div data-i18n="Logistics">Tambah Data</div>
+                      </a>
+                    </li>
+                  </ul>
               </ul>
             </li>
             <li class="menu-item active">
-              <a href="loker.html" class="menu-link">
+              <a href="loker.html" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-briefcase-alt-2"></i>
                 <div data-i18n="Authentications">Data Loker</div>
               </a>
+              <ul class="menu-sub">
+                <li class="menu-item active">
+                  <a href="loker.html" class="menu-link">
+                    <i class='menu-icon bx bx-briefcase-alt-2'></i>
+                    <div data-i18n="Logistics">Tampil Data</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="tambah_loker.html" class="menu-link">
+                    <i class='menu-icon bx bxs-user-plus'></i>
+                    <div data-i18n="Logistics">Tambah Data</div>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="menu-item">
               <a href="lamaran.html" class="menu-link">
@@ -246,7 +321,7 @@
                         <div class="card-body pb-0 px-0 px-md-4">
                           <img
                             src="../../assets/img/illustrations/man-with-laptop-light.png"
-                            height="140"
+                            height="200"
                             alt="View Badge User"
                             data-app-dark-img="illustrations/man-with-laptop-dark.png"
                             data-app-light-img="illustrations/man-with-l  aptop-light.png"
@@ -257,44 +332,23 @@
                   </div>
                 </div>
               </div>
-                <div class="row">
-                  <div class="col-lg-12 mb-4 order-0">
-                    <div class="card">         
-                      <h5 class="card-header">Data Loker</h5>
-                      <div class="table-responsive text-nowrap">
+              <div class=" col-lg-12 mb-4 order-0">
+                <div class="card">
+                  <h5 class="card-header">Data Loker</h5>
+                  <form>
+                    <div class="row g-3 m-3">
+                      <div class="col-md-5">
+                        <label for="nama" class="form-label">Jabatan</label>
+                        <input class="form-control" type="text" id="searchInput" placeholder="John Doe" onkeyup="searchTable()">
                       </div>
-                      <form>
-                        <div class="row m-1">
-                          <div class="col-sm-4">
-                            <label class="form-label">Nama</label>
-                            <input class="form-control" type="text" id="searchInput" placeholder="John Doe" onkeyup="searchTable()">
-                          </div>
-                          <div class="col-sm-3  ">
-                            <label for="exampleFormControlSelect1" class="form-label">Program Keahlian</label>
-                            <select class="form-select" id="select1" aria-label="Default select example" onchange="searchTable1()">
-                              <option selected>Jurusan</option>
-                              <option value="1">RPL</option>
-                              <option value="2">PM</option>
-                              <option value="3">DKV</option>
-                              <option value="4">Nothing</option>
-                            </select>
-                          </div>
-                          <div class="col-sm-3">
-                            <label for="exampleFormControlSelect1" class="form-label">Tahun Lulus</label>
-                            <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
-                              <option selected>Tahun Lulus</option>
-                              <option value="1">2020 - 2023</option>
-                              <option value="2">2023 - 2026</option>
-                              <option value="3">2026 - 2029</option>
-                            </select>
-                          </div>
-                          <div class="col-sm-1">
-                            <button class="form-control btn-primary" style="margin: 29px; width: 100px;" ><i class="bx bx-search fs-4 lh-0" style="margin-right: 5px;"></i>Send</button>
-                          </div>
-                          </div>
-                      </form>
-                      <div class="row">
-                        <div class="m-3">
+                      <div class="col-md-5">
+                        <label for="programKeahlian" class="form-label">Jenis Pekerjaan</label>
+                        <input type="text" class="form-control" placeholder="Administrasi">
+                      </div>
+                      <div class="col-md-2" style="padding-top: 30px;">
+                        <button class="btn btn-success" style="width: 150px;">Send</button>
+                      </div>
+                        <div class="col-md-4 mt-4">
                           <input type="file" id="uploadImport" class="account-file-input" hidden accept="image/png, image/jpeg" />
                           <label for="uploadImport" class="btn btn-primary float-md-right">
                             <i class="bx bx-upload mr-2"></i> Import
@@ -303,218 +357,134 @@
                           <label for="uploadExport" class="btn btn-danger float-md-right">
                             <i class="bx bx-download mr-2"></i> Export
                           </label>
-                          <a href="tambah_loker.html" class="btn btn-success">Tambah</a>
+                          <a href="tambah_loker.html"class="btn btn-success">
+                           <i class="bx bx-id-card"></i> Tambah
+                          </a>
                         </div>
                     </div>
-                      <table class="table" id="myTable">
-                          <thead>
-                            <tr>
-                            <th>Jabatan</th>
-                            <th>Lokasi</th>
-                            <th>Jenis Pekerjaan</th>
-                            <th>Deskripsi</th>
-                            <th>Aksi</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>
-                              <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                                <li
-                                  data-bs-toggle="tooltip"
-                                  data-popup="tooltip-custom"
-                                  data-bs-placement="text-center"
-                                  class="avatar avatar-xs pull-up"
-                                  title="Christina Parker"
-                                >
-                                  <img src="../../assets/img/avatars/7.png" alt="Avatar" class="rounded-circle" style="height: 40px; width: 40px;" />
-                                </li>
-                              </ul>
-                            </td>
-                            <td>1111111  </td>
-                            <td>Lawcere</td>
-                            <td>Lawcere</td>
-                            <!-- <td>Nothing</td> -->
-                      
-                            <td>
-                             
-                           
-                              <a href="edit_loker.html" class="btn btn-danger">Edit</a>
-
-                            </td>
-                         
-                          <tr>
-                            <td>
-                              <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                                <li
-                                data-bs-toggle="tooltip"
-                                data-popup="tooltip-custom"
-                                data-bs-placement="text-center"
-                                class="avatar avatar-xs pull-up"
-                                title="Christina Parker"
-                                >
-                                  <img src="../../assets/img/avatars/6.png" alt="Avatar" class="rounded-circle" style="height: 40px; width: 40px;" />
-                                </li>
-                              </ul>
-                            </td>
-                            <td>22222  </td>
-                            <td>Wyaat</td>
-                            <td>Nothing</td>
-                            <!-- <td>Nothing</td> -->
-                          
-                            <td>
-                             
-                           
-                              <a href="edit_loker.html" class="btn btn-danger">Edit</a>
-
-                            </td>
-                          </tr>
-                          <tr>
-                          <tr>
-                            <td>
-                              <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                                <li
-                                  data-bs-toggle="tooltip"
-                                  data-popup="tooltip-custom"
-                                  data-bs-placement="text-center"
-                                  class="avatar avatar-xs pull-up"
-                                  title="Christina Parker"
-                                >
-                                  <img src="../../assets/img/avatars/7.png" alt="Avatar" class="rounded-circle" style="height: 40px; width: 40px;" />
-                                </li>
-                              </ul>
-                            </td>
-                            <td>1111111  </td>
-                            <td>Lawcere</td>
-                            <td>Nothing</td>
-                            <!-- <td>Nothing</td> -->
-                           
-                            <td>
-                             
-                           
-                              <a href="edit_loker.html" class="btn btn-danger">Edit</a>
-
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                                <li
-                                data-bs-toggle="tooltip"
-                                data-popup="tooltip-custom"
-                                data-bs-placement="text-center"
-                                class="avatar avatar-xs pull-up"
-                                title="Christina Parker"
-                                >
-                                  <img src="../../assets/img/avatars/6.png" alt="Avatar" class="rounded-circle" style="height: 40px; width: 40px;" />
-                                </li>
-                              </ul>
-                            </td>
-                            <td>22222  </td>
-                            <td>Wyaat</td>
-                            <td>Wyaat</td>
-                          
-                            <!-- <td>Nothing</td> -->
-                            <td>
-                             
-                           
-                              <a href="edit_loker.html" class="btn btn-danger">Edit</a>
-
-                            </td>
-                          </tr>
-                          <tr>
-                          <tr>
-                            <td>
-                              <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                                <li
-                                  data-bs-toggle="tooltip"
-                                  data-popup="tooltip-custom"
-                                  data-bs-placement="text-center"
-                                  class="avatar avatar-xs pull-up"
-                                  title="Christina Parker"
-                                >
-                                  <img src="../../assets/img/avatars/7.png" alt="Avatar" class="rounded-circle" style="height: 40px; width: 40px;" />
-                                </li>
-                              </ul>
-                            </td>
-                            <td>1111111  </td>
-                            <td>Lawcere</td>
-                           
-                            <!-- <td>Nothing</td>/ -->
-                            <td>Nothing</td>
-                            <td>
-                             
-                           
-                              <a href="edit_loker.html" class="btn btn-danger">Edit</a>
-
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                                <li
-                                data-bs-toggle="tooltip"
-                                data-popup="tooltip-custom"
-                                data-bs-placement="text-center"
-                                class="avatar avatar-xs pull-up"
-                                title="Christina Parker"
-                                >
-                                  <img src="../../assets/img/avatars/6.png" alt="Avatar" class="rounded-circle" style="height: 40px; width: 40px;" />
-                                </li>
-                              </ul>
-                            </td>
-                            <td>22222  </td>
-                            <td>Wyaat</td>
-                          
-                            <!-- <td>Nothing</td> -->
-                            <td>Nothing</td>
-                            <td>
-                             
-                           
-                              <a href="edit_loker.html" class="btn btn-danger">Edit</a>
-
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                                <li
-                                  data-bs-toggle="tooltip"
-                                  data-popup="tooltip-custom"
-                                  data-bs-placement="text-center"
-                                  class="avatar avatar-xs pull-up"
-                                  title="Christina Parker"
-                                >
-                                  <img src="../../assets/img/avatars/1.png" alt="Avatar" class="rounded-circle" style="height: 40px; width: 40px;" />
-                                </li>
-                              </ul>
-                            </td>
-                            <td>33333  </td>
-                            <td>Albert Cook</td>
-                            <!-- <td>Nothing</td> -->
-                            
-                            <td>Nothing</td>
-                            <td>
-                             
-                           
-                              <a href="edit_loker.html" class="btn btn-danger">Edit</a>
-                            </td>
-                        </tbody>
+                  </form>
+                  <div class="table-responsive text-nowrap">
+                    <table class="table m-2" id="myTable">
+                      <thead>
+                        <tr>
+                          <th>Jabatan</th>
+                          <th>Jenis Pekerjaan</th>
+                          <th>Deskripsi</th>  
+                          <th>Aksi</th>
+                        </tr>
+                      </thead>
+                      <tbody class="table-border-bottom-0">
+                        <tr>
+                          <td>Administrasi</td>
+                          <td>IT</td>
+                          <td>
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Deskripsi
+                          </button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Deskripsi</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                INFO LOKER TERBARU | PT Epson Indonesia merupakan perusahaan penjualan dan pemasaran, anak perusahaan dari Seiko Epson Corporation Pasar perusahaan mendukung Epson printer inkjet, laser, SIDM, format besar,scanner, kamera digital, dan LCD proyektor multimedia.
+                                <br>
+                                Lowongan Kerja Epson Indonesia Saat ini Kami PT  Indonesia Epson Industry kembali membuka lowongan pekerjaan untuk lulusan  sma smk sederajat sebagai operator produksi dengan kualifikasi yang kami butuhkan sebagai berikut :
+                                <br>
+                                INFO LOWONGAN KERJA PT  EPSON INDONESIA (TERBARU)
+                                <br>
+                                1. Posisi : Operator Produksi
+                                <br>
+                                Deskripsi Pekerjaan :
+                                <br>
+                                1. Melakukan pekerjaan yang berhubungan dengan posisi Operator produksi
+                                <br>
+                                2. Melaksanakan kebijakan dan rencana produksi
+                                <br>
+                                3. Melaksanakan proses produksi dan prosedur kualitas sesuai dengan ketentuan suatu perusahaan
+                                <br>
+                                4. Mengoperasikan mesin dan mengontrol proses produksi
+                                <br>
+                                5. Mengatur dan mengontrol bahan baku proses produksi sehingga menjadi bahan jadi yang telah ditentukan oleh perusahaan
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          </td>
+                          <td>
+                            <a href="edit_loker.html" class="btn btn-danger">Edit</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Software Engineer</td>
+                          <td>IT</td>
+                          <td>
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Deskripsi
+                          </button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Deskripsi</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                INFO LOKER TERBARU | PT Epson Indonesia merupakan perusahaan penjualan dan pemasaran, anak perusahaan dari Seiko Epson Corporation Pasar perusahaan mendukung Epson printer inkjet, laser, SIDM, format besar,scanner, kamera digital, dan LCD proyektor multimedia.
+                                <br>
+                                Lowongan Kerja Epson Indonesia Saat ini Kami PT  Indonesia Epson Industry kembali membuka lowongan pekerjaan untuk lulusan  sma smk sederajat sebagai operator produksi dengan kualifikasi yang kami butuhkan sebagai berikut :
+                                <br>
+                                INFO LOWONGAN KERJA PT  EPSON INDONESIA (TERBARU)
+                                <br>
+                                1. Posisi : Operator Produksi
+                                <br>
+                                Deskripsi Pekerjaan :
+                                <br>
+                                1. Melakukan pekerjaan yang berhubungan dengan posisi Operator produksi
+                                <br>
+                                2. Melaksanakan kebijakan dan rencana produksi
+                                <br>
+                                3. Melaksanakan proses produksi dan prosedur kualitas sesuai dengan ketentuan suatu perusahaan
+                                <br>
+                                4. Mengoperasikan mesin dan mengontrol proses produksi
+                                <br>
+                                5. Mengatur dan mengontrol bahan baku proses produksi sehingga menjadi bahan jadi yang telah ditentukan oleh perusahaan
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          </td>
+                          <td>
+                            <a href="edit_loker.html" class="btn btn-danger">Edit</a>
+                          </td>
+                        </tr>
                         <tfoot class="table-border-bottom-0">
                           <tr>
-                            <th>Project</th>
-                            <th>Client</th>
-                            <th>Users</th>
-                            <th>Status</th>
-                            <th>Actions</th>
+                            <th>Jabatan</th>
+                            <th>Jenis Pekerjaan</th>
+                            <th>Deskripsi</th> 
+                            <th>Aksi</th>
                           </tr>
                         </tfoot>
-                      </table>
-                      <button id="loadMoreBtn" class="btn btn-primary">Lihat Lebih Banyak</button>
-                    </div>
+                      </tbody>
+                    </table>
+                    <nav aria-label="Page navigation">
+                      <ul class="pagination s justify-content-end mt-3" id="pagination">
+                        <li class="page-item prev">
+                          <a class="page-link" href="javascript:void(0);"><i class="tf-icon bx bx-chevrons-left"></i></a>
+                        </li>
+                        <li class="page-item next">
+                          <a class="page-link" href="javascript:void(0);"><i class="tf-icon bx bx-chevrons-right"></i></a>
+                        </li>
+                      </ul>
+                    </nav>
+  
                   </div>
-                
-                <!-- Total Revenue -->
+                </div>
               </div>
               <div class="row">
                 <div class="col-12 col-lg-12 order-2 order-md-3 order-lg-2 mb-4">
@@ -535,19 +505,29 @@
             <!-- / Content -->
 
             <!-- Footer -->
-            <footer class="content-footer footer bg-footer-theme">
-              <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
-                <div class="mb-2 mb-md-0">
-                  
-                  <script>
-                    document.write(new Date().getFullYear());
-                  </script>
-                  
-                  <a href="https://themeselection.com" target="_blank" class="footer-link fw-bolder align-middle">Made by Julius</a>
+            <section id="basic-footer">
+              <footer class="footer bg-footer-theme">
+                <div
+                  class="container-fluid d-flex flex-md-row flex-column justify-content-between align-items-md-center gap-1 container-p-x py-3"
+                >
+                  <div>
+                    <a
+                      href="https://themeselection.com/demo/sneat-bootstrap-html-admin-template/landing/"
+                      target="_blank"
+                      class="footer-text fw-bolder"
+                      >Karis Sebelass</a
+                    >
+                    ©
+                  </div>
+                  <div>
+                    <a href="https://themeselection.com/license/" class="footer-link me-4" target="_blank">License</a>
+                    <a href="javascript:void(0)" class="footer-link me-4">Help</a>
+                    <a href="javascript:void(0)" class="footer-link me-4">Contact</a>
+                    <a href="javascript:void(0)" class="footer-link">Terms &amp; Conditions</a>
+                  </div>
                 </div>
-                
-              </div>
-            </footer>
+              </footer>
+            </section>
             <!-- / Footer -->
 
             <div class="content-backdrop fade"></div>
@@ -579,6 +559,7 @@
 
     <!-- Main JS -->
     <script src="../../assets/js/main.js"></script>
+    <script src="../../assets/js/pagiantion.js"></script>
     <script src="../../assets/js/table-search.js"></script>
 
     <!-- Page JS -->
