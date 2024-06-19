@@ -27,12 +27,12 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Admin - Dashboard</title>
+    <title>Penelusuran Alumni</title>
 
     <meta name="description" content="" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="../../assets/img/favicon/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="../../assets/img/logo/smkn11.png" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -75,7 +75,7 @@
           <div class="app-brand demo">
             <a href="index.html" class="app-brand-link">
               <!-- <span class="app-brand-text demo menu-text fw-bolder ms-2">Sneat</span> -->
-              <img src="../../assets/img/logo/karir_sebelas.png" width="190px" height="90px"></img>
+              <img src="../../assets/img/logo/KARIR_sebelas.jpeg" width="190px" height="90px"></img>
             </a>
             
             <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -87,13 +87,6 @@
 
           <ul class="menu-inner py-1">
             <!-- Dashboard -->
-            <li class="menu-item active">
-              <a href="dashboard.html" class="menu-link">
-                <i class="menu-icon tf-icons bx bxs-graduation"></i>
-                <div data-i18n="Analytics">Penelusuran Alumni</div>
-              </a>
-            </li>
-
             <!-- Layouts -->
             <li class="menu-item">
               <a href="data_loker.html" class="menu-link menu-toggle">
@@ -188,7 +181,7 @@
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end">
                     <li>
-                      <a class="dropdown-item" href="profile.html">
+                      <a class="dropdown-item" href="profil.html">
                         <div class="d-flex">
                           <div class="flex-shrink-0 me-3">
                             <div class="avatar avatar-online">
@@ -206,7 +199,7 @@
                       <div class="dropdown-divider"></div>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="/html/Real/login.html">
+                      <a class="dropdown-item" href="../Real/login.html">
                         <i class="bx bx-power-off me-2"></i>
                         <span class="align-middle">Log Out</span>
                       </a>
@@ -241,7 +234,7 @@
                       <div class="col-sm-5 text-center text-sm-left">
                         <div class="card-body pb-0 px-0 px-md-4">
                           <img
-                            src="../../assets/img/illustrations/man-with-laptop-light.png"
+                            src="../../assets/img/logo/11_sebelas.png"
                             height="200"
                             alt="View Badge User"
                             data-app-dark-img="illustrations/man-with-laptop-dark.png"
@@ -262,44 +255,44 @@
                       <form>
                         <div class="row g-3 m-3">
                           <div class="col-md-4">
-                            <label for="nama" class="form-label">Nama Lengkap</label>
-                            <input class="form-control" type="text" id="searchInput" placeholder="John Doe" onkeyup="searchTable()">
+                            <label for="nama" class="card-title">Nama Lengkap</label>
+                            <div class="input-group input-group-merge">
+                              <span class="input-group-text"><i class="bx bxs-user"></i></span>
+                              <input class="form-control" type="text" id="searchInput" placeholder="John Doe" onkeyup="searchTable()">
+                            </div>
                           </div>
                           <div class="col-md-3">
-                            <label for="programKeahlian" class="form-label">Program Keahlian</label>
-                            <select class="form-select" id="select1" aria-label="Default select example" onchange="searchTable1()">
-                              <option selected>Jurusan</option>
-                              <option value="1">PPLG</option>
-                              <option value="2">PM</option>
-                              <option value="3">DKV</option>
-                              <option value="4">AKL</option>
-                              <option value="5">MBLOG</option>
-                              <option value="6">MPLB</option>
-                              <option value="7">TJKT</option>
-                            </select>
+                            <label for="programKeahlian" class="card-title">Program Keahlian</label>
+                            <div class="input-group input-group-merge">
+                              <span class="input-group-text"><i class="bx bxs-book"></i></span>
+                              <select class="form-select" id="select1" aria-label="Default select example" onchange="searchTable1()">
+                                <option selected>Jurusan</option>
+                                <option value="1">PPLG</option>
+                                <option value="2">PM</option>
+                                <option value="3">DKV</option>
+                                <option value="4">AKL</option>
+                                <option value="5">MBLOG</option>
+                                <option value="6">MPLB</option>
+                                <option value="7">TJKT</option>
+                              </select>
+                            </div>
                           </div>
                           <div class="col-md-3">
-                            <label for="tahunLulus" class="form-label">Tahun Lulus</label>
-                            <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
-                              <option selected>Tahun Lulus</option>
-                              <option value="1">2020 - 2023</option>
-                              <option value="2">2023 - 2026</option>
-                              <option value="3">2026 - 2029</option>
-                            </select>
+                            <label for="tahunLulus" class="card-title">Tahun Lulus</label>
+                            <div class="input-group input-group-merge">
+                              <span class="input-group-text"><i class="bx bxs-calendar"></i></span>
+                              <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
+                                <option selected>Tahun Lulus</option>
+                                <option value="1">2020 - 2023</option>
+                                <option value="2">2023 - 2026</option>
+                                <option value="3">2026 - 2029</option>
+                              </select>
+                            </div>
                           </div>
-                          <div class="col-md-1" style="padding-top: 30px;">
+                          <div class="col-md-1" style="padding-top: 36px;">
                             <button class="btn btn-success" style="width: 150px;">Send</button>
                           </div>
-                            <div class="col-md-3 mt-4">
-                              <input type="file" id="uploadImport" class="account-file-input" hidden accept="image/png, image/jpeg" />
-                              <label for="uploadImport" class="btn btn-primary float-md-right">
-                                <i class="bx bx-upload mr-2"></i> Import
-                              </label>
-                              <input type="file" id="uploadExport" class="account-file-input" hidden accept="image/png, image/jpeg" />
-                              <label for="uploadExport" class="btn btn-danger float-md-right">
-                                <i class="bx bx-download mr-2"></i> Export
-                              </label>
-                            </div>
+                           
                         </div>
                       </form>
                       <table class="table" id="myTable">
@@ -307,7 +300,7 @@
                           <thead>
                             <tr>
                             <th>Foto</th>
-                            <th>NIS</th>
+                            
                             <th>Nama Lengkap</th>
                             <th>Jenis Kelamin</th>
                             <th>Jurusan</th>
@@ -330,7 +323,7 @@
                                 </li>
                               </ul>
                             </td>
-                            <td>22034433</td>
+                            <!-- <td>22034433</td> -->
                             <td>Michie Alexandra</td>
                             <td>Perempuan</td>
                             <td>PPLG</td>
@@ -366,42 +359,22 @@
                                       <div class="card-body">
                                         <div class="row">
                                           <div class="col-md-6">
-                                              <label for="inputEmail4" class="form-label">Provinsi</label>
-                                               <select class="form-select menu-link menu-toggle">
-                                                  <option>Provinsi</option>
-                                                  <option>Jawa Barat</option>
-                                                  <option>Nanggroe Aceh</option>
-                                                  <option>Kepulauan Riau</option>
-                                               </select>
+                                              <label for="inputEmail4" class="card-title">Provinsi</label><br>
+                                               <label for="" class="card-text">jawa Barat</label>
                                             </div>
                                             <div class="col-md-6">
-                                              <label for="inputPassword4" class="form-label">Kabupatan/Kota</label>
-                                              <select class="form-select">
-                                                  <option>Kabupatan/Kota</option>
-                                                  <option>Jakarta</option>
-                                                  <option>Bandung</option>
-                                                  <option>Kabupatan Nganjuk</option>
-                                              </select>
+                                              <label for="inputPassword4" class="card-title">Kabupatan/Kota</label><br>
+                                              <label for="" class="card-text">Bandung</label>
                                             </div>
                                           </div>
                                           <div class="row mt-4">
                                             <div class="col-md-6">
-                                              <label for="inputEmail4" class="form-label">Kecamatan</label>
-                                              <select class="form-select">
-                                                  <option>Kecamatan</option>
-                                                  <option>Babakan Ciparay</option>
-                                                  <option>Kelay</option>
-                                                  <option>Laham</option>
-                                              </select>
+                                              <label for="inputEmail4" class="card-title">Kecamatan</label><br>
+                                              <label for="" class="card-text">Bababan Ciparay</label>
                                             </div>
                                             <div class="col-md-6">
-                                              <label for="inputEmail4" class="form-label">Kelurahan</label>
-                                              <select class="form-select">
-                                                  <option>Kelurahan</option>
-                                                  <option>Sukahaji</option>
-                                                  <option>Kayu Ara</option>
-                                                  <option>Bandugn Ujung</option>
-                                              </select>
+                                              <label for="inputEmail4" class="card-title">Kelurahan</label><br>
+                                              <label for="" class="card-text">Sukahaji</label>
                                             </div>
                                         </div>
                                       </div>
@@ -426,7 +399,7 @@
                                 </li>
                               </ul>
                             </td>
-                            <td>22436353</td>
+                            <!-- <td>22436353</td> -->
                             <td>Dava Ardiansyah Hidayat</td>
                             <td>Laki-Laki</td>
                             <td>DKV</td>
@@ -462,16 +435,11 @@
                                       <div class="card-body">
                                         <div class="row">
                                           <div class="col-md-6">
-                                              <label for="inputEmail4" class="form-label">Provinsi</label>
-                                               <select class="form-select menu-link menu-toggle">
-                                                  <option>Provinsi</option>
-                                                  <option>Jawa Barat</option>
-                                                  <option>Nanggroe Aceh</option>
-                                                  <option>Kepulauan Riau</option>
-                                               </select>
+                                              <label for="inputEmail4" class="card-title">Provinsi</label>
+                                               
                                             </div>
                                             <div class="col-md-6">
-                                              <label for="inputPassword4" class="form-label">Kabupatan/Kota</label>
+                                              <label for="inputPassword4" class="card-title">Kabupatan/Kota</label>
                                               <select class="form-select">
                                                   <option>Kabupatan/Kota</option>
                                                   <option>Jakarta</option>
@@ -482,7 +450,7 @@
                                           </div>
                                           <div class="row mt-4">
                                             <div class="col-md-6">
-                                              <label for="inputEmail4" class="form-label">Kecamatan</label>
+                                              <label for="inputEmail4" class="card-title">Kecamatan</label>
                                               <select class="form-select">
                                                   <option>Kecamatan</option>
                                                   <option>Babakan Ciparay</option>
@@ -491,7 +459,7 @@
                                               </select>
                                             </div>
                                             <div class="col-md-6">
-                                              <label for="inputEmail4" class="form-label">Kelurahan</label>
+                                              <label for="inputEmail4" class="card-title">Kelurahan</label>
                                               <select class="form-select">
                                                   <option>Kelurahan</option>
                                                   <option>Sukahaji</option>
@@ -522,7 +490,7 @@
                                 </li>
                               </ul>
                             </td>
-                            <td>22443632</td>
+                            <!-- <td>22443632</td> -->
                             <td>Rasyad Athad</td>
                             <td>Laki-Laki</td>
                             <td>AKL</td>
@@ -618,7 +586,7 @@
                                 </li>
                               </ul>
                             </td>
-                            <td>22327562</td>
+                            <!-- <td>22327562</td> -->
                             <td>Muhammad Afdhal Halimawan</td>
                             <td>Laki-Laki</td>
                             <td>PM</td>
@@ -704,7 +672,7 @@
                         <tfoot class="table-border-bottom-0">
                           <tr>
                             <th>Foto</th>
-                            <th>NIS</th>
+                            
                             <th>Nama Lengkap</th>
                             <th>Jenis Kelamin</th>
                             <th>Jurusan</th>

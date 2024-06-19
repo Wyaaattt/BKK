@@ -27,12 +27,12 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Horizontal Layouts - Forms | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
+    <title>Edit Lamaran</title>
 
     <meta name="description" content="" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="../../assets/img/favicon/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="../../assets/img/logo/smkn11.png" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -73,7 +73,7 @@
             <div class="app-brand demo">
               <a href="index.html" class="app-brand-link">
                 <!-- <span class="app-brand-text demo menu-text fw-bolder ms-2">Sneat</span> -->
-                <img src="../../assets/img/logo/logo11.png" width="200px" height="80px"></img>
+                <img src="../../assets/img/logo/KARIR_sebelas.jpeg" width="190px" height="90px"></img>
               </a>
               
               <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -85,12 +85,7 @@
   
             <ul class="menu-inner py-1">
               <!-- Dashboard -->
-              <li class="menu-item">
-                <a href="dashboard.html" class="menu-link">
-                  <i class="menu-icon tf-icons bx bxs-graduation"></i>
-                  <div data-i18n="Analytics">Penelusuran Alumni</div>
-                </a>
-              </li>
+             
   
               <!-- Layouts -->
               <li class="menu-item">
@@ -169,7 +164,7 @@
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end">
                     <li>
-                      <a class="dropdown-item" href="profile.html">
+                      <a class="dropdown-item" href="profil.html">
                         <div class="d-flex">
                           <div class="flex-shrink-0 me-3">
                             <div class="avatar avatar-online">
@@ -187,7 +182,7 @@
                       <div class="dropdown-divider"></div>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="/html/Real/login.html">
+                      <a class="dropdown-item" href="../Real/login.html">
                         <i class="bx bx-power-off me-2"></i>
                         <span class="align-middle">Log Out</span>
                       </a>
@@ -212,114 +207,83 @@
                 <!-- Basic Layout -->
                
                 <!-- Basic with Icons -->
-                <h5 class="pb-1 mb-4">Detail Alumni</h5>
-              <div class="row mb-5">
-                <div class="col-md">
-                  <div class="card mb-3">
-                    <div class="row g-0">
-                      <div class="col-md-4">
-                        <img class="card-img card-img-left" src="../../assets/img/elements/12.jpg" alt="Card image" />
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <!-- <h5 class="card-title">Detail Alumni</h5> -->
-                          <form>
-                            <div class="row mb-3">
-                              <label class="col-sm-2 col-form-label" for="basic-icon-default-fullname">Name</label>
-                              <div class="col-sm-10">
-                                <div class="input-group input-group-merge">
-                                  <span id="basic-icon-default-fullname2" class="input-group-text"
-                                    ><i class="bx bx-user"></i
-                                  ></span>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="basic-icon-default-fullname"
-                                    placeholder="John Doe"
-                                    aria-label="John Doe"
-                                    aria-describedby="basic-icon-default-fullname2"
-                                  />
-                                </div>
-                              </div>
+                <div class="col-xxl">
+                  <div class="card mb-4">
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                      <h5 class="mb-0">Edit Lamaran</h5>
+                    </div>
+                    <div class="card-body">
+                      <form>
+                        <div class="row mb-3">
+                          <div class="col-md-6">
+                            <label class="col-sm-12 card-title" for="basic-icon-default-fullname">Nama Pelamar</label>
+                            <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-fullname2" class="input-group-text"
+                                ><i class="bx bx-user"></i
+                              ></span>
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="basic-icon-default-fullname"
+                                placeholder="John Doe"
+                                aria-label="John Doe"
+                                aria-describedby="basic-icon-default-fullname2"
+                                value="Rasyad "
+                              />
                             </div>
-                            <div class="row mb-3">
-                              <label class="col-sm-2 col-form-label" for="basic-icon-default-company">Company</label>
-                              <div class="col-sm-10">
-                                <div class="input-group input-group-merge">
-                                  <span id="basic-icon-default-company2" class="input-group-text"
-                                    ><i class="bx bx-buildings"></i
-                                  ></span>
-                                  <input
-                                    type="text"
-                                    id="basic-icon-default-company"
-                                    class="form-control"
-                                    placeholder="ACME Inc."
-                                    aria-label="ACME Inc."
-                                    aria-describedby="basic-icon-default-company2"
-                                  />
-                                </div>
-                              </div>
+                          </div>
+                          <div class="col-md-6">
+                            <label class="col-sm-12 card-title" for="basic-icon-default-company">Jenis Pekerjaan</label>
+                            <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-company2" class="input-group-text"
+                                ><i class="bx bx-buildings"></i
+                              ></span>
+                              <input
+                                type="text"
+                                id="basic-icon-default-company"
+                                class="form-control"
+                                placeholder="ACME Inc."
+                                aria-label="ACME Inc."
+                                aria-describedby="basic-icon-default-company2"
+                                value="Fulltime"
+                              />
                             </div>
-                            <div class="row mb-3">
-                              <label class="col-sm-2 col-form-label" for="basic-icon-default-email">Email</label>
-                              <div class="col-sm-10">
-                                <div class="input-group input-group-merge">
-                                  <span class="input-group-text"><i class="bx bx-envelope"></i></span>
-                                  <input
-                                    type="text"
-                                    id="basic-icon-default-email"
-                                    class="form-control"
-                                    placeholder="john.doe"
-                                    aria-label="john.doe"
-                                    aria-describedby="basic-icon-default-email2"
-                                  />
-                                  <span id="basic-icon-default-email2" class="input-group-text">@example.com</span>
-                                </div>
-                                <div class="form-text">You can use letters, numbers & periods</div>
-                              </div>
+                          </div>
+                        </div>   
+                        <div class="row mb-3">
+                          <div class="col-md-6">
+                            <label class="col-sm-12 card-title" for="basic-icon-default-fullname">Nama Perusahaan</label>
+                            <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-fullname2" class="input-group-text"
+                                ><i class="bx bxs-building"></i
+                              ></span>
+                              <input type="text" class="form-control" value="PT Forit">
                             </div>
-                            <div class="row mb-3">
-                              <label class="col-sm-2 form-label" for="basic-icon-default-phone">Phone No</label>
-                              <div class="col-sm-10">
-                                <div class="input-group input-group-merge">
-                                  <span id="basic-icon-default-phone2" class="input-group-text"
-                                    ><i class="bx bx-phone"></i
-                                  ></span>
-                                  <input
-                                    type="text"
-                                    id="basic-icon-default-phone"
-                                    class="form-control phone-mask"
-                                    placeholder="658 799 8941"
-                                    aria-label="658 799 8941"
-                                    aria-describedby="basic-icon-default-phone2"
-                                  />
-                                </div>
-                              </div>
+                          </div>
+                          <div class="col-md-6">
+                            <label class="col-sm-12 card-title" for="basic-icon-default-company">Status</label>
+                            <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-company2" class="input-group-text"
+                                ><i class="bx bx-buildings"></i
+                              ></span>
+                              <select class="form-select">
+                                <option value="">Pending</option>
+                                <option value="">Terima</option>
+                                <option value="">Tolak</option>
+                              </select>
                             </div>
-                            <div class="row mb-3">
-                              <label class="col-sm-2 form-label" for="basic-icon-default-message">Message</label>
-                              <div class="col-sm-10">
-                                <div class="input-group input-group-merge">
-                                  <span id="basic-icon-default-message2" class="input-group-text"
-                                    ><i class="bx bx-comment"></i
-                                  ></span>
-                                  <textarea
-                                    id="basic-icon-default-message"
-                                    class="form-control"
-                                    placeholder="Hi, Do you have a moment to talk Joe?"
-                                    aria-label="Hi, Do you have a moment to talk Joe?"
-                                    aria-describedby="basic-icon-default-message2"
-                                  ></textarea>
-                                </div>
-                              </div>
-                            </div>
-                          </form>
+                          </div>
+                        </div>   
+                        <div class="row mt-3">
+                          <div class="col-md-12">
+                            <a href="data_lamaran.html" class="btn btn-primary">Save</a>
+                          </div>
                         </div>
-                      </div>
+                      </form>
                     </div>
                   </div>
                 </div>
-              </div>
+                <div class="layout-overlay layout-menu-toggle"></div>
               </div>
             </div>
             <!-- / Content -->

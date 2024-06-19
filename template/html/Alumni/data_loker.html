@@ -27,12 +27,12 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Admin - Dashboard</title>
+    <title>Loker</title>
 
     <meta name="description" content="" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="../../assets/img/favicon/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="../../assets/img/logo/smkn11.png" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -75,7 +75,7 @@
           <div class="app-brand demo">
             <a href="index.html" class="app-brand-link">
               <!-- <span class="app-brand-text demo menu-text fw-bolder ms-2">Sneat</span> -->
-              <img src="../../assets/img/logo/KARIR_sebelas.jpeg" width="190px" height="90px"></img>
+              <img src="../../assets/img/logo/KARIR_sebelas.jpeg" width="200px" height="90px"></img>
             </a>
             
             <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -88,7 +88,7 @@
           <ul class="menu-inner py-1">
             <!-- Dashboard -->
             <li class="menu-item">
-              <a href="dashboard.html" class="menu-link">
+              <a href="index.html" class="menu-link">
                 <i class="menu-icon tf-icons bx bxs-graduation"></i>
                 <div data-i18n="Analytics">Penelusuran Alumni</div>
               </a>
@@ -104,7 +104,7 @@
             <li class="menu-item">
               <a href="data_lamaran.html" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-briefcase-alt-2"></i>
-                <div data-i18n="Authentications">Data Lamaran</div>
+                <div data-i18n="Authentications">Lamaran</div>
               </a>
             </li>
             <!-- <li class="menu-item">
@@ -183,7 +183,7 @@
                           </div>
                           <div class="flex-grow-1">
                             <span class="fw-semibold d-block">John Doe</span>
-                            <small class="text-muted">Admin</small>
+                            <small class="text-muted">Alumni</small>
                           </div>
                         </div>
                       </a>
@@ -192,7 +192,7 @@
                       <div class="dropdown-divider"></div>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="/html/Real/login.html">
+                      <a class="dropdown-item" href="../Real/login.html">
                         <i class="bx bx-power-off me-2"></i>
                         <span class="align-middle">Log Out</span>
                       </a>
@@ -211,103 +211,197 @@
             <!-- Content -->
 
             <div class="container-xxl flex-grow-1 container-p-y">
-              <div class="row">
-                <div class="col-lg-12 mb-4 order-0">
-                  <div class="card">
-                    <div class="d-flex align-items-end row">
-                      <div class="col-sm-7">
-                        <div class="card-body">
-                          <h3 class="card-title text-primary">Selamat Datang di Halaman Penelusuran Alumni</h3>
-                          <p class="mb-4">
-                           Penelusuran Alumni adalah para para alumni Smk Negeri 11 Bandung
-                          </p>
-                          <!-- <a href="javascript:;" class="btn btn-sm btn-outline-primary">View Badges</a> -->
-                        </div>
-                      </div>
-                      <div class="col-sm-5 text-center text-sm-left">
-                        <div class="card-body pb-0 px-0 px-md-4">
-                          <img
-                            src="../../assets/img/illustrations/man-with-laptop-light.png"
-                            height="200"
-                            alt="View Badge User"
-                            data-app-dark-img="illustrations/man-with-laptop-dark.png"
-                            data-app-light-img="illustrations/man-with-l  aptop-light.png"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
                 <div class="row">
+                </div>
                   <div class="col-md-12 mb-4 order-0">
                     <div class="row">
-                            <div class="col-md-6">
+                      <div class="col-md-6 mb-4">
+                          <div class="card">
+                              <img src="/template/assets/img/logo/Program.png" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <p class="card-text">Kami menyediakan loker untuk perusahaan PT Chlorine</p>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                  Detail
+                                </button>
+                                <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 10">
+                                  <div id="toastExample" class="toast align-items-center bg-primary" role="alert" aria-live="assertive" aria-atomic="true">
+                                    <div class="toast-header">
+                                      <i class="bx bx-bell me-2"></i>
+                                      <div class="me-auto fw-semibold">Loker</div>
+                                      <small>Just now</small>
+                                      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                                    </div>
+                                    <div class="toast-body">
+                                      Pengajuan Lamaran Sukses
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                                      <div class="modal-content">
+                                          <div class="modal-header">
+                                              <h5 class="modal-title" id="exampleModalLabel">Detail</h5>
+                                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                          </div>
+                                          <div class="modal-body">
+                                              <h2 class="card-title mb-3">PT Forit</h2>
+                                              <label for="" class="card-text mb-3">Provinsi, Kota/Kabupaten, Kecamatan, Kelurahan</label><br>
+                                              <label for="" class="card-text mb-3">Jabatan : Software Engineering</label><br>
+                                              <label for="" class="card-text mb-3">Jenis Pekerjaan : Fulltime</label><br>
+                                              <h2 class="card-title">Deskripsi</h2>
+                                              <label for="" class="card-text mb-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus reprehenderit voluptatibus facilis rerum laboriosam. Quibusdam nulla itaque maiores libero animi expedita non aliquid ea delectus iusto? Sunt aliquam ipsum recusandae.</label>
+
+                                              <!-- Toast -->
+                                              <!-- <button type="button" class="btn btn-primary" id="saveChanges">Kirim Lamaran</button> -->
+                                              <!-- <div class="position-fixed buttom-0 end-0 p-3" style="z-index: 11">
+                                                <div id="toastExample" class="toast align-items-center bg-primary" role="alert" aria-live="assertive" aria-atomic="true">
+                                                  <div class="toast-header">
+                                                    <i class="bx bx-bell me-2"></i>
+                                                    <div class="me-auto fw-semibold">Loker</div>
+                                                    <small>Just now</small>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                                                  </div>
+                                                  <div class="toast-body">
+                                                    Pengajuan Lamaran Sukses
+                                                  </div>
+                                                </div>
+                                              </div> -->
+                                        </div>
+                                        <div class="modal-footer">
+                                            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                                            <a href="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal" class="btn btn-primary">Kirim Lamaran Cepat</a>
+                                            <a href="#exampleModalToggle1" data-bs-toggle="modal" data-bs-dismiss="modal" class="btn btn-primary">Kirim Lamaran Lewat File</a>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalToggleLabel2">Lamaran Cepat</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                    Kami akan mengirim lamaran cepat dengan data yang ada di profil
+                                    </div>
+                                    <div class="modal-footer">
+                                      <!-- <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button> -->
+                                      <div class="button btn btn-primary" id="saveChanges">Kirim Lamaran</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="modal fade" id="exampleModalToggle1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel1" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalToggleLabel1">Lamaran Lewat File</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="input-group">
+                                        <input type="file" class="form-control" id="inputGroupFile02" />
+                                        <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                                      </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Kirim Lamaran</button>
+                                      <!-- <div class="button btn btn-primary" data-bs-target="#toastExample" id="saveChanges">Kirim Lamaran</div> -->
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                              </div>
+                          </div>
+                      </div>
+                            <div class="col-md-6 mb-4">
                                 <div class="card">
-                                    <img src="/assets/img/logo/Purple White Orange Modern Geometric Digital Marketing Training Banner.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <img src="/template/assets/img/logo/Program.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                  <p class="card-text">Kami menyediakan loker untuk perusahaan PT Forit</p>
+                                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Detail
+                                  </button>
+                                  
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="card">
-                                <img src="..." class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="col-md-6 mb-4">
+                                <div class="card">
+                                    <img src="/template/assets/img/logo/Program.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                  <p class="card-text">Kami menyediakan loker untuk perusahaan PT Forit</p>
+                                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Detail
+                                  </button>
+                                  
                                 </div>
                             </div>
                         </div>
-                    </div>
-                  </div>
-                
-                <!-- Total Revenue -->
-              </div>
-                <!--/ Total Revenue -->
+                            <div class="col-md-6 mb-4">
+                                <div class="card">
+                                    <img src="/template/assets/img/logo/Program.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                  <p class="card-text">Kami menyediakan loker untuk perusahaan PT Forit</p>
+                                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Detail
+                                  </button>
+                                  
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Total Revenue -->
+                        </div>
+                        <!--/ Total Revenue -->
               
-            </div>
-            <!-- / Content -->
-
+                        </div>
+                        <!-- / Content -->
+                        
             <!-- Footer -->
-            <section id="basic-footer">
-              <footer class="footer bg-footer-theme">
-                <div
-                class="container-fluid d-flex flex-md-row flex-column justify-content-between align-items-md-center gap-1 container-p-x py-3"
-                >
-                <div>
-                    <a
-                      href="https://themeselection.com/demo/sneat-bootstrap-html-admin-template/landing/"
-                      target="_blank"
-                      class="footer-text fw-bolder"
-                      >Karis Sebelass</a
-                    >
-                    ©
-                  </div>
+            <!-- / Footer-->
+            
+            <!-- Content wrapper -->
+            
+            <!-- / Layout page -->
+            </div>
+              <section id="basic-footer">
+                <footer class="footer bg-footer-theme">
+                  <div
+                  class="container-fluid d-flex flex-md-row flex-column justify-content-between align-items-md-center gap-1 container-p-x py-3"
+                  >
                   <div>
-                    <a href="https://themeselection.com/license/" class="footer-link me-4" target="_blank">License</a>
-                    <a href="javascript:void(0)" class="footer-link me-4">Help</a>
-                    <a href="javascript:void(0)" class="footer-link me-4">Contact</a>
-                    <a href="javascript:void(0)" class="footer-link">Terms &amp; Conditions</a>
-                  </div>
-                </div>
-              </footer>
-            </section>
-            <!-- / Footer -->
-
-            <div class="content-backdrop fade"></div>
-          </div>
-          <!-- Content wrapper -->
-        </div>
-        <!-- / Layout page -->
-      </div>
-
-      <!-- Overlay -->
-      <div class="layout-overlay layout-menu-toggle"></div>
-    </div>
-    <!-- / Layout wrapper -->
-
-    
-
+                      <a
+                        href="https://themeselection.com/demo/sneat-bootstrap-html-admin-template/landing/"
+                        target="_blank"
+                        class="footer-text fw-bolder"
+                        >Karis Sebelass</a
+                      >
+                      ©
+                      </div>
+                      <div>
+                        <a href="https://themeselection.com/license/" class="footer-link me-4" target="_blank">License</a>
+                        <a href="javascript:void(0)" class="footer-link me-4">Help</a>
+                        <a href="javascript:void(0)" class="footer-link me-4">Contact</a>
+                        <a href="javascript:void(0)" class="footer-link">Terms &amp; Conditions</a>
+                        </div>
+                        </div>
+                        </footer>
+                        </section>
+                      
+                      <!-- Overlay -->
+                      <div class="layout-overlay layout-menu-toggle"></div>
+                      </div>
+                      <!-- / Layout wrapper -->
+                      <div class="content-backdrop fade"></div>
+                    </div>
+                      
+                      
+                      
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
     <script src="../../assets/vendor/libs/jquery/jquery.js"></script>
@@ -316,6 +410,8 @@
     <script src="../../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
 
     <script src="../../assets/vendor/js/menu.js"></script>
+    <!-- <script src="../../assets/js/ui-toasts.js"></script> -->
+
     <!-- endbuild -->
 
     <!-- Vendors JS -->
@@ -325,6 +421,7 @@
     <script src="../../assets/js/main.js"></script>
     <script src="../../assets/js/table-search.js"></script>
     <script src="../../assets/js/pagiantion.js"></script>
+    <script src="../../assets/js/toast-modal.js"></script>
 
     <!-- Page JS -->
     <script src="../../assets/js/dashboards-analytics.js"></script>

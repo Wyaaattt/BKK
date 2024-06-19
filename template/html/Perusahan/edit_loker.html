@@ -27,12 +27,12 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Horizontal Layouts - Forms | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
+    <title>Edit Loker</title>
 
     <meta name="description" content="" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="../../assets/img/favicon/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="../../assets/img/logo/smkn11.png" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -73,7 +73,7 @@
             <div class="app-brand demo">
               <a href="index.html" class="app-brand-link">
                 <!-- <span class="app-brand-text demo menu-text fw-bolder ms-2">Sneat</span> -->
-                <img src="../../assets/img/logo/karir_sebelas.png" width="190px" height="80px"></img>
+                <img src="../../assets/img/logo/KARIR_sebelas.jpeg" width="190px" height="80px"></img>
               </a>
               
               <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -85,12 +85,7 @@
   
             <ul class="menu-inner py-1">
               <!-- Dashboard -->
-              <li class="menu-item">
-                <a href="dashboard.html" class="menu-link">
-                  <i class="menu-icon tf-icons bx bxs-graduation"></i>
-                  <div data-i18n="Analytics">Penelusuran Alumni</div>
-                </a>
-              </li>
+              
   
               <!-- Layouts -->
               <li class="menu-item active">
@@ -183,7 +178,7 @@
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end">
                     <li>
-                      <a class="dropdown-item" href="profile.html">
+                      <a class="dropdown-item" href="profil.html">
                         <div class="d-flex">
                           <div class="flex-shrink-0 me-3">
                             <div class="avatar avatar-online">
@@ -201,7 +196,7 @@
                       <div class="dropdown-divider"></div>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="/html/Real/login.html">
+                      <a class="dropdown-item" href="../Real/login.html">
                         <i class="bx bx-power-off me-2"></i>
                         <span class="align-middle">Log Out</span>
                       </a>
@@ -229,13 +224,13 @@
                 <div class="col-xxl">
                   <div class="card mb-4">
                     <div class="card-header d-flex align-items-center justify-content-between">
-                      <h5 class="mb-0">Edit Loker</h5>
+                      <h5 class="mb-0 card-title">Edit Loker</h5>
                     </div>
                     <div class="card-body">
                       <form>
                         <div class="row mb-3">
                           <div class="col-md-6">
-                            <label class="col-sm-12 col-form-label" for="basic-icon-default-fullname">Jabatan</label>
+                            <label class="col-sm-12 card-title" for="basic-icon-default-fullname">Jabatan</label>
                             <div class="input-group input-group-merge">
                               <span id="basic-icon-default-fullname2" class="input-group-text"
                                 ><i class="bx bx-user"></i
@@ -251,25 +246,21 @@
                             </div>
                           </div>
                           <div class="col-md-6">
-                            <label class="col-sm-12 col-form-label" for="basic-icon-default-company">Jenis Pekerjaan</label>
+                            <label class="col-sm-12 card-title" for="basic-icon-default-company">Jenis Pekerjaan</label>
                             <div class="input-group input-group-merge">
                               <span id="basic-icon-default-company2" class="input-group-text"
-                                ><i class="bx bx-buildings"></i
+                                ><i class="bx bx-alarm"></i
                               ></span>
-                              <input
-                                type="text"
-                                id="basic-icon-default-company"
-                                class="form-control"
-                                placeholder="ACME Inc."
-                                aria-label="ACME Inc."
-                                aria-describedby="basic-icon-default-company2"
-                              />
+                              <select name="" id="" class="form-select">
+                                <option value=""selected>Fulltime</option>
+                                <option value=""selected>Kontrak</option>
+                              </select>
                             </div>
                           </div>
                         </div>
                         <div class="row mb-3">
                           <div class="col-md-12">
-                            <label class="col-sm-2 form-label" for="basic-icon-default-phone">Deskripsi</label>
+                            <label class="col-sm-2 card-title" for="basic-icon-default-phone">Deskripsi</label>
                             <div class="input-group input-group-merge">
                               <!-- <span id="basic-icon-default-phone2" class="input-group-text" -->
                                 <!-- ><i class="bx bx-phone"></i -->
@@ -280,7 +271,7 @@
                          
                         <div class="row mt-3">
                           <div class="col-md-12">
-                            <button type="submit" class="btn btn-primary">Send</button>
+                            <a href="data_loker.html" class="btn btn-primary">Save</a>
                           </div>
                         </div>
                       </form>

@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+
+<!-- =========================================================
+* Sneat - Bootstrap 5 HTML Admin Template - Pro | v1.0.0
+==============================================================
+
+* Product Page: https://themeselection.com/products/sneat-bootstrap-html-admin-template/
+* Created by: ThemeSelection
+* License: You must have a valid license purchased in order to legally use the theme for your project.
+* Copyright ThemeSelection (https://themeselection.com)
+
+=========================================================
+ -->
+<!-- beautify ignore:start -->
+<html
+  lang="en"
+  class="light-style layout-menu-fixed"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="../../assets/"
+  data-template="vertical-menu-template-free"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+
+    <title>Data Alumni</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../../assets/img/logo/smkn11.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons. Uncomment required icon fonts -->
+    <link rel="stylesheet" href="../../assets/vendor/fonts/boxicons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="../../assets/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="../../assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="../../assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="../../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+
+    <link rel="stylesheet" href="../../assets/vendor/libs/apex-charts/apex-charts.css" />
+
+    <!-- Page CSS -->
+
+    <!-- Helpers -->
+    <script src="../../assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="../../assets/js/config.js"></script>
+  </head>
+
+  <body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+        <!-- Menu -->
+
+        <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+          <div class="app-brand demo">
+            <a href="dashboard.html" class="app-brand-link">
+              <!-- <span class="app-brand-text demo menu-text fw-bolder ms-2">Sneat</span> -->
+              <img src="../../assets/img/logo/KARIR_sebelas.jpeg" width="190px" height="90px"></img>
+            </a>
+            
+            <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+              <i class="bx bx-chevron-left bx-sm align-middle"></i>
+            </a>
+          </div>
+          
+          <div class="menu-inner-shadow"></div>
+
+          <ul class="menu-inner py-1">
+            <!-- Dashboard -->
+            <li class="menu-item">
+              <a href="dashboard.html" class="menu-link menu-toggle">
+                <i class='menu-icon bx bxs-dashboard'></i>
+                <div data-i18n="Analytics">Dashboard</div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="riwayat_akun_alumni.html" class="menu-link">
+                    <i class="menu-icon tf-icons bx bxs-user-circle"></i>
+                    <div data-i18n="CRM"> Riwayat Akun Alumni</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">1</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="riwayat_akun_perusahaan.html" class="menu-link">
+                    <i class="menu-icon tf-icons bx bxs-building"></i>
+                    <div data-i18n="Analytics">Riwayat Akun Perusahaan</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">1</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="riwayat_loker.html" class="menu-link">
+                    <i class="menu-icon tf-icons bx bx-briefcase-alt-2"></i>
+                    <div data-i18n="eCommerce">Riwayat Loker</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">3</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="riwayat_lamaran.html" class="menu-link">
+                    <i class="menu-icon tf-icons bx bx-file"></i>
+                    <div data-i18n="Logistics">Riwayat Lamaran</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">2</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-header small text-uppercase"><span class="menu-header-text">Data</span></li>
+            <li class="menu-item active">
+              <a href="index.html" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bxs-graduation"></i>
+                <div data-i18n="Analytics">Data Alumni</div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="index.html" class="menu-link">
+                    <i class='menu-icon bx bxs-user-circle'></i>
+                    <div data-i18n="Logistics">Alumni Bergabung</div>
+                  </a>
+                </li>
+                <li class="menu-item active">
+                  <a href="belum_bergabung.html" class="menu-link">
+                    <i class="menu-icon bx bxs-user-minus"></i>
+                    <div data-i18n="Logistics">Alumni Belum Bergabung</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="import_alumni.html" class="menu-link">
+                    <i class="menu-icon bx bxs-user-plus"></i>
+                    <div data-i18n="Logistics">Import Alumni</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Layouts -->
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-id-card"></i>
+                <div data-i18n="Layouts">Data User</div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="perusahaa.html" class="menu-link menu-toggle">
+                    <i class="menu-icon tf-icons bx bxs-building"></i>
+                    <div data-i18n="Without menu">Akun Perusahaan</div>
+                  </a>
+                  <ul class="menu-sub">
+                    <li class="menu-item">
+                      <a href="perusahaa.html" class="menu-link">
+                        <i class='menu-icon bx bxs-building'></i>
+                        <div data-i18n="Logistics">Tampil Data</div>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="tambah_perusaha.html" class="menu-link">
+                        <i class="menu-icon bx bxs-user-plus"></i>
+                        <div data-i18n="Logistics">Tambah Data</div>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="alumni.html" class="menu-link menu-toggle">
+                      <i class="menu-icon tf-icons bx bxs-user-circle"></i>
+                    <div data-i18n="Without navbar">Akun Alumni</div>
+                  </a>
+                  <ul class="menu-sub">
+                    <li class="menu-item">
+                      <a href="alumni.html" class="menu-link">
+                        <i class="menu-icon bx bxs-user-circle"></i>
+                        <div data-i18n="Logistics">Tampil Data</div>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="tambah_alumni.html" class="menu-link">
+                        <i class='menu-icon bx bxs-user-plus'></i>
+                        <div data-i18n="Logistics">Tambah Data</div>
+                      </a>
+                    </li>
+                  </ul>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="loker.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-briefcase-alt-2"></i>
+                <div data-i18n="Authentications">Data Loker</div>
+              </a>
+            </li>
+            <li class="menu-item">
+                <a href="lamaran.html" class="menu-link menu-toggle">
+                  <i class="menu-icon tf-icons bx bx-file"></i>
+                  <div data-i18n="Misc">Data Lamaran</div>
+                </a>
+                <ul class="menu-sub">
+                  <li class="menu-item">
+                    <a href="lamaran.html" class="menu-link">
+                      <i class="menu-icon bx bxs-user-check"></i>
+                      <div data-i18n="Logistics">Terima</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="pending.html" class="menu-link">
+                      <i class='menu-icon bx bxs-user-detail'></i>
+                      <div data-i18n="Logistics">Pending</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <a href="loker.html" class="menu-link menu-toggle">
+                  <i class="menu-icon tf-icons bx bx-clipboard"></i>
+                  <div data-i18n="Authentications">Pengajuan</div>
+                </a>
+                <ul class="menu-sub">
+                  <li class="menu-item">
+                    <a href="pengajuan_alumni.html" class="menu-link">
+                      <i class="menu-icon bx bxs-user-circle"></i>
+                      <div data-i18n="Logistics">Alumni</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="pengajuan_perusahaan.html" class="menu-link">
+                      <i class='menu-icon bx bxs-building'></i>
+                      <div data-i18n="Logistics">Perusahaan</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            <!-- Components -->
+            <!-- <li class="menu-header small text-uppercase"><span class="menu-header-text">Components</span></li> -->
+            <!-- Cards -->
+            
+           
+
+            <!-- Forms & Tables -->
+            <!-- <li class="menu-header small text-uppercase"><span class="menu-header-text">Forms &amp; Tables</span></li> -->
+            <!-- Forms -->
+            
+            
+            <!-- Tables -->
+           
+            <!-- Misc -->
+            <!-- <li class="menu-header small text-uppercase"><span class="menu-header-text">Misc</span></li> -->
+           
+          </ul>
+        </aside>
+        <!-- / Menu -->
+
+        <!-- Layout container -->
+        <div class="layout-page">
+          <!-- Navbar -->
+
+          <nav
+            class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+            id="layout-navbar"
+          >
+            <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+              <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                <i class="bx bx-menu bx-sm"></i>
+              </a>
+            </div>
+
+            <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+              <!-- Search -->
+              <div class="navbar-nav align-items-center">
+                <div class="nav-item d-flex align-items-center">
+                  <i class="bx bx-search fs-4 lh-0"></i>
+                  <input
+                    type="text"
+                    class="form-control border-0 shadow-none"
+                    placeholder="Search../..."
+                    aria-label="Search../..."
+                  />
+                </div>
+              </div>
+              <!-- /Search -->
+
+              <ul class="navbar-nav flex-row align-items-center ms-auto">
+                <!-- Place this tag where you want the button to render. -->
+                
+                <!-- User -->
+                <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                  <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                    <div class="avatar avatar-online">
+                      <img src="../../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                    </div>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                      <a class="dropdown-item" href="profile.html">
+                        <div class="d-flex">
+                          <div class="flex-shrink-0 me-3">
+                            <div class="avatar avatar-online">
+                              <img src="../../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <span class="fw-semibold d-block">John Doe</span>
+                            <small class="text-muted">Admin</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="login.html">
+                        <i class="bx bx-power-off me-2"></i>
+                        <span class="align-middle">Log Out</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!--/ User -->
+              </ul>
+            </div>
+          </nav>
+
+          <!-- / Navbar -->
+
+          <!-- Content wrapper -->
+          <div class="content-wrapper">
+            <!-- Content -->
+
+            <div class="container-xxl flex-grow-1 container-p-y">
+              <div class=" col-lg-12 mb-4 order-0">
+              <div class="card">
+                <h5 class="card-header">Alumni Belum Bergabung</h5>
+                <form>
+                  <div class="row g-3 m-3">
+                    <div class="col-md-4">
+                      <label for="nama" class="card-title">Nama Lengkap</label>
+                      <div class="input-group input-group-merge">
+                        <span class="input-group-text"><i class="bx bxs-user"></i></span>
+                      <input class="form-control" type="text" id="searchInput" placeholder="John Doe" onkeyup="searchTable()">
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <label for="programKeahlian" class="card-title">Program Keahlian</label>
+                      <div class="input-group input-group-merge">
+                        <span class="input-group-text"><i class="bx bxs-book-content"></i></span>
+                      <select class="form-select" id="select1" aria-label="Default select example" onchange="searchTable1()">
+                        <option selected>Jurusan</option>
+                        <option value="1">PPLG</option>
+                        <option value="2">PM</option>
+                        <option value="3">DKV</option>
+                        <option value="4">AKL</option>
+                        <option value="5">MBLOG</option>
+                        <option value="6">MPLB</option>
+                        <option value="7">TJKT</option>
+                      </select>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <label for="tahunLulus" class="card-title">Tahun Lulus</label>
+                      <div class="input-group input-group-merge">
+                        <span class="input-group-text"><i class="bx bxs-calendar"></i></span>
+                      <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
+                        <option selected>Tahun Lulus</option>
+                        <option value="1">2020 - 2023</option>
+                        <option value="2">2023 - 2026</option>
+                        <option value="3">2026 - 2029</option>
+                      </select>
+                      </div>
+                    </div>
+                    <div class="col-md-1" style="padding-top: 36px;">
+                      <button class="btn btn-success" style="width: 150px;">Cari</button>
+                    </div>
+                  </div>
+                </form>
+                <div class="table-responsive text-nowrap">
+                  <table class="table m-2" id="myTable">
+                    <thead>
+                      <tr>
+                        <th>Foto</th>
+                        <th>NIS</th>
+                        <th>Nama Lengkap</th>
+                        <th>Jenis Kelamin</th>
+                        <th>Jurusan</th>
+                        <th>Tahun Lulus</th>  
+                        <th>Status</th>  
+                        <th>Aksi</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table-border-bottom-0">
+                      <tr>
+                        <td>
+                          <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
+                            <li
+                              data-bs-toggle="tooltip"
+                              data-popup="tooltip-custom"
+                              data-bs-placement="text-center"
+                              class="avatar avatar-xs pull-up"
+                              title="Christina Parker"
+                            >
+                              <img src="../../assets/img/avatars/7.png" alt="Avatar" class="rounded-circle" style="height: 40px; width: 40px;" />
+                            </li>
+                          </ul>
+                        </td>
+                        <td>234247</td>
+                        <td>Fatir Rohman</td>
+                        <td>
+                          Laki-Laki
+                      </td>
+                        <td>
+                          RPL
+                      </td>
+                      <td>2021-2024</td>
+                      <td>
+                        <span class="badge bg-label-danger me-1">Belum Bergabung</span>
+                    </td>
+                        <td>
+                          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal_julius">
+                            Detail
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="modal_julius" tabindex="-1" aria-labelledby="modal_julius_label" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="modal_julius_label">Detail</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                            <div class="card-body">
+                                                <div class="d-flex flex-column align-items-center gap-4">
+                                                    <img
+                                                        src="../../assets/img/avatars/1.png"
+                                                        alt="user-avatar"
+                                                        class="d-block rounded"
+                                                        height="100"
+                                                        width="100"
+                                                        id="uploadedAvatar"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <hr class="my-0" />
+                                            <div class="card-body">
+                                              <div class="row">
+                                                <div class="col-md-6">
+                                                    <label for="inputEmail4" class="card-title">Provinsi</label><br>
+                                                    <label for="" class="card-text"><i class="bx bxs-building"></i>Jawa Barat</label>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                    <label for="inputPassword4" class="card-title">Kabupatan/Kota</label><br>
+                                                    <label for="" class="card-text"><i class="bx bxs-building"></i>Bandung</label>
+                                                  </div>
+                                                </div>
+                                                <div class="row mt-4">
+                                                  <div class="col-md-6">
+                                                    <label for="inputEmail4" class="card-title">Kecamatan</label><br>
+                                                    <label for="" class="card-text"><i class="bx bxs-building"></i>Sukajadi</label>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                    <label for="inputEmail4" class="card-title">Kelurahan</label><br>
+                                                    <label for="" class="card-text"><i class="bx bxs-building"></i>Sukahaji</label>
+                                                  </div>
+                                              </div>
+                                            </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                        </td>
+                      <tr>
+                        <td>
+                          <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
+                            <li
+                            data-bs-toggle="tooltip"
+                            data-popup="tooltip-custom"
+                            data-bs-placement="text-center"
+                            class="avatar avatar-xs pull-up"
+                            title="Christina Parker"
+                            >
+                              <img src="../../assets/img/avatars/6.png" alt="Avatar" class="rounded-circle" style="height: 40px; width: 40px;" />
+                            </li>
+                          </ul>
+                        </td>
+                        <td>253585</td>
+                        <td>Muhammad Farrel</td>
+                        <td>
+                         Laki-Laki
+                        </td>
+                        <td>
+                          RPL
+                      </td>
+                      <td>
+                        2021-2024
+                      </td>
+                      <td>
+                        <span class="badge bg-label-danger me-1">Belum Bergabung</span>
+                    </td>
+                        <td>
+                          <!-- Button to trigger modal -->
+                          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal_julius">
+                            Detail
+                        </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="modal_dava" tabindex="-1" aria-labelledby="modal_dava_label" aria-hidden="true">
+                              <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                  <div class="modal-content">
+                                      <div class="modal-header">
+                                          <h5 class="modal-title" id="modal_dava_label">Detail</h5>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                      </div>
+                                      <div class="modal-body">
+                                          <div class="card mb-4">
+                                              <h5 class="card-header">Alamat</h5>
+                                              <div class="card-body">
+                                                  <div class="d-flex flex-column align-items-center gap-4">
+                                                      <img
+                                                          src="../../assets/img/avatars/1.png"
+                                                          alt="user-avatar"
+                                                          class="d-block rounded"
+                                                          height="100"
+                                                          width="100"
+                                                          id="uploadedAvatar"
+                                                      />
+                                                  </div>
+                                              </div>
+                                              <hr class="my-0" />
+                                              <div class="card-body">
+                                                <div class="row">
+                                                  <div class="col-md-6">
+                                                      <label for="inputEmail4" class="form-label">Provinsi</label>
+                                                       <select class="form-select menu-link menu-toggle">
+                                                          <option>Provinsi</option>
+                                                          <option>Jawa Barat</option>
+                                                          <option>Nanggroe Aceh</option>
+                                                          <option>Kepulauan Riau</option>
+                                                       </select>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                      <label for="inputPassword4" class="form-label">Kabupatan/Kota</label>
+                                                      <select class="form-select">
+                                                          <option>Kabupatan/Kota</option>
+                                                          <option>Jakarta</option>
+                                                          <option>Bandung</option>
+                                                          <option>Kabupatan Nganjuk</option>
+                                                      </select>
+                                                    </div>
+                                                  </div>
+                                                  <div class="row mt-4">
+                                                    <div class="col-md-6">
+                                                      <label for="inputEmail4" class="form-label">Kecamatan</label>
+                                                      <select class="form-select">
+                                                          <option>Kecamatan</option>
+                                                          <option>Babakan Ciparay</option>
+                                                          <option>Kelay</option>
+                                                          <option>Laham</option>
+                                                      </select>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                      <label for="inputEmail4" class="form-label">Kelurahan</label>
+                                                      <select class="form-select">
+                                                          <option>Kelurahan</option>
+                                                          <option>Sukahaji</option>
+                                                          <option>Kayu Ara</option>
+                                                          <option>Bandugn Ujung</option>
+                                                      </select>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
+                            <li
+                              data-bs-toggle="tooltip"
+                              data-popup="tooltip-custom"
+                              data-bs-placement="text-center"
+                              class="avatar avatar-xs pull-up"
+                              title="Christina Parker"
+                            >
+                              <img src="../../assets/img/avatars/7.png" alt="Avatar" class="rounded-circle" style="height: 40px; width: 40px;" />
+                            </li>
+                          </ul>
+                        </td>
+                        <td>253474</td>
+                        <td>Satria Galang</td>
+                        <td>
+                         Laki-Laki
+                        </td>
+                        <td>
+                          RPL
+                        </td>
+                        <td>
+                          2021-2024
+                        </td>
+                        <td>
+                          <span class="badge bg-label-danger me-1">Belum Bergabung</span>
+                      </td>
+                        <td>
+                          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal_julius">
+                            Detail
+                        </button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="modal_acid" tabindex="-1" aria-labelledby="modal_acid_label" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="modal_acid_label">Detail</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="card mb-4">
+                                            <h5 class="card-header">Alamat</h5>
+                                            <div class="card-body">
+                                                <div class="d-flex flex-column align-items-center gap-4">
+                                                    <img
+                                                        src="../../assets/img/avatars/1.png"
+                                                        alt="user-avatar"
+                                                        class="d-block rounded"
+                                                        height="100"
+                                                        width="100"
+                                                        id="uploadedAvatar"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <hr class="my-0" />
+                                            <div class="card-body">
+                                                <form>
+                                                  <div class="row mb-3">
+                                                      <!-- <label class="col-sm-2 col-form-label" for="basic-icon-default-company">Alamat</label> -->
+                                                      <div class="row">
+                                                      <div class="col-md-6">
+                                                          <label for="inputEmail4" class="form-label">Provinsi</label>
+                                                           <select class="form-select menu-link menu-toggle">
+                                                              <option>Provinsi</option>
+                                                              <option>Jawa Barat</option>
+                                                              <option>Nanggroe Aceh</option>
+                                                              <option>Kepulauan Riau</option>
+                                                           </select>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                          <label for="inputPassword4" class="form-label">Kabupatan/Kota</label>
+                                                          <select class="form-select">
+                                                              <option>Kabupatan/Kota</option>
+                                                              <option>Jakarta</option>
+                                                              <option>Bandung</option>
+                                                              <option>Kabupatan Nganjuk</option>
+                                                          </select>
+                                                        </div>
+                                                      </div>
+                                                      <div class="row mt-4">
+                                                        <div class="col-md-6">
+                                                          <label for="inputEmail4" class="form-label">Kecamatan</label>
+                                                          <select class="form-select">
+                                                              <option>Kecamatan</option>
+                                                              <option>Babakan Ciparay</option>
+                                                              <option>Kelay</option>
+                                                              <option>Laham</option>
+                                                          </select>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                          <label for="inputEmail4" class="form-label">Kelurahan</label>
+                                                          <select class="form-select">
+                                                              <option>Kelurahan</option>
+                                                              <option>Sukahaji</option>
+                                                              <option>Kayu Ara</option>
+                                                              <option>Bandugn Ujung</option>
+                                                          </select>
+                                                        </div>
+                                                    </div>
+                                                  </div>
+                                                </form>
+                                              </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
+                            <li
+                            data-bs-toggle="tooltip"
+                            data-popup="tooltip-custom"
+                            data-bs-placement="text-center"
+                            class="avatar avatar-xs pull-up"
+                            title="Christina Parker"
+                            >
+                              <img src="../../assets/img/avatars/6.png" alt="Avatar" class="rounded-circle" style="height: 40px; width: 40px;" />
+                            </li>
+                          </ul>
+                        </td>
+                        <td>264694</td>
+                        <td>Andini Rohyaini</td>
+                        <td>
+                         Perempuan
+                        </td>
+                        <td>
+                          RPL
+                        </td>
+                        <td>
+                        2021-2024
+                        </td> 
+                        <td>
+                          <span class="badge bg-label-danger me-1">Belum Bergabung</span>
+                      </td>
+                        <td>
+                          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal_julius">
+                            Detail
+                        </button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="modal_afdhal" tabindex="-1" aria-labelledby="modal_afdhal_label" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="modal_afdhal_label">Detail</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="card mb-4">
+                                            <h5 class="card-header">Profile</h5>
+                                            <div class="card-body">
+                                                <div class="d-flex flex-column align-items-center gap-4">
+                                                    <img
+                                                        src="../../assets/img/avatars/1.png"
+                                                        alt="user-avatar"
+                                                        class="d-block rounded"
+                                                        height="100"
+                                                        width="100"
+                                                        id="uploadedAvatar"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <hr class="my-0" />
+                                            <div class="card-body">
+                                              <div class="row">
+                                                <div class="col-md-6">
+                                                    <label for="inputEmail4" class="card-title">Provinsi</label>
+                                                    <label for="" class="card-text"><i class="bx bxs-building"></i>Jawa Barat</label>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                    <label for="inputPassword4" class="form-label">Kabupatan/Kota</label>
+                                                    <select class="form-select">
+                                                        <option>Kabupatan/Kota</option>
+                                                        <option>Jakarta</option>
+                                                        <option>Bandung</option>
+                                                        <option>Kabupatan Nganjuk</option>
+                                                    </select>
+                                                  </div>
+                                                </div>
+                                                <div class="row mt-4">
+                                                  <div class="col-md-6">
+                                                    <label for="inputEmail4" class="form-label">Kecamatan</label>
+                                                    <select class="form-select">
+                                                        <option>Kecamatan</option>
+                                                        <option>Babakan Ciparay</option>
+                                                        <option>Kelay</option>
+                                                        <option>Laham</option>
+                                                    </select>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                    <label for="inputEmail4" class="form-label">Kelurahan</label>
+                                                    <select class="form-select">
+                                                        <option>Kelurahan</option>
+                                                        <option>Sukahaji</option>
+                                                        <option>Kayu Ara</option>
+                                                        <option>Bandugn Ujung</option>
+                                                    </select>
+                                                  </div>
+                                              </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          
+                        </td>
+                      </tr>
+                      <tfoot class="table-border-bottom-0">
+                        <tr>
+                          <th>Foto</th>
+                          <th>NIS</th>
+                          <th>Nama Lengkap</th>
+                          <th>Jenis Kalamin</th>
+                          <th>Jurusan</th>
+                          <th>Tahun Lulus</th>  
+                          <th>Status</th>  
+                          <th>Aksi</th>
+                        </tr>
+                      </tfoot>
+                    </tbody>
+                  </table>
+                  <nav aria-label="Page navigation">
+                    <ul class="pagination s justify-content-end mt-3" id="pagination">
+                      <li class="page-item prev">
+                        <a class="page-link" href="javascript:void(0);"><i class="tf-icon bx bx-chevrons-left"></i></a>
+                      </li>
+                      <li class="page-item next">
+                        <a class="page-link" href="javascript:void(0);"><i class="tf-icon bx bx-chevrons-right"></i></a>
+                      </li>
+                    </ul>
+                  </nav>
+
+                </div>
+              </div>
+            </div>
+            <!-- / Content -->
+            
+
+            
+            <div class="content-backdrop fade"></div>
+          </div>
+          <!-- Footer -->
+          <section id="basic-footer">
+            <footer class="footer bg-footer-theme">
+              <div
+              class="container-fluid d-flex flex-md-row flex-column justify-content-between align-items-md-center gap-1 container-p-x py-3"
+              >
+              <div>
+                  <a
+                    href="https://themeselection.com/demo/sneat-bootstrap-html-admin-template/landing/"
+                    target="_blank"
+                    class="footer-text fw-bolder"
+                    >Karis Sebelass</a
+                  >
+                  ©
+                </div>
+                <div>
+                  <a href="https://themeselection.com/license/" class="footer-link me-4" target="_blank">License</a>
+                  <a href="javascript:void(0)" class="footer-link me-4">Help</a>
+                  <a href="javascript:void(0)" class="footer-link me-4">Contact</a>
+                  <a href="javascript:void(0)" class="footer-link">Terms &amp; Conditions</a>
+                </div>
+              </div>
+            </footer>
+          </section>
+          <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+          <!-- / Footer -->
+      </div>
+
+      <!-- Overlay -->
+        <div class="layout-overlay layout-menu-toggle"></div>
+      </div>
+    </div>
+    
+    <!-- / Layout wrapper -->
+
+    
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+    <script src="../../assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="../../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../../assets/vendor/js/bootstrap.js"></script>
+    <script src="../../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+    <script src="../../assets/vendor/js/menu.js"></script>
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+    <script src="../../assets/vendor/libs/apex-charts/apexcharts.js"></script>
+
+    <!-- Main JS -->
+    <script src="../../assets/js/main.js"></script>
+    <script src="../../assets/js/table-search.js"></script>
+    <script src="../../assets/js/pagiantion.js"></script>
+
+    <!-- Page JS -->
+    <script src="../../assets/js/dashboards-analytics.js"></script>
+
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </body>
+</html>

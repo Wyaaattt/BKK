@@ -27,12 +27,12 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Admin - Dashboard</title>
+    <title>Dashboard</title>
 
     <meta name="description" content="" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="../../assets/img/favicon/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="../../assets/img/logo/" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -96,35 +96,55 @@
                 <li class="menu-item">
                   <a href="riwayat_akun_alumni.html" class="menu-link">
                     <i class="menu-icon tf-icons bx bxs-user-circle"></i>
-                    <div data-i18n="CRM">Alumni</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">1</div>
+                    <div data-i18n="CRM">Riwayat Akun Alumni</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">1</div>
                   </a>
                 </li>
                 <li class="menu-item">
                   <a href="riwayat_akun_perusahaan.html" class="menu-link">
                     <i class="menu-icon tf-icons bx bxs-building"></i>
-                    <div data-i18n="Analytics">Perusahaan</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">1</div>
+                    <div data-i18n="Analytics"> Riwayat Akun Perusahaan</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">1</div>
                   </a>
                 </li>
                 <li class="menu-item">
                   <a href="riwayat_loker.html" class="menu-link">
                     <i class="menu-icon tf-icons bx bx-briefcase-alt-2"></i>
-                    <div data-i18n="eCommerce">Loker</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">3</div>
+                    <div data-i18n="eCommerce">Riwayat Loker</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">3</div>
                   </a>
                 </li>
                 <li class="menu-item">
                   <a href="riwayat_lamaran.html" class="menu-link">
                     <i class="menu-icon tf-icons bx bx-file"></i>
-                    <div data-i18n="Logistics">Lamaran</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">2</div>
+                    <div data-i18n="Logistics">Riwayat Lamaran</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">2</div>
                   </a>
                 </li>
               </ul>
             </li>
             <li class="menu-header small text-uppercase"><span class="menu-header-text">Data</span></li>
             <li class="menu-item">
-              <a href="index.html" class="menu-link">
+              <a href="index.html" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bxs-graduation"></i>
                 <div data-i18n="Analytics">Data Alumni</div>
               </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="index.html" class="menu-link">
+                    <i class='menu-icon bx bxs-user-circle'></i>
+                    <div data-i18n="Logistics">Alumni Bergabung</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="belum_bergabung.html" class="menu-link">
+                    <i class="menu-icon bx bxs-user-minus"></i>
+                    <div data-i18n="Logistics">Alumni Belum Bergabung</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="import_alumni.html" class="menu-link">
+                    <i class="menu-icon bx bxs-user-plus"></i>
+                    <div data-i18n="Logistics">Import Alumni</div>
+                  </a>
+                </li>
+              </ul>
             </li>
             <!-- Layouts -->
             <li class="menu-item">
@@ -176,31 +196,77 @@
               </ul>
             </li>
             <li class="menu-item">
-              <a href="loker.html" class="menu-link menu-toggle">
+              <a href="loker.html" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-briefcase-alt-2"></i>
                 <div data-i18n="Authentications">Data Loker</div>
               </a>
+            </li>
+            <li class="menu-item">
+              <a href="lamaran.html" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-file"></i>
+                <div data-i18n="Misc">Data Lamaran</div>
+              </a>
               <ul class="menu-sub">
-                <li class="menu-item ">
-                  <a href="loker.html" class="menu-link">
-                    <i class='menu-icon bx bx-briefcase-alt-2'></i>
-                    <div data-i18n="Logistics">Tampil Data</div>
+                <li class="menu-item">
+                  <a href="lamaran.html" class="menu-link">
+                    <i class="menu-icon bx bxs-user-check"></i>
+                    <div data-i18n="Logistics">Terima</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="tambah_loker.html" class="menu-link">
-                    <i class='menu-icon bx bxs-user-plus'></i>
-                    <div data-i18n="Logistics">Tambah Data</div>
+                  <a href="pending.html" class="menu-link">
+                    <i class='menu-icon bx bxs-user-detail'></i>
+                    <div data-i18n="Logistics">Pending</div>
                   </a>
                 </li>
               </ul>
             </li>
             <li class="menu-item">
-              <a href="lamaran.html" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-file"></i>
-                <div data-i18n="Misc">Data Lamaran</div>
+              <a href="loker.html" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-clipboard"></i>
+                <div data-i18n="Authentications">Pengajuan</div>
               </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="pengajuan_alumni.html" class="menu-link">
+                    <i class="menu-icon bx bxs-user-circle"></i>
+                    <div data-i18n="Logistics">Alumni</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="pengajuan_perusahaan.html" class="menu-link">
+                    <i class='menu-icon bx bxs-building'></i>
+                    <div data-i18n="Logistics">Perusahaan</div>
+                  </a>
+                </li>
+              </ul>
             </li>
+            <li class="menu-item">
+              <div class="row mt-3">
+                <div class="col-md-12">
+                  <div class="card mx-auto shadow p-3" style="width: 200px;"> <!-- 'mx-auto' to center the card horizontally -->
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center" style="padding: 10px;">
+                      <i class="menu-icon tf-icons bx bxs-user-circle" style="font-size: 50px; margin-bottom: 10px;"></i>
+                      <h5 class="card-title" style="white-space: nowrap; font-size: 14px;">Pengajuan Alumni</h5>
+                      <!-- <small class="text-success fw-medium"><i class="bx bx-up-arrow-alt"></i> +72</small> -->
+                      <a href="pengajuan_cek_alumni.html" class="btn btn-success">Lihat</a>
+                    </div>
+                  </div>
+                </div>
+              </div>  
+              <div class="row mt-3">
+                <div class="col-md-12">
+                  <div class="card mx-auto shadow p-3" style="width: 200px;"> <!-- 'mx-auto' to center the card horizontally -->
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center" style="padding: 10px;">
+                      <i class="menu-icon tf-icons bx bxs-building" style="font-size: 50px; margin-bottom: 10px;"></i>
+                      <h5 class="card-title" style="white-space: nowrap; font-size: 14px;">Pengajuan Loker</h5>
+                      <!-- <small class="text-success fw-medium"><i class="bx bx-up-arrow-alt"></i> +32</small> -->
+                       <a href="pengajuan_cek_perusahaan.html" class="btn btn-success">Lihat</a>
+                    </div>
+                  </div>
+                </div>
+              </div>  
+          </li>
           </ul>
         </aside>
         <!-- / Menu -->
@@ -254,7 +320,7 @@
                             </div>
                           </div>
                           <div class="flex-grow-1">
-                            <span class="fw-semibold d-block">John Doe</span>
+                            <span class="fw-semibold d-block">Fahal Malik</span>
                             <small class="text-muted">Admin</small>
                           </div>
                         </div>
@@ -288,7 +354,7 @@
                   <div class="card">
                     <div class="card-body align-items-center">
                       <i class="menu-icon tf-icons bx bxs-user-circle" style="font-size: 100px; margin-bottom: 20px;"></i>
-                      <h5 class="card-title">Laporan Akun Alumni</h5>
+                      <h5 class="card-title"  style="white-space: nowrap;">Riwayat Akun Alumni</h5>
                       <a href="riwayat_akun_alumni.html" type="button" class="btn btn-primary position-relative">
                         Lihat Detail
                         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
@@ -303,7 +369,7 @@
                   <div class="card">
                     <div class="card-body align-items-center">
                       <i class="menu-icon tf-icons bx bxs-building" style="font-size: 100px; margin-bottom: 20px;"></i>
-                      <h5 class="card-title">Laporan Akun Perusahaan</h5>
+                      <h5 class="card-title" style="white-space: nowrap;">Riwayat Akun Perusahaan</h5>
                       <a href="riwayat_akun_perusahaan.html" type="button" class="btn btn-primary position-relative">
                         Lihat Detail
                         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
@@ -318,7 +384,7 @@
                   <div class="card">
                     <div class="card-body align-items-center">
                         <i class="menu-icon tf-icons bx bx-briefcase-alt-2"style="font-size: 100px; margin-bottom: 20px;"></i>
-                      <h5 class="card-title">Laporan Loker</h5>
+                      <h5 class="card-title"  style="white-space: nowrap;">Riwayat Loker</h5>
                       <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
                       <a href="riwayat_loker.html" type="button" class="btn btn-primary position-relative">
                         Lihat Detail
@@ -334,7 +400,7 @@
                   <div class="card">
                     <div class="card-body align-items-center">
                         <i class="menu-icon tf-icons bx bx-file" style="font-size: 100px; margin-bottom: 20px;"></i>
-                      <h5 class="card-title">Laporan Lamaran</h5>
+                      <h5 class="card-title"  style="white-space: nowrap;">Riwayat Lamaran</h5>
                       <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
                       <a href="riwayat_lamaran.html" type="button" class="btn btn-primary position-relative">
                         Lihat Detail
@@ -363,8 +429,9 @@
                       <div class="col-sm-5 text-center text-sm-left">
                         <div class="card-body pb-0 px-0 px-md-4">
                           <img
-                            src="../../assets/img/illustrations/man-with-laptop-light.png"
+                            src="../../assets/img/logo/11_sebelas.png"
                             height="200"
+                            
                             alt="View Badge User"
                             data-app-dark-img="illustrations/man-with-laptop-dark.png"
                             data-app-light-img="illustrations/man-with-l  aptop-light.png"
@@ -378,16 +445,26 @@
               
               <div class="row">
                 <div class="col-12 col-lg-12 order-2 order-md-3 order-lg-2 mb-4">
-                  <div class="card">
-                    <div class="row row-bordered g-0">
-                      <div class="col-md-12">
-                        <h5 class="card-header m-0 me-2 pb-3">Alumni</h5>
-                        <div id="chart" class="px-2"></div>
-                      </div>
+                    <div class="card">
+                        <div class="row row-bordered g-0">
+                            <div class="col-md-12">
+                                <!-- Elemen pembungkus baru untuk judul dan select -->
+                                <div class="d-flex justify-content-between align-items-center p-3">
+                                    <h5 class="card-header m-0 me-2">Alumni Baru dan Alumni Bekerja</h5>
+                                    <select name="" id="" class="form-select w-auto">
+                                        <option value="">2025</option>
+                                        <option value="">2023</option>
+                                        <option value="">2022</option>
+                                        <option value="">2021</option>
+                                    </select>
+                                </div>
+                                <div id="chart" class="px-2"></div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
+            </div>
+            
                 
                 <!--/ Total Revenue -->
               

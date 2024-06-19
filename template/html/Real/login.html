@@ -32,7 +32,7 @@
     <meta name="description" content="" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="../../assets/img/logo/logo12.png" />
+    <link rel="icon" type="image/x-icon" href="../../assets/img/logo/smkn11.png" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -64,7 +64,7 @@
     <script src="../../assets/js/config.js"></script>
   </head>
 <body>
-<div class="container-xxl-fluid" style="background-image: url(/assets/img/backgrounds/bg1.jpg);">
+<div class="container-xxl">
     <div class="authentication-wrapper authentication-basic">
         <div class="authentication-inner">
             <!-- Register -->
@@ -72,61 +72,72 @@
                 <div class="card-body">
                     <!-- Logo -->
                     <div class="app-brand justify-content-center">
-                        <a href="index.html" class="app-brand-link gap-2">
+                        <a href="dashboard.html" class="app-brand-link gap-2">
                             <img src="../../assets/img/logo/KARIR_sebelas.jpeg" width="300px" height="200px"></img>
                         </a>
                     </div>
                     <!-- /Logo -->
                     <!-- <h4 class="mb-2">Welcome to Sneat! 👋</h4> -->
-                    <!-- <p class="mb-4">Please sign-in to your account and start the adventure</p> -->
+                    <!-- <p class="mb-4">Please sign-in to your account and start the adventure</p> 
+                    <label for="firstName" class="form-label">Nama Lengkap</label>
+                              <div class="input-group input-group-merge">
+                                <span class="input-group-text"><i class="bx bxs-user-circle"></i></span>
+                               <input type="text" class="form-control" value="Gultom Julius">
+                              </div> 
+                    -->
 
                     <form id="formAuthentication" class="mb-3" action="index.html" method="POST">
                         <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
+                            <label for="email" class="card-title">Email</label>
+                            <div class="input-group input-group-merge">
+                            <span class="input-group-text"><i class="bx bxs-envelope"></i></span>
                             <input
-                                type="text"
+                                type="email"
                                 class="form-control"
-                                id="email"
                                 name="email-username"
-                                placeholder="Masukan Email Anda"
-                                autofocus
+                                  
                             />
                         </div>
+                        </div>
                         <div class="mb-3 form-password-toggle">
-                            <div class="d-flex justify-content-between">
-                                <label class="form-label" for="password">Password</label>
-                                <a href="auth-forgot-password-basic.html">
+                            <div class="d-flex justify-content-between" >
+                                <label class="card-title" for="password">Password</label>
+                                <a href="forgot_password.html">
                                     <small>Lupa Password?</small>
                                 </a>
                             </div>
-                            <div class="input-group input-group-merge">
-                                <input
-                                    type="password"
-                                    id="password"
-                                    class="form-control"
-                                    name="password"
-                                    placeholder="Masukan Password Anda"
-                                    aria-describedby="password"
-                                />
-                                <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
+                            <div class="input-group input-group-merge" id="basic-default-password-group">
+                              <span class="input-group-text cursor-pointer" id="basic-default-password-toggle">
+                                <i class="bx bx-hide"></i>
+                              </span>
+                              <input
+                                type="password"
+                                class="form-control"
+                                id="basic-default-password"
+                                aria-describedby="basic-default-password-group"
+                              />
                             </div>
+                            
                         </div>
                         <div class="mb-3">
-                            <button class="btn btn-primary d-grid w-100" type="submit">Login</button>
+                            <a class="btn btn-primary d-grid w-100" href="../Alumni/profile.html">Login</a>
                         </div>
                     </form>
 
                     <p class="text-center">
                         <!-- <span>Alumni Baru?</span> -->
-                        <a href="#">
+                        <a href="../Alumni/profile.html">
                             <span>Alumni |</span>
-                          </a>
-                        <a href="/html/Perusahan/dashboard.html">
+                          </a> 
+                        <a href="/template/html/Perusahan/data_loker.html">
                             <span>Perusahaan |</span>
-                          </a>
+                          </a> 
                         <a href="dashboard.html">
                             <span>Admin</span>
-                          </a>      
+                          </a><br> 
+                          <label class="card-text">Pengguna Baru?</label>
+                          <a href="../Alumni/cekdata.html">
+                            Cek Data Kamu</a>
                     </p>
                 </div>
             </div>
@@ -134,5 +145,7 @@
         </div>
     </div>
 </div>
+<script src="../../assets/js/show-hide-password.js"></script>
+<script src="../../assets/js/form-basic-inputs.js"></script>
 </body>
 </html>

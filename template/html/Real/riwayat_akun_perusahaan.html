@@ -27,12 +27,12 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Admin - Dashboard</title>
+    <title>Riwayat Akun Perusahaan</title>
 
     <meta name="description" content="" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="../../assets/img/favicon/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="../../assets/img/logo/smkn11.png" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -75,7 +75,7 @@
           <div class="app-brand demo">
             <a href="dashboard.html" class="app-brand-link">
               <!-- <span class="app-brand-text demo menu-text fw-bolder ms-2">Sneat</span> -->
-              <img src="../../assets/img/logo/karir_sebelas.png" width="190px" height="90px"></img>
+              <img src="../../assets/img/logo/KARIR_sebelas.jpeg" width="190px" height="90px"></img>
             </a>
             
             <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -96,35 +96,55 @@
                 <li class="menu-item">
                   <a href="riwayat_akun_alumni.html" class="menu-link">
                     <i class="menu-icon tf-icons bx bxs-user-circle"></i>
-                    <div data-i18n="CRM">Alumni</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">1</div>
+                    <div data-i18n="CRM">Riwayat User Alumni</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">1</div>
                   </a>
                 </li>
                 <li class="menu-item active">
                   <a href="riwayat_akun_perusahaan.html" class="menu-link">
                     <i class="menu-icon tf-icons bx bxs-building"></i>
-                    <div data-i18n="Analytics">Perusahaan</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">1</div>
+                    <div data-i18n="Analytic">Riwayat User Perusahan</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">1</div>
                   </a>
                 </li>
                 <li class="menu-item">
                   <a href="riwayat_loker.html" class="menu-link">
                     <i class="menu-icon tf-icons bx bx-briefcase-alt-2"></i>
-                    <div data-i18n="eCommerce">Loker</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">3</div>
+                    <div data-i18n="eCommerce">Riwayat Loker</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">3</div>
                   </a>
                 </li>
                 <li class="menu-item">
                   <a href="riwayat_lamaran.html" class="menu-link">
                     <i class="menu-icon tf-icons bx bx-file"></i>
-                    <div data-i18n="Logistics">Lamaran</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">2</div>
+                    <div data-i18n="Logistics">Riwayat Lamaran</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">2</div>
                   </a>
                 </li>
               </ul>
             </li>
-            <li class="menu-header small text-uppercase"><span class="menu-header-text">Pages</span></li>
+            <li class="menu-header small text-uppercase"><span class="menu-header-text">Data</span></li>
             <li class="menu-item">
-              <a href="index.html" class="menu-link">
+              <a href="index.html" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bxs-graduation"></i>
                 <div data-i18n="Analytics">Data Alumni</div>
               </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="index.html" class="menu-link">
+                    <i class='menu-icon bx bxs-user-circle'></i>
+                    <div data-i18n="Logistics">Alumni Bergabung</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="belum_bergabung.html" class="menu-link">
+                    <i class="menu-icon bx bxs-user-minus"></i>
+                    <div data-i18n="Logistics">Alumni Belum Bergabung</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="import_alumni.html" class="menu-link">
+                    <i class="menu-icon bx bxs-user-plus"></i>
+                    <div data-i18n="Logistics">Import Alumni</div>
+                  </a>
+                </li>
+              </ul>
             </li>
             <!-- Layouts -->
             <li class="menu-item">
@@ -180,26 +200,46 @@
                 <i class="menu-icon tf-icons bx bx-briefcase-alt-2"></i>
                 <div data-i18n="Authentications">Data Loker</div>
               </a>
+            </li>
+            <li class="menu-item">
+              <a href="lamaran.html" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-file"></i>
+                <div data-i18n="Misc">Data Lamaran</div>
+              </a>
               <ul class="menu-sub">
                 <li class="menu-item">
-                  <a href="loker.html" class="menu-link menu-toggle">
-                    <i class='menu-icon bx bx-briefcase-alt-2'></i>
-                    <div data-i18n="Logistics">Tampil Data</div>
+                  <a href="lamaran.html" class="menu-link">
+                    <i class="menu-icon bx bxs-user-check"></i>
+                    <div data-i18n="Logistics">Terima</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="tambah_loker.html" class="menu-link">
-                    <i class='menu-icon bx bxs-user-plus'></i>
-                    <div data-i18n="Logistics">Tambah Data</div>
+                  <a href="pending.html" class="menu-link">
+                    <i class='menu-icon bx bxs-user-detail'></i>
+                    <div data-i18n="Logistics">Pending</div>
                   </a>
                 </li>
               </ul>
             </li>
             <li class="menu-item">
-              <a href="lamaran.html" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-file"></i>
-                <div data-i18n="Misc">Data Lamaran</div>
+              <a href="loker.html" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-clipboard"></i>
+                <div data-i18n="Authentications">Pengajuan</div>
               </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="pengajuan_alumni.html" class="menu-link">
+                    <i class="menu-icon bx bxs-user-circle"></i>
+                    <div data-i18n="Logistics">Alumni</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="pengajuan_perusahaan.html" class="menu-link">
+                    <i class='menu-icon bx bxs-building'></i>
+                    <div data-i18n="Logistics">Perusahaan</div>
+                  </a>
+                </li>
+              </ul>
             </li>
             <!-- Components -->
             <!-- <li class="menu-header small text-uppercase"><span class="menu-header-text">Components</span></li> -->
@@ -305,25 +345,36 @@
                       <form>
                         <div class="row g-3 m-3">
                           <div class="col-md-4">
-                            <label for="nama" class="form-label">Tanggal</label>
-                            <input class="form-control" type="text" id="searchInput" placeholder="2023.." onkeyup="searchTable()">
+                            <label for="nama" class="card-title">Tanggal</label>
+                            <div class="input-group input-group-merge">
+                              <span class="input-group-text"><i class="bx bxs-calendar"></i></span>
+                            <input class="form-control" type="text" id="searchInput" placeholder="2023..." onkeyup="searchTable()">
+                            </div>
                           </div>
                           <div class="col-md-3">
-                            <label for="programKeahlian" class="form-label">Keterangan</label>
+                            <label for="programKeahlian" class="card-title">Keterangan</label>
+                            <div class="input-group input-group-merge">
+                              <span class="input-group-text"><i class="bx bxs-notepad"></i></span>
                             <select class="form-select" id="select1" aria-label="Default select example">
-                              <option selected>Keterangan<option>
-                              <option value="1">Edit</option>
-                              <option value="2">Tambah</option>
-                              <option value="3">Hapus</option>
+                              <option selected>Keterangan</option>
+                              <option value="edit">Edit</option>
+                              <option value="hapus">Hapus</option>
+                              <option value="tambah">Tambah</option>
                             </select>
+                            </div>
                           </div>
                           <div class="col-md-3">
-                            <label for="tahunLulus" class="form-label">Deskripsi</label>
-                            <input type="text" class="form-control" placeholder="Edit bagian...">
+                            <label for="tahunLulus" class="card-title">Deskripsi</label>
+                            <div class="input-group innput-group-merge">
+                              <span class="input-group-text"><i class="bx bxs-copy-alt"></i></span>
+                            <input type="text" class="form-control" id="searchInput" placeholder="Edit bagian...">
+                            </div>
                           </div>
-                          <div class="col-md-1" style="padding-top: 30px;">
-                            <button class="btn btn-success" style="width: 150px;">Send</button>
+                          
+                          <div class="col-md-1" style="padding-top: 36px;">
+                            <button class="btn btn-success" style="width: 150px;">Cari</button>
                           </div>
+                            
                         </div>
                       </form>
                       <div class="table-responsive text-nowrap">
@@ -340,11 +391,7 @@
                             <tr>
                               <td>2021-3-3</td>
                               <td>
-                                <select class="form-select">
-                                  <option value="edit">Edit</option>
-                                  <option value="tambah">Tambah</option>
-                                  <option value="hapus">Hapus</option>
-                                </select>
+                               Edit
                               </td>
                               <td>Edit bagian Telepon</td>
                               <td>
@@ -367,59 +414,33 @@
                                             <form id="formAccountSettings" method="POST" onsubmit="return false">
                                               <div class="row">
                                                 <div class="mb-3 col-md-6">
-                                                  <label for="firstName" class="form-label">Nama Perusahaan</label>
-                                                  <input
-                                                    class="form-control"
-                                                    type="text"
-                                                    id="firstName"
-                                                    name="firstName"
-                                                    value="PT Chlorine"
-                                                    autofocus
-                                                  />
+                                                  <label for="firstName" class="card-title">Nama Perusahaan</label><br>
+                                                  <label for="" class="card-text"><i class="bx bxs-building"></i>PT Chlorine</label>
                                                 </div>
                                                 <div class="mb-3 col-md-6">
-                                                  <label for="text" class="form-label">Jurusan</label>
-                                                  <input
-                                                    class="form-control"
-                                                    type="email"
-                                                    id="email"
-                                                    name="email"
-                                                    value="PPLG,DKV"
-                                                  />
+                                                  <label class="form-label" for="phoneNumber">Telepon</label><br>
+                                                  <label for="" class="card-text"><i class="bx bxs-phone-call"></i>+62 878-9288-1129</label>
                                                 </div>
                                                 <div class="mb-3 col-md-6">
-                                                  <label class="form-label" for="phoneNumber">Telepon</label>
-                                                  <div class="input-group input-group-merge">
-                                                    <!-- <span class="input-group-text">US (+1)</span> -->
-                                                    <input
-                                                      type="text"
-                                                      id="phoneNumber"
-                                                      name="phoneNumber"
-                                                      class="form-control"
-                                                      value="083253"
-                                                    />
-                                                  </div>
-                                                </div>
-                                                <div class="mb-3 col-md-6">
-                                                    <label for="inputEmail4" class="form-label">Ruang Lingkup</label>
-                                                    <input type="text" class="form-control" value="Jl. Kebon Sirih No.40 Lantai 1">
-                                                </div>
-                                                <div class="mb-3 col-md-6">
-                                                    <label for="inputEmail4" class="form-label">Provinsi</label>
-                                                    <input type="text" class="form-control" value="Jawa Barat">
+                                                  <label for="inputEmail4" class="card-title">Provinsi</label><br>
+                                                    <label  class="card-text"><i class="bx bxs-building"></i>Jawa Barat</label>
                                                 </div>
                                                   <div class="mb-3 col-md-6">
-                                                    <label for="inputPassword4" class="form-label">Kabupatan/Kota</label>
-                                                    <input type="text" class="form-control" value="Bandung">
+                                                    <label for="inputPassword4" class="card-title">Kabupatan/Kota</label><br>
+                                                    <label class="card-text"><i class="bx bxs-building"></i>Bandung</label>
                                                   </div>
                                                   <div class="mb-3 col-md-6">
-                                                    <label for="inputEmail4" class="form-label">Kecamatan</label>
-                                                    <input type="text" class="form-control" value="Babakan Ciparay">
-                                                  </div>
-                                                  <div class="mb-3 col-md-6">
-                                                    <label for="inputEmail4" class="form-label">Kelurahan</label>
-                                                    <input type="text" class="form-control" value="Sukahaji">
-                                                  </div>
+                                                    <label for="inputEmail4" class="card-title">Kecamatan</label><br>
+                                                    <label class="card-text"><i class="bx bxs-building"></i>Bababakan Ciparay</label>
+                                                    </div>
+                                                    <div class="mb-3 col-md-6">
+                                                      <label for="inputEmail4" class="card-title">Kelurahan</label><br>
+                                                      <label for="" class="card-text"><i class="bx bxs-building"></i>Sukahaji</label>
+                                                    </div>
+                                                    <div class="mb-3 col-md-6">
+                                                        <label for="inputEmail4" class="card-title">Ruang Lingkup</label><br>
+                                                        <label class="card-text"><i class="bx bxs-building-house"></i>Jl. Kebon Sirih No.40 Lantai 1</label>
+                                                    </div>
                                                 </div>
                                                
                                                 
@@ -443,11 +464,7 @@
                             <tr>
                               <td>2023-4-1</td>
                               <td>
-                                <select class="form-select">
-                                  <option value="edit">Edit</option>
-                                  <option value="tambah">Tambah</option>
-                                  <option value="hapus">Hapus</option>
-                                </select>
+                               Edit
                               </td>
                               <td>Edit bagian Alamat</td>
                               <td>

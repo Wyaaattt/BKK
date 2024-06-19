@@ -27,12 +27,12 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Admin - Dashboard</title>
+    <title>Riwayat Akun Alumni</title>
 
     <meta name="description" content="" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="../../assets/img/favicon/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="../../assets/img/logo/smkn11.png" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -75,7 +75,7 @@
           <div class="app-brand demo">
             <a href="dashboard.html" class="app-brand-link">
               <!-- <span class="app-brand-text demo menu-text fw-bolder ms-2">Sneat</span> -->
-              <img src="../../assets/img/logo/karir_sebelas.png" width="190px" height="90px"></img>
+              <img src="../../assets/img/logo/KARIR_sebelas.jpeg" width="190px" height="90px"></img>
             </a>
             
             <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -96,35 +96,55 @@
                 <li class="menu-item active">
                   <a href="riwayat_akun_alumni.html" class="menu-link">
                     <i class="menu-icon tf-icons bx bxs-user-circle"></i>
-                    <div data-i18n="CRM">Alumni</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">1</div>
+                    <div data-i18n="CRM">Riwayat User Alumni</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">1</div>
                   </a>
                 </li>
                 <li class="menu-item">
                   <a href="riwayat_akun_perusahaan.html" class="menu-link">
                     <i class="menu-icon tf-icons bx bxs-building"></i>
-                    <div data-i18n="Analytics">Perusahaan</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">1</div>
+                    <div data-i18n="Analytic">Riwayat User Perusahan</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">1</div>
                   </a>
                 </li>
                 <li class="menu-item">
                   <a href="riwayat_loker.html" class="menu-link">
                     <i class="menu-icon tf-icons bx bx-briefcase-alt-2"></i>
-                    <div data-i18n="eCommerce">Loker</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">3</div>
+                    <div data-i18n="eCommerce">Riwayat Loker</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">3</div>
                   </a>
                 </li>
                 <li class="menu-item">
                   <a href="riwayat_lamaran.html" class="menu-link">
                     <i class="menu-icon tf-icons bx bx-file"></i>
-                    <div data-i18n="Logistics">Lamaran</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">2</div>
+                    <div data-i18n="Logistics">Riwayat Lamaran</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">2</div>
                   </a>
                 </li>
               </ul>
             </li>
-            <li class="menu-header small text-uppercase"><span class="menu-header-text">Pages</span></li>
+            <li class="menu-header small text-uppercase"><span class="menu-header-text">Data</span></li>
             <li class="menu-item">
-              <a href="index.html" class="menu-link">
+              <a href="index.html" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bxs-graduation"></i>
                 <div data-i18n="Analytics">Data Alumni</div>
               </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="index.html" class="menu-link">
+                    <i class='menu-icon bx bxs-user-circle'></i>
+                    <div data-i18n="Logistics">Alumni Bergabung</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="belum_bergabung.html" class="menu-link">
+                    <i class="menu-icon bx bxs-user-minus"></i>
+                    <div data-i18n="Logistics">Alumni Belum Bergabung</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="import_alumni.html" class="menu-link">
+                    <i class="menu-icon bx bxs-user-plus"></i>
+                    <div data-i18n="Logistics">Import Alumni</div>
+                  </a>
+                </li>
+              </ul>
             </li>
             <!-- Layouts -->
             <li class="menu-item">
@@ -176,30 +196,50 @@
               </ul>
             </li>
             <li class="menu-item">
-              <a href="loker.html" class="menu-link menu-toggle">
+              <a href="loker.html" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-briefcase-alt-2"></i>
                 <div data-i18n="Authentications">Data Loker</div>
               </a>
+            </li>
+            <li class="menu-item">
+              <a href="lamaran.html" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-file"></i>
+                <div data-i18n="Misc">Data Lamaran</div>
+              </a>
               <ul class="menu-sub">
                 <li class="menu-item">
-                  <a href="loker.html" class="menu-link">
-                    <i class='menu-icon bx bx-briefcase-alt-2'></i>
-                    <div data-i18n="Logistics">Tampil Data</div>
+                  <a href="lamaran.html" class="menu-link">
+                    <i class="menu-icon bx bxs-user-check"></i>
+                    <div data-i18n="Logistics">Terima</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="tambah_loker.html" class="menu-link">
-                    <i class='menu-icon bx bxs-user-plus'></i>
-                    <div data-i18n="Logistics">Tambah Data</div>
+                  <a href="pending.html" class="menu-link">
+                    <i class='menu-icon bx bxs-user-detail'></i>
+                    <div data-i18n="Logistics">Pending</div>
                   </a>
                 </li>
               </ul>
             </li>
             <li class="menu-item">
-              <a href="lamaran.html" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-file"></i>
-                <div data-i18n="Misc">Data Lamaran</div>
+              <a href="loker.html" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-clipboard"></i>
+                <div data-i18n="Authentications">Pengajuan</div>
               </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="pengajuan_alumni.html" class="menu-link">
+                    <i class="menu-icon bx bxs-user-circle"></i>
+                    <div data-i18n="Logistics">Alumni</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="pengajuan_perusahaan.html" class="menu-link">
+                    <i class='menu-icon bx bxs-building'></i>
+                    <div data-i18n="Logistics">Perusahaan</div>
+                  </a>
+                </li>
+              </ul>
             </li>
             <!-- Components -->
             <!-- <li class="menu-header small text-uppercase"><span class="menu-header-text">Components</span></li> -->
@@ -305,25 +345,34 @@
                   <form>
                     <div class="row g-3 m-3">
                       <div class="col-md-4">
-                        <label for="nama" class="form-label">Tanggal</label>
+                        <label for="nama" class="card-title">Tanggal</label>
+                        <div class="input-group input-group-merge">
+                          <span class="input-group-text"><i class="bx bxs-calendar"></i></span>
                         <input class="form-control" type="text" id="searchInput" placeholder="2023..." onkeyup="searchTable()">
+                        </div>
                       </div>
                       <div class="col-md-3">
-                        <label for="programKeahlian" class="form-label">Keterangan</label>
+                        <label for="programKeahlian" class="card-title">Keterangan</label>
+                        <div class="input-group input-group-merge">
+                          <span class="input-group-text"><i class="bx bxs-notepad"></i></span>
                         <select class="form-select" id="select1" aria-label="Default select example">
                           <option selected>Keterangan</option>
                           <option value="edit">Edit</option>
                           <option value="hapus">Hapus</option>
                           <option value="tambah">Tambah</option>
                         </select>
+                        </div>
                       </div>
                       <div class="col-md-3">
-                        <label for="tahunLulus" class="form-label">Deskripsi</label>
+                        <label for="tahunLulus" class="card-title">Deskripsi</label>
+                        <div class="input-group innput-group-merge">
+                          <span class="input-group-text"><i class="bx bxs-copy-alt"></i></span>
                         <input type="text" class="form-control" id="searchInput" placeholder="Edit bagian...">
+                        </div>
                       </div>
                       
-                      <div class="col-md-1" style="padding-top: 30px;">
-                        <button class="btn btn-success" style="width: 150px;">Send</button>
+                      <div class="col-md-1" style="padding-top: 36px;">
+                        <button class="btn btn-success" style="width: 150px;">Cari</button>
                       </div>
                         
                     </div>
@@ -342,12 +391,8 @@
                         <tr>
                           <td>2020-2-1</td>
                           <td>
-                            <select class="form-select"  aria-label="Default select example">
-                            <option selected>Edit</option>
-                            <option value="1">Tambah</option>
-                            <option value="2">Hapus</option>
-                          </select>
-                        </td>
+                          Edit  
+                          </td>
                           <td>Edit Bagian Foto</td>
                           <td>
                             <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -402,38 +447,16 @@
                                         <form id="formAccountSettings" method="POST" onsubmit="return false">
                                           <div class="row">
                                             <div class="mb-3 col-md-6">
-                                              <label for="firstName" class="form-label">Nama</label>
-                                              <input
-                                                class="form-control"
-                                                type="text"
-                                                id="firstName"
-                                                name="firstName"
-                                                value="Dava Ardiansyah"
-                                                autofocus
-                                              />
+                                              <label for="firstName" class="card-title">Nama</label><br>
+                                              <label for="" class="card-text"><i class="bx bxs-user"></i>Dava Ardiansyah</label>
                                             </div>
                                             <div class="mb-3 col-md-6">
-                                              <label for="email" class="form-label">E-mail</label>
-                                              <input
-                                                class="form-control"
-                                                type="email"
-                                                id="email"
-                                                name="email"
-                                                value="john.doe@example.com"
-                                              />
+                                              <label for="email" class="card-title">E-mail</label><br>
+                                              <label for="" class="card-text"><i class='bx bxs-envelope'></i>davaardiasyah@gmail.com</label>
                                             </div>
                                             <div class="mb-3 col-md-12">
-                                              <label class="form-label" for="phoneNumber">Role</label>
-                                              <div class="input-group input-group-merge">
-                                                <!-- <span class="input-group-text">US (+1)</span> -->
-                                                <input
-                                                  type="text"
-                                                  id="phoneNumber"
-                                                  name="phoneNumber"
-                                                  class="form-control"
-                                                  value="Alumni"
-                                                />
-                                              </div>
+                                              <label class="card-title" for="phoneNumber">Role</label><br>
+                                              <label for="" class="card-text"><i class="bx bx-cube-alt"></i>Alumni</label>
                                             </div>
                                             <div class="mb-3 col-md-12">
                                               <div class="accordion " id="accordionExample">
@@ -445,15 +468,20 @@
                                                   </h2>
                                                   <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                                     <div class="accordion-body">
-                                                      SDN 199 Sayuran
+                                                      SMKN 11 BANDUNG
                                                       <hr>
-                                                      SMPN 47 Cimahi
-                                                      <!-- <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow. -->
+                                                      D2 - Computer Science
+                                                      <hr>
+                                                      Pengembangan Perangkat Lunak Dan Gim - (PPLG)
+                                                      <hr>
+                                                      2021-2025
+                                                      <hr>
+                                                      IPK - 4.00
                                                     </div>
                                                   </div>
                                                 </div>
                                                 <div class="accordion-item border-1">
-                                                  <h2 class="accordion-header" id="headingThree">
+                                                  <h2 class="accordion-header" id="heading">
                                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                                       Keahlian
                                                     </button>
@@ -461,116 +489,30 @@
                                                   <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                                     <div class="accordion-body">
                                                       Saya Ahli dalam bidang Repair Laptop
-                                                      <!-- <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow. -->
+                                                      
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="accordion-item border-1">
+                                                  <h2 class="accordion-header" id="heading">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                      Riwayat Pekerjaan
+                                                    </button>
+                                                  </h2>
+                                                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                      2023-2025 &nbsp;-&nbsp;PT Forit &nbsp;-&nbsp;Fulltime
                                                     </div>
                                                   </div>
                                                 </div>
                                               </div>
                                             </div>
-                                            <!-- <div class="mb-3 col-md-6">
-                                              <label for="state" class="form-label">Riwayat Pendidikan</label>
-                                              <input class="form-control" type="text" id="state" name="state" placeholder="California" />
-                                            </div> -->
-                                            <!-- <div class="mb-3 col-md-6">
-                                              <label for="zipCode" class="form-label">Zip Code</label>
-                                              <input
-                                                type="text"
-                                                class="form-control"
-                                                id="zipCode"
-                                                name="zipCode"
-                                                placeholder="231465"
-                                                maxlength="6"
-                                              />
-                                            </div>
-                                            <div class="mb-3 col-md-6">
-                                              <label class="form-label" for="country">Country</label>
-                                              <select id="country" class="select2 form-select">
-                                                <option value="">Select</option>
-                                                <option value="Australia">Australia</option>
-                                                <option value="Bangladesh">Bangladesh</option>
-                                                <option value="Belarus">Belarus</option>
-                                                <option value="Brazil">Brazil</option>
-                                                <option value="Canada">Canada</option>
-                                                <option value="China">China</option>
-                                                <option value="France">France</option>
-                                                <option value="Germany">Germany</option>
-                                                <option value="India">India</option>
-                                                <option value="Indonesia">Indonesia</option>
-                                                <option value="Israel">Israel</option>
-                                                <option value="Italy">Italy</option>
-                                                <option value="Japan">Japan</option>
-                                                <option value="Korea">Korea, Republic of</option>
-                                                <option value="Mexico">Mexico</option>
-                                                <option value="Philippines">Philippines</option>
-                                                <option value="Russia">Russian Federation</option>
-                                                <option value="South Africa">South Africa</option>
-                                                <option value="Thailand">Thailand</option>
-                                                <option value="Turkey">Turkey</option>
-                                                <option value="Ukraine">Ukraine</option>
-                                                <option value="United Arab Emirates">United Arab Emirates</option>
-                                                <option value="United Kingdom">United Kingdom</option>
-                                                <option value="United States">United States</option>
-                                              </select>
-                                            </div>
-                                            <div class="mb-3 col-md-6">
-                                              <label for="language" class="form-label">Language</label>
-                                              <select id="language" class="select2 form-select">
-                                                <option value="">Select Language</option>
-                                                <option value="en">English</option>
-                                                <option value="fr">French</option>
-                                                <option value="de">German</option>
-                                                <option value="pt">Portuguese</option>
-                                              </select>
-                                            </div>
-                                            <div class="mb-3 col-md-6">
-                                              <label for="timeZones" class="form-label">Timezone</label>
-                                              <select id="timeZones" class="select2 form-select">
-                                                <option value="">Select Timezone</option>
-                                                <option value="-12">(GMT-12:00) International Date Line West</option>
-                                                <option value="-11">(GMT-11:00) Midway Island, Samoa</option>
-                                                <option value="-10">(GMT-10:00) Hawaii</option>
-                                                <option value="-9">(GMT-09:00) Alaska</option>
-                                                <option value="-8">(GMT-08:00) Pacific Time (US & Canada)</option>
-                                                <option value="-8">(GMT-08:00) Tijuana, Baja California</option>
-                                                <option value="-7">(GMT-07:00) Arizona</option>
-                                                <option value="-7">(GMT-07:00) Chihuahua, La Paz, Mazatlan</option>
-                                                <option value="-7">(GMT-07:00) Mountain Time (US & Canada)</option>
-                                                <option value="-6">(GMT-06:00) Central America</option>
-                                                <option value="-6">(GMT-06:00) Central Time (US & Canada)</option>
-                                                <option value="-6">(GMT-06:00) Guadalajara, Mexico City, Monterrey</option>
-                                                <option value="-6">(GMT-06:00) Saskatchewan</option>
-                                                <option value="-5">(GMT-05:00) Bogota, Lima, Quito, Rio Branco</option>
-                                                <option value="-5">(GMT-05:00) Eastern Time (US & Canada)</option>
-                                                <option value="-5">(GMT-05:00) Indiana (East)</option>
-                                                <option value="-4">(GMT-04:00) Atlantic Time (Canada)</option>
-                                                <option value="-4">(GMT-04:00) Caracas, La Paz</option>
-                                              </select>
-                                            </div>
-                                            <div class="mb-3 col-md-6">
-                                              <label for="currency" class="form-label">Currency</label>
-                                              <select id="currency" class="select2 form-select">
-                                                <option value="">Select Currency</option>
-                                                <option value="usd">USD</option>
-                                                <option value="euro">Euro</option>
-                                                <option value="pound">Pound</option>
-                                                <option value="bitcoin">Bitcoin</option>
-                                              </select>
-                                            </div>
-                                          </div>
-                                          <div class="mt-2">
-                                            <button type="submit" class="btn btn-primary me-2">Save changes</button>
-                                            <button type="reset" class="btn btn-outline-secondary">Cancel</button>
-                                          </div> -->
                                         </form>
                                       </div>
                                       <!-- /Account -->
                                     </div>
                                   </form>
                                 </div>
-                                <!-- <div class="modal-footer">
-                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                  <button type="button" class="btn btn-primary">Save changes</button>
-                                </div> -->
                               </div>
                             </div>
                           </div>
@@ -578,11 +520,7 @@
                         <tr>
                           <td>2023-5-2</td>
                           <td>
-                            <select class="form-select"  aria-label="Default select example">
-                            <option selected>Edit</option>
-                            <option value="1">Tambah</option>
-                            <option value="2">Hapus</option>
-                          </select>
+                           Edit
                         </td>
                           <td>Edit Bagian Nama</td>
                           <td>
@@ -674,7 +612,7 @@
                                                   <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                                     <div class="accordion-body">
                                                       Saya Ahli dalam bidang JumpShot
-                                                      <!-- <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow. -->
+                                                      
                                                     </div>
                                                   </div>
                                                 </div>
@@ -689,11 +627,7 @@
                          <tr>
                           <td>2021-5-12</td>
                           <td>
-                            <select class="form-select"  aria-label="Default select example">
-                            <option selected>Hapus</option>
-                            <option value="1">Edit</option>
-                            <option value="2">Tambah</option>
-                          </select>
+                            Hapus
                           </td>
                           <td>Hapus Begian Riwayat Pendidikan</td>
                           <td>

@@ -18,10 +18,10 @@
   var options = {
     series: [{
     name: 'Alumni Baru',
-    data: [44, 55, 57, 56, 61, 58, 63, 60, 66]
+    data: [44, 55, 57, 56, 61, 58]
   }, {
     name: 'Alumni Bekerja',
-    data: [76, 85, 101, 98, 87, 105, 91, 114, 94]
+    data: [76, 85, 101, 98, 87, 105]
   }, 
   ],
     chart: {
@@ -44,7 +44,7 @@
     colors: ['transparent']
   },
   xaxis: {
-    categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],
+    categories: ['Januari','Februari', 'Maret', 'April', 'Mei', 'Juni'],
   },
   yaxis: {
     title: {

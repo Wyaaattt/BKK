@@ -27,12 +27,12 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Admin - Dashboard</title>
+    <title>Data Loker</title>
 
     <meta name="description" content="" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="../../assets/img/favicon/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="../../assets/img/logo/smkn11.png" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -75,7 +75,7 @@
           <div class="app-brand demo">
             <a href="dashboard.html" class="app-brand-link">
               <!-- <span class="app-brand-text demo menu-text fw-bolder ms-2">Sneat</span> -->
-              <img src="../../assets/img/logo/karir_sebelas.png" width="190px" height="90px"></img>
+              <img src="../../assets/img/logo/KARIR_sebelas.jpeg" width="190px" height="90px"></img>
             </a>
             
             <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -90,42 +90,62 @@
             <li class="menu-item">
               <a href="dashboard.html" class="menu-link menu-toggle">
                 <i class='menu-icon bx bxs-dashboard'></i>
-                <div data-i18n="Analytics">Dashboard</div>
+                <div data-i18n="Dashboard">Dashboard</div>
               </a>
               <ul class="menu-sub">
                 <li class="menu-item">
                   <a href="riwayat_akun_alumni.html" class="menu-link">
                     <i class="menu-icon tf-icons bx bxs-user-circle"></i>
-                    <div data-i18n="CRM">Alumni</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">1</div>
+                    <div data-i18n="CRM">Riwayat Akun Alumni</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">1</div>
                   </a>
                 </li>
                 <li class="menu-item">
                   <a href="riwayat_akun_perusahaan.html" class="menu-link">
                     <i class="menu-icon tf-icons bx bxs-building"></i>
-                    <div data-i18n="Analytics">Perusahaan</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">1</div>
+                    <div data-i18n="Analytics"> Riwayat Akun Perusahaan</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">1</div>
                   </a>
                 </li>
                 <li class="menu-item">
                   <a href="riwayat_loker.html" class="menu-link">
                     <i class="menu-icon tf-icons bx bx-briefcase-alt-2"></i>
-                    <div data-i18n="eCommerce">Loker</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">3</div>
+                    <div data-i18n="eCommerce">Riwayat Loker</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">3</div>
                   </a>
                 </li>
                 <li class="menu-item">
                   <a href="riwayat_lamaran.html" class="menu-link">
                     <i class="menu-icon tf-icons bx bx-file"></i>
-                    <div data-i18n="Logistics">Lamaran</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">2</div>
+                    <div data-i18n="Logistics">Riwayat Lamaran</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">2</div>
                   </a>
                 </li>
               </ul>
             </li>
 
-            <li class="menu-header small text-uppercase"><span class="menu-header-text">Pages</span></li>
+            <li class="menu-header small text-uppercase"><span class="menu-header-text">Data</span></li>
             <li class="menu-item">
-              <a href="index.html" class="menu-link">
+              <a href="index.html" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bxs-graduation"></i>
                 <div data-i18n="Analytics">Data Alumni</div>
               </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="index.html" class="menu-link">
+                    <i class='menu-icon bx bxs-user-circle'></i>
+                    <div data-i18n="Logistics">Alumni Bergabung</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="belum_bergabung.html" class="menu-link">
+                    <i class="menu-icon bx bxs-user-minus"></i>
+                    <div data-i18n="Logistics">Alumni Belum Bergabung</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="import_alumni.html" class="menu-link">
+                    <i class="menu-icon bx bxs-user-plus"></i>
+                    <div data-i18n="Logistics">Import Alumni</div>
+                  </a>
+                </li>
+              </ul>
             </li>
             <!-- Layouts -->
             <li class="menu-item">
@@ -177,30 +197,50 @@
               </ul>
             </li>
             <li class="menu-item active">
-              <a href="loker.html" class="menu-link menu-toggle">
+              <a href="loker.html" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-briefcase-alt-2"></i>
                 <div data-i18n="Authentications">Data Loker</div>
               </a>
+            </li>
+            <li class="menu-item">
+              <a href="lamaran.html" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-file"></i>
+                <div data-i18n="Misc">Data Lamaran</div>
+              </a>
               <ul class="menu-sub">
-                <li class="menu-item active">
-                  <a href="loker.html" class="menu-link">
-                    <i class='menu-icon bx bx-briefcase-alt-2'></i>
-                    <div data-i18n="Logistics">Tampil Data</div>
+                <li class="menu-item">
+                  <a href="lamaran.html" class="menu-link">
+                    <i class="menu-icon bx bxs-user-check"></i>
+                    <div data-i18n="Logistics">Terima</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="tambah_loker.html" class="menu-link">
-                    <i class='menu-icon bx bxs-user-plus'></i>
-                    <div data-i18n="Logistics">Tambah Data</div>
+                  <a href="pending.html" class="menu-link">
+                    <i class='menu-icon bx bxs-user-detail'></i>
+                    <div data-i18n="Logistics">Pending</div>
                   </a>
                 </li>
               </ul>
             </li>
             <li class="menu-item">
-              <a href="lamaran.html" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-file"></i>
-                <div data-i18n="Misc">Data Lamaran</div>
+              <a href="loker.html" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-clipboard"></i>
+                <div data-i18n="Authentications">Pengajuan</div>
               </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="pengajuan_alumni.html" class="menu-link">
+                    <i class="menu-icon bx bxs-user-circle"></i>
+                    <div data-i18n="Logistics">Alumni</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="pengajuan_perusahaan.html" class="menu-link">
+                    <i class='menu-icon bx bxs-building'></i>
+                    <div data-i18n="Logistics">Perusahaan</div>
+                  </a>
+                </li>
+              </ul>
             </li>
             <!-- Components -->
             <!-- <li class="menu-header small text-uppercase"><span class="menu-header-text">Components</span></li> -->
@@ -303,124 +343,91 @@
               <div class="row">
                
               </div>
-              <div class="row">
-                <div class="col-lg-12 mb-4 order-0">
-                  <div class="card">
-                    <div class="d-flex align-items-end row">
-                      <div class="col-sm-7">
-                        <div class="card-body">
-                          <h3 class="card-title text-primary">Welcome to Admin  Dashboard</h3>
-                          <p class="mb-4">
-                            You have done <span class="fw-bold">72%</span> more sales today. Check your new badge in
-                            your profile.
-                          </p>
-                          <!-- <a href="javascript:;" class="btn btn-sm btn-outline-primary">View Badges</a> -->
-                        </div>
-                      </div>
-                      <div class="col-sm-5 text-center text-sm-left">
-                        <div class="card-body pb-0 px-0 px-md-4">
-                          <img
-                            src="../../assets/img/illustrations/man-with-laptop-light.png"
-                            height="200"
-                            alt="View Badge User"
-                            data-app-dark-img="illustrations/man-with-laptop-dark.png"
-                            data-app-light-img="illustrations/man-with-l  aptop-light.png"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
               <div class=" col-lg-12 mb-4 order-0">
                 <div class="card">
                   <h5 class="card-header">Data Loker</h5>
                   <form>
                     <div class="row g-3 m-3">
-                      <div class="col-md-5">
-                        <label for="nama" class="form-label">Jabatan</label>
-                        <input class="form-control" type="text" id="searchInput" placeholder="John Doe" onkeyup="searchTable()">
-                      </div>
-                      <div class="col-md-5">
-                        <label for="programKeahlian" class="form-label">Jenis Pekerjaan</label>
-                        <input type="text" class="form-control" placeholder="Administrasi">
-                      </div>
-                      <div class="col-md-2" style="padding-top: 30px;">
-                        <button class="btn btn-success" style="width: 150px;">Send</button>
-                      </div>
-                        <div class="col-md-4 mt-4">
-                          <input type="file" id="uploadImport" class="account-file-input" hidden accept="image/png, image/jpeg" />
-                          <label for="uploadImport" class="btn btn-primary float-md-right">
-                            <i class="bx bx-upload mr-2"></i> Import
-                          </label>
-                          <input type="file" id="uploadExport" class="account-file-input" hidden accept="image/png, image/jpeg" />
-                          <label for="uploadExport" class="btn btn-danger float-md-right">
-                            <i class="bx bx-download mr-2"></i> Export
-                          </label>
-                          <a href="tambah_loker.html"class="btn btn-success">
-                           <i class="bx bx-id-card"></i> Tambah
-                          </a>
+                      <div class="col-md-3">
+                        <label for="nama" class="card-title">Jabatan</label>
+                        <div class="input-group input-group-merge">
+                          <span class="input-group-text"><i class="bx bxs-briefcase-alt-2"></i></span>
+                        <input class="form-control" type="text" id="searchInput" placeholder="Software Engineering" onkeyup="searchTable()">
                         </div>
-                    </div>
+                      </div>
+                      <div class="col-md-3">
+                        <label for="programKeahlian" class="card-title">Jenis Waktu Kerja</label>
+                        <inpuit-group class="input-group input-group-merge">
+                          <span class="input-group-text"><i class="bx bxs-time"></i></span>
+                        <select class="form-select" id="select1" aria-label="Default select example" onchange="searchTable1()">
+                          <option selected>Jenis Waktu Kerja</option>
+                          <option value="1">Fulltime</option>
+                          <option value="2">Kontrak</option>
+                          <option value="3">Magang</option>
+                        </select>
+                        </inpuit-group>
+                      </div>
+                      <div class="col-md-3">
+                        <label for="tahunLulus" class="card-title">Nama Perusahaan</label>
+                        <div class="input-group input-group-merge">
+                          <span class="input-group-text"><i class="bx bxs-building"></i></span>
+                        <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
+                          <option selected>Nama Perusahaan</option>
+                          <option value="1">PT Chlorine</option>
+                          <option value="2">PT Forit</option>
+                          <option value="3">SCola LMS</option>
+                        </select>
+                        </div>
+                        
+                        </div>
+                          <div class="col-md-1" style="padding-top: 36px;">
+                            <button class="btn btn-success" style="width: 150px;">Cari</button>
+                          </div>
                   </form>
                   <div class="table-responsive text-nowrap">
                     <table class="table m-2" id="myTable">
                       <thead>
                         <tr>
                           <th>Jabatan</th>
-                          <th>Jenis Pekerjaan</th>
+                          <th>Alamat</th>
+                          <th>Jenis Waktu Kerja</th>
+                          <th>Nama Perusahaan</th>
                           <th>Deskripsi</th>  
-                          <th>Aksi</th>
                         </tr>
                       </thead>
                       <tbody class="table-border-bottom-0">
                         <tr>
                           <td>Administrasi</td>
-                          <td>IT</td>
+                          <td> LT. 3 Gedung BITC, Jl. HMS Mintareja Sarjana Hukum,<br> Baros, Kec. Cimahi Tengah,<br> Kota Cimahi, Jawa Barat 40512</td>
+                          <td>Fulltime</td>
+                          <td>PT Chlorine</td>
                           <td>
                           <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             Deskripsi
                           </button>
                           <!-- Modal -->
                           <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
                               <div class="modal-content">
                                 <div class="modal-header">
                                   <h5 class="modal-title" id="exampleModalLabel">Deskripsi</h5>
                                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                INFO LOKER TERBARU | PT Epson Indonesia merupakan perusahaan penjualan dan pemasaran, anak perusahaan dari Seiko Epson Corporation Pasar perusahaan mendukung Epson printer inkjet, laser, SIDM, format besar,scanner, kamera digital, dan LCD proyektor multimedia.
-                                <br>
-                                Lowongan Kerja Epson Indonesia Saat ini Kami PT  Indonesia Epson Industry kembali membuka lowongan pekerjaan untuk lulusan  sma smk sederajat sebagai operator produksi dengan kualifikasi yang kami butuhkan sebagai berikut :
-                                <br>
-                                INFO LOWONGAN KERJA PT  EPSON INDONESIA (TERBARU)
-                                <br>
-                                1. Posisi : Operator Produksi
-                                <br>
-                                Deskripsi Pekerjaan :
-                                <br>
-                                1. Melakukan pekerjaan yang berhubungan dengan posisi Operator produksi
-                                <br>
-                                2. Melaksanakan kebijakan dan rencana produksi
-                                <br>
-                                3. Melaksanakan proses produksi dan prosedur kualitas sesuai dengan ketentuan suatu perusahaan
-                                <br>
-                                4. Mengoperasikan mesin dan mengontrol proses produksi
-                                <br>
-                                5. Mengatur dan mengontrol bahan baku proses produksi sehingga menjadi bahan jadi yang telah ditentukan oleh perusahaan
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga molestiae, rerum, consectetur dolorum explicabo, <br>
+                                 placeat nisi porro aliquam ipsam rem optio inventore numquam quasi repudiandae molestias corrupti labore perspiciatis natus.
                                 </div>
                               </div>
                             </div>
                           </div>
                           </td>
-                          <td>
-                            <a href="edit_loker.html" class="btn btn-danger">Edit</a>
-                          </td>
+                         
                         </tr>
                         <tr>
                           <td>Software Engineer</td>
-                          <td>IT</td>
+                          <td>l. Kebon Sirih No.40 Lantai 1, Babakan Ciamis, Kec. Sumur Bandung, Kota Bandung, Jawa Barat 40117</td>
+                          <td>Kontrak</td>
+                          <td>PT Forit</td>
                           <td>
                           <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             Deskripsi
@@ -458,44 +465,29 @@
                             </div>
                           </div>
                           </td>
-                          <td>
-                            <a href="edit_loker.html" class="btn btn-danger">Edit</a>
-                          </td>
+                        
                         </tr>
                         <tfoot class="table-border-bottom-0">
                           <tr>
                             <th>Jabatan</th>
-                            <th>Jenis Pekerjaan</th>
+                            <th>Alamat</th>
+                            <th>Jenis Waktu Kerja</th>
                             <th>Deskripsi</th> 
-                            <th>Aksi</th>
                           </tr>
                         </tfoot>
                       </tbody>
                     </table>
-                    <nav aria-label="Page navigation">
-                      <ul class="pagination s justify-content-end mt-3" id="pagination">
-                        <li class="page-item prev">
-                          <a class="page-link" href="javascript:void(0);"><i class="tf-icon bx bx-chevrons-left"></i></a>
-                        </li>
-                        <li class="page-item next">
-                          <a class="page-link" href="javascript:void(0);"><i class="tf-icon bx bx-chevrons-right"></i></a>
-                        </li>
-                      </ul>
-                    </nav>
-  
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12 col-lg-12 order-2 order-md-3 order-lg-2 mb-4">
-                  <div class="card">
-                    <div class="row row-bordered g-0">
-                      <div class="col-md-12">
-                        <h5 class="card-header m-0 me-2 pb-3">Alumni</h5>
-                        <div id="chart" class="px-2"></div>
-                      </div>
                     </div>
-                  </div>
+                      <nav aria-label="Page navigation">
+                        <ul class="pagination s justify-content-end mt-3" id="pagination">
+                          <li class="page-item prev">
+                            <a class="page-link" href="javascript:void(0);"><i class="tf-icon bx bx-chevrons-left"></i></a>
+                          </li>
+                          <li class="page-item next">
+                            <a class="page-link" href="javascript:void(0);"><i class="tf-icon bx bx-chevrons-right"></i></a>
+                          </li>
+                        </ul>
+                      </nav>
                 </div>
               </div>
                 

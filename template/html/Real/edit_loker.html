@@ -27,12 +27,12 @@
         content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
       />
 
-    <title>Horizontal Layouts - Forms | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
+    <title>Edit Loker</title>
 
     <meta name="description" content="" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="../../assets/img/favicon/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="../../assets/img/logo/smkn11.png" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -73,7 +73,7 @@
             <div class="app-brand demo">
               <a href="dashboard.html" class="app-brand-link">
                 <!-- <span class="app-brand-text demo menu-text fw-bolder ms-2">Sneat</span> -->
-                <img src="../../assets/img/logo/karir_sebelas.png" width="190px" height="90px"></img>
+                <img src="../../assets/img/logo/KARIR_sebelas.jpeg" width="190px" height="90px"></img>
               </a>
               
               <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -86,18 +86,64 @@
             <ul class="menu-inner py-1">
               <!-- Dashboard -->
               <li class="menu-item ">
-                <a href="dashboard.html" class="menu-link">
+                <a href="dashboard.html" class="menu-link menu-toggle">
                   <i class='menu-icon bx bxs-dashboard'></i>
                   <div data-i18n="Analytics">Dashboard</div>
                 </a>
+                <ul class="menu-sub">
+                  <li class="menu-item">
+                    <a href="riwayat_akun_alumni.html" class="menu-link">
+                      <i class="menu-icon tf-icons bx bxs-user-circle"></i>
+                      <div data-i18n="CRM">Riwayat Akun Alumni</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">1</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="riwayat_akun_perusahaan.html" class="menu-link">
+                      <i class="menu-icon tf-icons bx bxs-building"></i>
+                      <div data-i18n="Analytics"> Riwayat Akun Perusahaan</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">1</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="riwayat_loker.html" class="menu-link">
+                      <i class="menu-icon tf-icons bx bx-briefcase-alt-2"></i>
+                      <div data-i18n="eCommerce">Riwayat Loker</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">3</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="riwayat_lamaran.html" class="menu-link">
+                      <i class="menu-icon tf-icons bx bx-file"></i>
+                      <div data-i18n="Logistics">Riwayat Lamaran</div><div class="badge bg-label-danger fs-tiny rounded-pill ms-auto">2</div>
+                    </a>
+                  </li>
+                </ul>
               </li>
 
-              <li class="menu-header small text-uppercase"><span class="menu-header-text">Pages</span></li>
-              <li class="menu-item ">
-                <a href="index.html" class="menu-link">
+              <li class="menu-header small text-uppercase"><span class="menu-header-text">Data</span></li>
+              <li class="menu-item">
+                <a href="index.html" class="menu-link menu-toggle">
                   <i class="menu-icon tf-icons bx bxs-graduation"></i>
                   <div data-i18n="Analytics">Data Alumni</div>
                 </a>
+                <ul class="menu-sub">
+                  <li class="menu-item">
+                    <a href="index.html" class="menu-link">
+                      <i class='menu-icon bx bxs-user-circle'></i>
+                      <div data-i18n="Logistics">Alumni Bergabung</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="belum_bergabung.html" class="menu-link">
+                      <i class="menu-icon bx bxs-user-minus"></i>
+                      <div data-i18n="Logistics">Alumni Belum Bergabung</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="import_alumni.html" class="menu-link">
+                      <i class="menu-icon bx bxs-user-plus"></i>
+                      <div data-i18n="Logistics">Import Alumni</div>
+                    </a>
+                  </li>
+                </ul>
               </li>
               <!-- Layouts -->
               <li class="menu-item">
@@ -141,10 +187,44 @@
                 </ul>
               </li>
               <li class="menu-item">
-                <a href="lamaran.html" class="menu-link">
+                <a href="lamaran.html" class="menu-link menu-toggle">
                   <i class="menu-icon tf-icons bx bx-file"></i>
                   <div data-i18n="Misc">Data Lamaran</div>
                 </a>
+                <ul class="menu-sub">
+                  <li class="menu-item">
+                    <a href="lamaran.html" class="menu-link">
+                      <i class="menu-icon bx bxs-user-check"></i>
+                      <div data-i18n="Logistics">Terima</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="pending.html" class="menu-link">
+                      <i class='menu-icon bx bxs-user-detail'></i>
+                      <div data-i18n="Logistics">Pending</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <a href="loker.html" class="menu-link menu-toggle">
+                  <i class="menu-icon tf-icons bx bx-clipboard"></i>
+                  <div data-i18n="Authentications">Pengajuan</div>
+                </a>
+                <ul class="menu-sub">
+                  <li class="menu-item">
+                    <a href="pengajuan_alumni.html" class="menu-link">
+                      <i class="menu-icon bx bxs-user-circle"></i>
+                      <div data-i18n="Logistics">Alumni</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="pengajuan_perusahaan.html" class="menu-link">
+                      <i class='menu-icon bx bxs-building'></i>
+                      <div data-i18n="Logistics">Perusahaan</div>
+                    </a>
+                  </li>
+                </ul>
               </li>
               <!-- Components -->
               <!-- <li class="menu-header small text-uppercase"><span class="menu-header-text">Components</span></li> -->
@@ -256,7 +336,7 @@
                       <form>
                         <div class="row mb-3">
                           <div class="col-md-6">
-                            <label class="col-sm-12 col-form-label" for="basic-icon-default-fullname">Jabatan</label>
+                            <label class="col-sm-12 card-title" for="basic-icon-default-fullname">Jabatan</label>
                             <div class="input-group input-group-merge">
                               <span id="basic-icon-default-fullname2" class="input-group-text"
                                 ><i class="bx bx-user"></i
@@ -272,7 +352,7 @@
                             </div>
                           </div>
                           <div class="col-md-6">
-                            <label class="col-sm-12 col-form-label" for="basic-icon-default-company">Jenis Pekerjaan</label>
+                            <label class="col-sm-12 card-title" for="basic-icon-default-company">Jenis Pekerjaan</label>
                             <div class="input-group input-group-merge">
                               <span id="basic-icon-default-company2" class="input-group-text"
                                 ><i class="bx bx-buildings"></i
@@ -290,7 +370,7 @@
                         </div>
                         <div class="row mb-3">
                           <div class="col-md-12">
-                            <label class="col-sm-2 form-label" for="basic-icon-default-phone">Deskripsi</label>
+                            <label class="col-sm-2 card-title" for="basic-icon-default-phone">Deskripsi</label>
                             <div class="input-group input-group-merge">
                               <!-- <span id="basic-icon-default-phone2" class="input-group-text" -->
                                 <!-- ><i class="bx bx-phone"></i -->
@@ -301,7 +381,7 @@
                          
                         <div class="row mt-3">
                           <div class="col-md-12">
-                            <button type="submit" class="btn btn-primary">Send</button>
+                            <a href="loker.html" class="btn btn-primary">Save</a>
                           </div>
                         </div>
                       </form>
