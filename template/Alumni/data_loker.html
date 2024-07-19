@@ -17,7 +17,7 @@
   class="light-style layout-menu-fixed"
   dir="ltr"
   data-theme="theme-default"
-  data-assets-path="../../assets/"
+  data-assets-path="../assets/"
   data-template="vertical-menu-template-free"
 >
   <head>
@@ -32,7 +32,7 @@
     <meta name="description" content="" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="../../assets/img/logo/smkn11.png" />
+    <link rel="icon" type="image/x-icon" href="../assets/img/logo/smkn11.png" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -43,26 +43,26 @@
     />
 
     <!-- Icons. Uncomment required icon fonts -->
-    <link rel="stylesheet" href="../../assets/vendor/fonts/boxicons.css" />
+    <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
 
     <!-- Core CSS -->
-    <link rel="stylesheet" href="../../assets/vendor/css/core.css" class="template-customizer-core-css" />
-    <link rel="stylesheet" href="../../assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
-    <link rel="stylesheet" href="../../assets/css/demo.css" />
+    <link rel="stylesheet" href="../assets/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="../assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="../assets/css/demo.css" />
 
     <!-- Vendors CSS -->
-    <link rel="stylesheet" href="../../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
 
-    <link rel="stylesheet" href="../../assets/vendor/libs/apex-charts/apex-charts.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/apex-charts/apex-charts.css" />
 
     <!-- Page CSS -->
 
     <!-- Helpers -->
-    <script src="../../assets/vendor/js/helpers.js"></script>
+    <script src="../assets/vendor/js/helpers.js"></script>
 
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
-    <script src="../../assets/js/config.js"></script>
+    <script src="../assets/js/config.js"></script>
   </head>
 
   <body>
@@ -75,7 +75,7 @@
           <div class="app-brand demo">
             <a href="index.html" class="app-brand-link">
               <!-- <span class="app-brand-text demo menu-text fw-bolder ms-2">Sneat</span> -->
-              <img src="../../assets/img/logo/KARIR_sebelas.jpeg" width="200px" height="90px"></img>
+              <img src="../assets/img/logo/KARIR_sebelas.jpeg" width="200px" height="90px"></img>
             </a>
             
             <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -169,7 +169,7 @@
                 <li class="nav-item navbar-dropdown dropdown-user dropdown">
                   <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
                     <div class="avatar avatar-online">
-                      <img src="../../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                      <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
                     </div>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end">
@@ -178,11 +178,11 @@
                         <div class="d-flex">
                           <div class="flex-shrink-0 me-3">
                             <div class="avatar avatar-online">
-                              <img src="../../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                              <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
                             </div>
                           </div>
                           <div class="flex-grow-1">
-                            <span class="fw-semibold d-block">John Doe</span>
+                            <span class="fw-semibold d-block">Gultom Julius</span>
                             <small class="text-muted">Alumni</small>
                           </div>
                         </div>
@@ -217,13 +217,19 @@
                     <div class="row">
                       <div class="col-md-6 mb-4">
                           <div class="card">
-                              <img src="/template/assets/img/logo/Program.png" class="card-img-top" alt="...">
+                              <!-- <img src="/template/assets/img/logo/Program.png" class="card-img-top" alt="..."> -->
                               <div class="card-body">
-                                <p class="card-text">Kami menyediakan loker untuk perusahaan PT Chlorine</p>
+                                <h2 class="card-title"><b>Administrasi</b></h2>
+                                <p class="card-text">PT Chlorine</p>
+                                <p class="card-text">Jawa Barat, Bandung, Babakan Ciparay, Sukahaji</p><br>
+                                <p class="card-text">2 Tahun 3 Bulan 2 Hari</p>
                                 <!-- Button trigger modal -->
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                  Detail
-                                </button>
+                                 <div class="d-flex">
+                                   <button type="button" class="btn btn-outline-primary col-md-2" style="margin-right: 10px;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                     Detail
+                                    </button>
+                                    <a href="#exampleModalToggle1" data-bs-toggle="modal" data-bs-dismiss="modal" class="btn btn-primary">Lamar</a>
+                                  </div>
                                 <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 10">
                                   <div id="toastExample" class="toast align-items-center bg-primary" role="alert" aria-live="assertive" aria-atomic="true">
                                     <div class="toast-header">
@@ -252,27 +258,9 @@
                                               <label for="" class="card-text mb-3">Jenis Pekerjaan : Fulltime</label><br>
                                               <h2 class="card-title">Deskripsi</h2>
                                               <label for="" class="card-text mb-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus reprehenderit voluptatibus facilis rerum laboriosam. Quibusdam nulla itaque maiores libero animi expedita non aliquid ea delectus iusto? Sunt aliquam ipsum recusandae.</label>
-
-                                              <!-- Toast -->
-                                              <!-- <button type="button" class="btn btn-primary" id="saveChanges">Kirim Lamaran</button> -->
-                                              <!-- <div class="position-fixed buttom-0 end-0 p-3" style="z-index: 11">
-                                                <div id="toastExample" class="toast align-items-center bg-primary" role="alert" aria-live="assertive" aria-atomic="true">
-                                                  <div class="toast-header">
-                                                    <i class="bx bx-bell me-2"></i>
-                                                    <div class="me-auto fw-semibold">Loker</div>
-                                                    <small>Just now</small>
-                                                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                                                  </div>
-                                                  <div class="toast-body">
-                                                    Pengajuan Lamaran Sukses
-                                                  </div>
-                                                </div>
-                                              </div> -->
                                         </div>
                                         <div class="modal-footer">
-                                            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
-                                            <a href="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal" class="btn btn-primary">Kirim Lamaran Cepat</a>
-                                            <a href="#exampleModalToggle1" data-bs-toggle="modal" data-bs-dismiss="modal" class="btn btn-primary">Kirim Lamaran Lewat File</a>
+                                            <a href="#exampleModalToggle1" data-bs-toggle="modal" data-bs-dismiss="modal" class="btn btn-primary">Lamar</a>
                                           </div>
                                       </div>
                                   </div>
@@ -302,13 +290,14 @@
                                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
+                                      <p class="card-text">JIka Anda Tidak Mengupload File Tambahan Kami Hanya Akan Mengirimkan Data Anda Yang Ada Pada Bagian Profil</p>
                                       <div class="input-group">
                                         <input type="file" class="form-control" id="inputGroupFile02" />
                                         <label class="input-group-text" for="inputGroupFile02">Upload</label>
                                       </div>
                                     </div>
                                     <div class="modal-footer">
-                                      <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Kirim Lamaran</button>
+                                      <button class="btn btn-primary" id="saveChanges" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Kirim Lamaran</button>
                                       <!-- <div class="button btn btn-primary" data-bs-target="#toastExample" id="saveChanges">Kirim Lamaran</div> -->
                                     </div>
                                   </div>
@@ -320,37 +309,18 @@
                       </div>
                             <div class="col-md-6 mb-4">
                                 <div class="card">
-                                    <img src="/template/assets/img/logo/Program.png" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                  <p class="card-text">Kami menyediakan loker untuk perusahaan PT Forit</p>
-                                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    Detail
-                                  </button>
-                                  
-                                </div>
-                            </div>
-                        </div>
-                            <div class="col-md-6 mb-4">
-                                <div class="card">
-                                    <img src="/template/assets/img/logo/Program.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                  <p class="card-text">Kami menyediakan loker untuk perusahaan PT Forit</p>
-                                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    Detail
-                                  </button>
-                                  
-                                </div>
-                            </div>
-                        </div>
-                            <div class="col-md-6 mb-4">
-                                <div class="card">
-                                    <img src="/template/assets/img/logo/Program.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                  <p class="card-text">Kami menyediakan loker untuk perusahaan PT Forit</p>
-                                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    Detail
-                                  </button>
-                                  
+                                      <h2 class="card-title"><b>Front End Develover</b></h2>
+                                      <p class="card-text">PT Chlorine</p>
+                                      <p class="card-text">Jawa Barat, Bandung, Babakan Ciparay, Sukahaji</p><br>
+                                      <p class="card-text">2 Tahun 3 Bulan 2 Hari</p>
+                                      <!-- Button trigger modal -->
+                                       <div class="d-flex">
+                                         <button type="button" class="btn btn-outline-primary col-md-2" style="margin-right: 10px;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                           Detail
+                                          </button>
+                                          <a href="#exampleModalToggle1" data-bs-toggle="modal" data-bs-dismiss="modal" class="btn btn-primary">Lamar</a>
+                                        </div>
                                 </div>
                             </div>
                         </div>
@@ -402,31 +372,31 @@
                       
                       
                       
-    <!-- Core JS -->
-    <!-- build:js assets/vendor/js/core.js -->
-    <script src="../../assets/vendor/libs/jquery/jquery.js"></script>
-    <script src="../../assets/vendor/libs/popper/popper.js"></script>
-    <script src="../../assets/vendor/js/bootstrap.js"></script>
-    <script src="../../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+                    <!-- Core JS -->
+                    <!-- build:js assets/vendor/js/core.js -->
+                    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+                    <script src="../assets/vendor/libs/popper/popper.js"></script>
+                    <script src="../assets/vendor/js/bootstrap.js"></script>
+                    <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
 
-    <script src="../../assets/vendor/js/menu.js"></script>
-    <!-- <script src="../../assets/js/ui-toasts.js"></script> -->
+                    <script src="../assets/vendor/js/menu.js"></script>
+                    <!-- <script src="../assets/js/ui-toasts.js"></script> -->
 
-    <!-- endbuild -->
+                    <!-- endbuild -->
 
-    <!-- Vendors JS -->
-    <script src="../../assets/vendor/libs/apex-charts/apexcharts.js"></script>
+                    <!-- Vendors JS -->
+                    <script src="../assets/vendor/libs/apex-charts/apexcharts.js"></script>
 
-    <!-- Main JS -->
-    <script src="../../assets/js/main.js"></script>
-    <script src="../../assets/js/table-search.js"></script>
-    <script src="../../assets/js/pagiantion.js"></script>
-    <script src="../../assets/js/toast-modal.js"></script>
+                    <!-- Main JS -->
+                    <script src="../assets/js/main.js"></script>
+                    <script src="../assets/js/table-search.js"></script>
+                    <script src="../assets/js/pagiantion.js"></script>
+                    <script src="../assets/js/toast-modal.js"></script>
 
-    <!-- Page JS -->
-    <script src="../../assets/js/dashboards-analytics.js"></script>
+                    <!-- Page JS -->
+                    <script src="../assets/js/dashboards-analytics.js"></script>
 
-    <!-- Place this tag in your head or just before your close body tag. -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
+                    <!-- Place this tag in your head or just before your close body tag. -->
+                    <script async defer src="https://buttons.github.io/buttons.js"></script>
   </body>
 </html>
